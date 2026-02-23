@@ -1,4 +1,4 @@
-From 1f98b1f6c531f85e7a44acdab147e35ca068c11c Mon Sep 17 00:00:00 2001
+From 9b8c8194a18bf4a2915ea3e64b473c8f8a810d91 Mon Sep 17 00:00:00 2001
 From: ThatApplePieGuy <necrozma999@gmail.com>
 Date: Mon, 26 Jan 2026 21:46:00 -0700
 Subject: [PATCH] Lag compensate projectiles
@@ -117,7 +117,7 @@ index 4f2670003..7dd63aa07 100644
  
      }
 diff --git a/src/main/java/net/minecraft/server/World.java b/src/main/java/net/minecraft/server/World.java
-index d98287d6e..4e63e80b1 100644
+index 0ffd5754b..bb1b449fe 100644
 --- a/src/main/java/net/minecraft/server/World.java
 +++ b/src/main/java/net/minecraft/server/World.java
 @@ -1109,6 +1109,16 @@ public abstract class World implements IBlockAccess {

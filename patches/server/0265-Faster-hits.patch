@@ -1,4 +1,4 @@
-From 5238ee34a32041f680636de06647b4dcab88f4b9 Mon Sep 17 00:00:00 2001
+From a2332dd346ab86d806ee8c8c699459da3c8ab14b Mon Sep 17 00:00:00 2001
 From: imkunet <im@kunet.dev>
 Date: Wed, 18 Feb 2026 10:00:48 -0500
 Subject: [PATCH] Faster hits
@@ -18,7 +18,7 @@ index f84f2c13e..91d210827 100644
                                  entity.motX = d0;
                                  entity.motY = d1;
 diff --git a/src/main/java/net/minecraft/server/MinecraftServer.java b/src/main/java/net/minecraft/server/MinecraftServer.java
-index 1ffbfc11e..929f51a1c 100644
+index fc8c747bb..bf54fe0f8 100644
 --- a/src/main/java/net/minecraft/server/MinecraftServer.java
 +++ b/src/main/java/net/minecraft/server/MinecraftServer.java
 @@ -715,8 +715,10 @@ public abstract class MinecraftServer implements Runnable, ICommandListener, IAs

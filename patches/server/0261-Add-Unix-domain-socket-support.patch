@@ -1,4 +1,4 @@
-From 5a9c57bd3a5a5db314b75f3326413089544efc78 Mon Sep 17 00:00:00 2001
+From b4c4eb77ab82c54e0ec3068f58cefbe86074a31d Mon Sep 17 00:00:00 2001
 From: Andrew Steinborn <git@steinborn.me>
 Date: Tue, 11 May 2021 17:39:22 -0400
 Subject: [PATCH] Add Unix domain socket support
@@ -7,7 +7,7 @@ Backported from Paper upstream
 https://github.com/PaperMC/Paper/pull/5611
 
 diff --git a/src/main/java/net/minecraft/server/DedicatedServer.java b/src/main/java/net/minecraft/server/DedicatedServer.java
-index 0689927ee..eb2328c80 100644
+index 572cddbca..a3e07724c 100644
 --- a/src/main/java/net/minecraft/server/DedicatedServer.java
 +++ b/src/main/java/net/minecraft/server/DedicatedServer.java
 @@ -169,19 +169,39 @@ public class DedicatedServer extends MinecraftServer implements IMinecraftServer

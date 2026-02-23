@@ -1,4 +1,4 @@
-From 64c1c239e5ba8cfd82c3831560b68abe9211b2e2 Mon Sep 17 00:00:00 2001
+From 26ef7af84b15867a09168f84e633b458de64e2f9 Mon Sep 17 00:00:00 2001
 From: imkunet <im@kunet.dev>
 Date: Sun, 1 Feb 2026 05:49:47 -0500
 Subject: [PATCH] Fix Unix domain socket support
@@ -33,7 +33,7 @@ index 770fd53ad..662c75682 100644
  
              @Override
 diff --git a/src/main/java/net/minecraft/server/PlayerList.java b/src/main/java/net/minecraft/server/PlayerList.java
-index 6c1792945..f4b1c2611 100644
+index 2be41afae..c849c380b 100644
 --- a/src/main/java/net/minecraft/server/PlayerList.java
 +++ b/src/main/java/net/minecraft/server/PlayerList.java
 @@ -455,7 +455,7 @@ public abstract class PlayerList {

@@ -1,11 +1,11 @@
-From 3d92735a15ab1211ade14fe6b162550110d8831b Mon Sep 17 00:00:00 2001
+From f7a73a7c0bce81338743b845859ac3548e4e43ad Mon Sep 17 00:00:00 2001
 From: ThatApplePieGuy <necrozma999@gmail.com>
 Date: Sun, 1 Feb 2026 18:16:25 -0700
 Subject: [PATCH] Support io_uring
 
 
 diff --git a/pom.xml b/pom.xml
-index ca6fe8cd4..b221e8e8a 100644
+index dcdc0fe8b..794170730 100644
 --- a/pom.xml
 +++ b/pom.xml
 @@ -85,6 +85,25 @@

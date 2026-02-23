@@ -1,11 +1,11 @@
-From 557050011e37a7c93a02701e179df3346bd7f3c9 Mon Sep 17 00:00:00 2001
+From c5bb2a0805db190ffe4cd3fd7d3c66cb40546a81 Mon Sep 17 00:00:00 2001
 From: imkunet <im@kunet.dev>
 Date: Wed, 18 Feb 2026 21:09:53 -0500
 Subject: [PATCH] Tighter tick times
 
 
 diff --git a/src/main/java/net/minecraft/server/MinecraftServer.java b/src/main/java/net/minecraft/server/MinecraftServer.java
-index a5b28b466..1ffbfc11e 100644
+index a5b28b466..fc8c747bb 100644
 --- a/src/main/java/net/minecraft/server/MinecraftServer.java
 +++ b/src/main/java/net/minecraft/server/MinecraftServer.java
 @@ -683,13 +683,16 @@ public abstract class MinecraftServer implements Runnable, ICommandListener, IAs
@@ -27,12 +27,14 @@ index a5b28b466..1ffbfc11e 100644
                      if (wait > 0) {
                          // SportPaper start - fix the tick loop improvements
                          if (catchupTime < 2E6) {
-@@ -704,11 +707,19 @@ public abstract class MinecraftServer implements Runnable, ICommandListener, IAs
+@@ -703,12 +706,20 @@ public abstract class MinecraftServer implements Runnable, ICommandListener, IAs
+                         }
                          // SportPaper end
                      }
-                     if (wait > 0) {
+-                    if (wait > 0) {
 -                        if (!doSuspension()) {
-+                        // SportPaper start - Tighter tick times
++                    // SportPaper start - Tighter tick times
++                    while (wait > 0) {
 +                        if (doSuspension()) {
 +                            curTime = System.nanoTime();
 +                            nextTick = curTime;
