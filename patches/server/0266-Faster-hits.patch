@@ -1,4 +1,4 @@
-From 50c0f34b40be70c65f7961cd7092feb313c62e36 Mon Sep 17 00:00:00 2001
+From 5238ee34a32041f680636de06647b4dcab88f4b9 Mon Sep 17 00:00:00 2001
 From: imkunet <im@kunet.dev>
 Date: Wed, 18 Feb 2026 10:00:48 -0500
 Subject: [PATCH] Faster hits
@@ -18,7 +18,7 @@ index f84f2c13e..91d210827 100644
                                  entity.motX = d0;
                                  entity.motY = d1;
 diff --git a/src/main/java/net/minecraft/server/MinecraftServer.java b/src/main/java/net/minecraft/server/MinecraftServer.java
-index 1ffbfc11e..e1a360ff9 100644
+index 1ffbfc11e..929f51a1c 100644
 --- a/src/main/java/net/minecraft/server/MinecraftServer.java
 +++ b/src/main/java/net/minecraft/server/MinecraftServer.java
 @@ -715,8 +715,10 @@ public abstract class MinecraftServer implements Runnable, ICommandListener, IAs
@@ -33,6 +33,14 @@ index 1ffbfc11e..e1a360ff9 100644
                          }
                          curTime = System.nanoTime();
                          wait = nextTick - curTime; // SportPaper - Tighter tick times
+@@ -1743,6 +1745,7 @@ public abstract class MinecraftServer implements Runnable, ICommandListener, IAs
+             // Spigot start
+             this.j.add(listenablefuturetask);
+             interrupt(); // SportBukkit
++            java.util.concurrent.locks.LockSupport.unpark(this.serverThread); // SportPaper - Faster hits
+             return listenablefuturetask;
+             // Spigot end
+         } else {
 diff --git a/src/main/java/net/minecraft/server/NetworkManager.java b/src/main/java/net/minecraft/server/NetworkManager.java
 index 1a4fbc825..1e3cae432 100644
 --- a/src/main/java/net/minecraft/server/NetworkManager.java
