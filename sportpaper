@@ -179,7 +179,7 @@ case "$1" in
         echo ""
         echo " These commands require the setup command before use:"
         echo "  * r, root             | Change directory to the root of the project."
-        echo "  * a. api              | Move to the SportPaper-API directory."
+        echo "  * a, api              | Move to the SportPaper-API directory."
         echo "  * s, server           | Move to the SportPaper-Server directory."
         echo "  * e, edit             | Use to edit a specific patch, give it the argument \"server\" or \"api\""
         echo "                        | respectively to edit the correct project. Use the argument \"continue\" after"

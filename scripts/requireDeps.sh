@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 set -ue
 
 # Check if an application is on the PATH.
