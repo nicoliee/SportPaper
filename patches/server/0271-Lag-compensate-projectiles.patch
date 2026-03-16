@@ -1,4 +1,4 @@
-From 9b8c8194a18bf4a2915ea3e64b473c8f8a810d91 Mon Sep 17 00:00:00 2001
+From 1dc7919ebaa447890dc45e2728e23bb7e70a2816 Mon Sep 17 00:00:00 2001
 From: ThatApplePieGuy <necrozma999@gmail.com>
 Date: Mon, 26 Jan 2026 21:46:00 -0700
 Subject: [PATCH] Lag compensate projectiles
@@ -104,15 +104,16 @@ index d4289ee48..29f56a5b4 100644
      }
  
 diff --git a/src/main/java/net/minecraft/server/PlayerConnection.java b/src/main/java/net/minecraft/server/PlayerConnection.java
-index 4f2670003..7dd63aa07 100644
+index 4f2670003..48346474d 100644
 --- a/src/main/java/net/minecraft/server/PlayerConnection.java
 +++ b/src/main/java/net/minecraft/server/PlayerConnection.java
-@@ -2082,7 +2082,7 @@ public class PlayerConnection implements PacketListenerPlayIn, IUpdatePlayerList
+@@ -2082,7 +2082,8 @@ public class PlayerConnection implements PacketListenerPlayIn, IUpdatePlayerList
          if (packetplayinkeepalive.a() == this.i) {
              int i = (int) (this.d() - this.j);
  
 -            this.player.ping = (this.player.ping * 3 + i) / 4;
 +            this.player.ping = this.player.ping == 0 ? i : (this.player.ping * 3 + i) / 4; // SportPaper - Update ping quicker
++            this.player.lowestPing = Math.min(this.player.lowestPing, i); // SportPaper - Lag compensation
          }
  
      }
@@ -138,5 +139,5 @@ index 0ffd5754b..bb1b449fe 100644
              return true;
          }
 -- 
-2.52.0
+2.39.3 (Apple Git-146)
 
