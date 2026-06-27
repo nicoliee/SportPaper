@@ -1,4 +1,4 @@
-From 8563a55a06d4332fcd01d2043ec9e4a51c0ffeb8 Mon Sep 17 00:00:00 2001
+From 730558a778f7cd397b1e44bf7291c1bd407b49b9 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Sun, 21 Jun 2015 15:05:21 -0400
 Subject: [PATCH] Custom replacement for eaten items
@@ -40,5 +40,5 @@ index 8ab76b1d..a81b6429 100644
          return this.isCancelled;
      }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

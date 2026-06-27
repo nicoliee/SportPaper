@@ -1,4 +1,4 @@
-From 7c87ecc2b9aa8cb1994654bf63f585bcdcd84ff5 Mon Sep 17 00:00:00 2001
+From f8373964d447e2310dbd055a3bb8e68bb3bd0419 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Fri, 4 Mar 2016 04:18:19 -0500
 Subject: [PATCH] Multi-trade API
@@ -63,5 +63,5 @@ index a12806d41..803322527 100644
          if (!force) {
              Block block = location.getBlock();
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

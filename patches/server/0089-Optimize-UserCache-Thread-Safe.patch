@@ -1,4 +1,4 @@
-From 4498dba8d8fffa4bc4ee47aab448508d4e3bdafb Mon Sep 17 00:00:00 2001
+From 66dd3c2b7b1fbd5dcc652d2b98ec0cec69355cdd Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Mon, 16 May 2016 20:47:41 -0400
 Subject: [PATCH] Optimize UserCache / Thread Safe
@@ -101,5 +101,5 @@ index 0f82e06cb..db95bc7a1 100644
      }
  
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

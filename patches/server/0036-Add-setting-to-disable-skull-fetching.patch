@@ -1,4 +1,4 @@
-From c33d7ca987770930e5af848c478434b459a4268c Mon Sep 17 00:00:00 2001
+From 0940a3182f9f3bca47c83c2985304c8c705fc8d9 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Wed, 4 Feb 2015 03:39:46 -0500
 Subject: [PATCH] Add setting to disable skull fetching
@@ -47,5 +47,5 @@ index b9d185d99..7ab410398 100644
      private static void bungee() {
          if ( version < 4 )
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

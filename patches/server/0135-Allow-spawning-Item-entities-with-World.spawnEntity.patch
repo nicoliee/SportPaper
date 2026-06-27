@@ -1,4 +1,4 @@
-From 538b315370670b5c2abc017857bdf469f2a7f2fb Mon Sep 17 00:00:00 2001
+From c267470798b0ecb3130d15132b88f434d7df180d Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Mon, 4 Jun 2018 20:39:20 -0400
 Subject: [PATCH] Allow spawning Item entities with World.spawnEntity
@@ -23,5 +23,5 @@ index 62ee2a856..2ba3c7e01 100644
              x = location.getBlockX();
              y = location.getBlockY();
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

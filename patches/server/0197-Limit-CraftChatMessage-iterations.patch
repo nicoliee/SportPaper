@@ -1,4 +1,4 @@
-From 6d67d32cbffb36aaeff4e67be7cb460394bf59ff Mon Sep 17 00:00:00 2001
+From eebc67a70e6e708583c35a8a0f55715c2972ed7d Mon Sep 17 00:00:00 2001
 From: VytskaLT <VytskaLT@protonmail.com>
 Date: Sat, 17 Apr 2021 10:28:37 +0300
 Subject: [PATCH] Limit CraftChatMessage iterations
@@ -25,5 +25,5 @@ index 38ef8216c..a68d9e38c 100644
              out.append(modi.getColor() == null ? defaultColor : modi.getColor());
              if (modi.isBold()) {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

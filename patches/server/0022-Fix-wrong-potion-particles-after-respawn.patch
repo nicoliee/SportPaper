@@ -1,4 +1,4 @@
-From 9c5b87b8225e6b13ef122cf40ad97497d9d9bc6c Mon Sep 17 00:00:00 2001
+From 1166e3d2e9902c29285a7f5ffde7ce7907f4887d Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Fri, 9 May 2014 22:38:54 -0400
 Subject: [PATCH] Fix wrong potion particles after respawn
@@ -25,5 +25,5 @@ index 593a12dca..35ba2e718 100644
          this.killer = null;
          this.lastDamager = null;
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

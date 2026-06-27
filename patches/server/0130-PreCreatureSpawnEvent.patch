@@ -1,4 +1,4 @@
-From 7740e9fb7619cee9173da32b63ffabca367a60f6 Mon Sep 17 00:00:00 2001
+From ccb5d22affdbedbb56a76e847529a005bd28821b Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Sun, 14 Jan 2018 17:01:31 -0500
 Subject: [PATCH] PreCreatureSpawnEvent
@@ -100,5 +100,5 @@ index a12ae12de..d840c1815 100644
  
                                                          try {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

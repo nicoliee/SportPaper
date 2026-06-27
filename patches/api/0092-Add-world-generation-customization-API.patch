@@ -1,4 +1,4 @@
-From b752418cdaab59c308c9e142f7ed5991830acd41 Mon Sep 17 00:00:00 2001
+From 988b275ef14c0ed2b441f869ae479ca8910877bd Mon Sep 17 00:00:00 2001
 From: Rafi Baum <rafi@ukbaums.com>
 Date: Tue, 23 Apr 2019 16:32:42 -0400
 Subject: [PATCH] Add world generation customization API
@@ -127,5 +127,5 @@ index 81c95d1f..0bb654a3 100644
       * Creates a world with the specified options.
       * <p>
 -- 
-2.17.1
+2.54.0
 

@@ -1,4 +1,4 @@
-From 8d30e6d25be035c79debef636b3445df7a905477 Mon Sep 17 00:00:00 2001
+From e9fdd041d92b5ec2702290a2ab4f4f42a30210d4 Mon Sep 17 00:00:00 2001
 From: BillyGalbreath <Blake.Galbreath@GMail.com>
 Date: Mon, 31 Jul 2017 02:08:55 -0500
 Subject: [PATCH] Make /plugins list alphabetical
@@ -50,5 +50,5 @@ index e21d1679..33deeb93 100644
  
      // Spigot Start
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

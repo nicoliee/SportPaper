@@ -1,4 +1,4 @@
-From 53d311b336daa7724136ecc909dece074de855f5 Mon Sep 17 00:00:00 2001
+From 1f749b8965f227d28843df67e7ced70358bae4e2 Mon Sep 17 00:00:00 2001
 From: "BT (calcastor/mame)" <43831917+calcastor@users.noreply.github.com>
 Date: Tue, 22 Aug 2023 10:11:12 -0700
 Subject: [PATCH] Update several build plugins
@@ -60,5 +60,5 @@ index 285e0eaea..a4c4a9e2b 100644
                      <workingDirectory>${basedir}/target/test-server</workingDirectory>
                      <excludes>
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

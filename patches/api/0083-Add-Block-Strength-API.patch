@@ -1,4 +1,4 @@
-From 8be779573efba0eca855a43bd03a028555f068a8 Mon Sep 17 00:00:00 2001
+From 84f1e30a945aaf761ea04fc60734822e283a409a Mon Sep 17 00:00:00 2001
 From: cswhite2000 <18whitechristop@gmail.com>
 Date: Sat, 15 Sep 2018 01:43:42 -0700
 Subject: [PATCH] Add Block Strength API
@@ -33,5 +33,5 @@ index e6171062..6a089e68 100644
       * Gets the world which contains this Block
       *
 -- 
-2.19.0
+2.54.0
 

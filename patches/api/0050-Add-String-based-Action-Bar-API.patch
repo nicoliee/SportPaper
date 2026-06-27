@@ -1,4 +1,4 @@
-From 949a68e5196c749c7bc9535fc34c01feaae72437 Mon Sep 17 00:00:00 2001
+From 0b1695c40c0981546760834011462a906c67dc25 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Tue, 20 Dec 2016 15:55:55 -0500
 Subject: [PATCH] Add String based Action Bar API
@@ -52,5 +52,5 @@ index d9473594..3cd5a669 100644
       * Sends the component to the player
       *
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

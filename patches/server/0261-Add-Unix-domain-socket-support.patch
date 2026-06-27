@@ -1,4 +1,4 @@
-From b4c4eb77ab82c54e0ec3068f58cefbe86074a31d Mon Sep 17 00:00:00 2001
+From 860b18d8c8f7bc39c1c7f338f885ed7e5119e68b Mon Sep 17 00:00:00 2001
 From: Andrew Steinborn <git@steinborn.me>
 Date: Tue, 11 May 2021 17:39:22 -0400
 Subject: [PATCH] Add Unix domain socket support
@@ -109,7 +109,10 @@ index 5454f2b55..f4a3c2f55 100644
 -                        this.b.close(chatcomponenttext);
 -                        return;
 -                    }
--
++                        throttleCounter++;
++                        if (throttleCounter > 200) {
++                            throttleCounter = 0;
+ 
 -                    throttleTracker.put(address, currentTime);
 -                    throttleCounter++;
 -                    if (throttleCounter > 200) {
@@ -121,10 +124,6 @@ index 5454f2b55..f4a3c2f55 100644
 -                            java.util.Map.Entry<InetAddress, Long> entry = (java.util.Map.Entry) iter.next();
 -                            if (entry.getValue() > connectionThrottle) {
 -                                iter.remove();
-+                        throttleCounter++;
-+                        if (throttleCounter > 200) {
-+                            throttleCounter = 0;
-+
 +                            // Cleanup stale entries
 +                            java.util.Iterator iter = throttleTracker.entrySet().iterator();
 +                            while (iter.hasNext()) {
@@ -216,5 +215,5 @@ index e4566014a..acfa52d6e 100644
      }
  
 -- 
-2.52.0
+2.54.0
 

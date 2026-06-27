@@ -1,4 +1,4 @@
-From 758f154d63b3032fb22a4a8f008600d62bef2195 Mon Sep 17 00:00:00 2001
+From 922ccab4cdaa6f4b10a8852df711858b890a77b6 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Sun, 14 Jan 2018 17:36:02 -0500
 Subject: [PATCH] PlayerNaturallySpawnCreaturesEvent
@@ -35,5 +35,5 @@ index d840c1815..0e4476139 100644
  
                      for (int i1 = -b0; i1 <= b0; ++i1) {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

@@ -1,4 +1,4 @@
-From fd1cfbb38f97c9dd6ce9fe539d143dcfdac7fdad Mon Sep 17 00:00:00 2001
+From 7f1bf1cf2724ee5d20d7b11e8a5d7e2e114fcda9 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Mon, 16 Mar 2015 22:43:13 -0400
 Subject: [PATCH] Force update player velocity
@@ -23,5 +23,5 @@ index a75b86ca..bfa93c05 100644
      public class Spigot extends Entity.Spigot
      {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

@@ -1,4 +1,4 @@
-From a85f05acb66ce6d8f3199b872fcd23712d59ad80 Mon Sep 17 00:00:00 2001
+From 7a34979b6bd83015773412d4281881fa456621e8 Mon Sep 17 00:00:00 2001
 From: ThatApplePieGuy <necrozma999@gmail.com>
 Date: Mon, 26 Jan 2026 18:48:33 -0700
 Subject: [PATCH] Fix projectile desync
@@ -34,5 +34,5 @@ index 47f8aaab7..9e580ff29 100644
              int j;
  
 -- 
-2.52.0
+2.54.0
 

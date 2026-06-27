@@ -1,4 +1,4 @@
-From 224ba9e0d43d4d58baa4d4d0099a525c24064fdd Mon Sep 17 00:00:00 2001
+From 5177e0ca29fe35810f25cf1f47b9b6f60ab15695 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Thu, 29 Dec 2016 23:23:45 -0500
 Subject: [PATCH] Add option to not tick empty worlds
@@ -165,5 +165,5 @@ index bf847c28d..142a5faf6 100644
      public static double weaknessEffectModifier;
      private static void effectModifiers()
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

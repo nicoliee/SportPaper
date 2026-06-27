@@ -1,4 +1,4 @@
-From 02df47a933d1c7b34d06a09fe0c2b1483c50920d Mon Sep 17 00:00:00 2001
+From bff61264c9132d1e78ac90713e97fc7598ff105d Mon Sep 17 00:00:00 2001
 From: mrapple <tony@oc.tc>
 Date: Tue, 13 Nov 2012 19:38:11 -0600
 Subject: [PATCH] Enable multiworld maps
@@ -60,5 +60,5 @@ index 6473ee5b7..95987cd4c 100644
              WorldMap worldmap1 = new WorldMap("map_" + itemstack.getData());
  
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

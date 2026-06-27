@@ -1,4 +1,4 @@
-From e0db083b99aac4c4c2a35f3c4fdb613b06ea5bb4 Mon Sep 17 00:00:00 2001
+From f7ea83c48563655cee3eb47d04b1b780bd036adc Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Wed, 4 Jul 2018 02:25:48 -0400
 Subject: [PATCH] Entity#getChunk API
@@ -31,5 +31,5 @@ index aade959c..060d2d5f 100644
      public class Spigot
      {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

@@ -1,4 +1,4 @@
-From 347a6d865c1d7e36f5f4547d0bfa8058ffdf1baa Mon Sep 17 00:00:00 2001
+From 96245c776a4f1193350230a062fb258a8df79892 Mon Sep 17 00:00:00 2001
 From: Austin Mayes <austin@avicus.net>
 Date: Wed, 26 Sep 2018 23:03:50 -0500
 Subject: [PATCH] Improve locale API and add methods for translating components
@@ -6,7 +6,7 @@ Subject: [PATCH] Improve locale API and add methods for translating components
 
 diff --git a/src/main/java/network/stratus/sportpaper/api/text/TranslatableComponent.java b/src/main/java/network/stratus/sportpaper/api/text/TranslatableComponent.java
 new file mode 100644
-index 0000000..2c4ebfc
+index 00000000..2c4ebfcc
 --- /dev/null
 +++ b/src/main/java/network/stratus/sportpaper/api/text/TranslatableComponent.java
 @@ -0,0 +1,18 @@
@@ -30,7 +30,7 @@ index 0000000..2c4ebfc
 +}
 \ No newline at end of file
 diff --git a/src/main/java/org/bukkit/Bukkit.java b/src/main/java/org/bukkit/Bukkit.java
-index 55b2bec..0d835e4 100644
+index 55b2bec9..0d835e42 100644
 --- a/src/main/java/org/bukkit/Bukkit.java
 +++ b/src/main/java/org/bukkit/Bukkit.java
 @@ -12,6 +12,7 @@ import java.util.Set;
@@ -61,7 +61,7 @@ index 55b2bec..0d835e4 100644
      {
          return server.spigot();
 diff --git a/src/main/java/org/bukkit/Server.java b/src/main/java/org/bukkit/Server.java
-index 6777fbc..e787891 100644
+index 6777fbc6..e7878915 100644
 --- a/src/main/java/org/bukkit/Server.java
 +++ b/src/main/java/org/bukkit/Server.java
 @@ -14,6 +14,7 @@ import java.util.Set;
@@ -93,7 +93,7 @@ index 6777fbc..e787891 100644
      {
          @Deprecated
 diff --git a/src/main/java/org/bukkit/command/CommandSender.java b/src/main/java/org/bukkit/command/CommandSender.java
-index f6ae012..7bc56a8 100644
+index f6ae012e..7bc56a8c 100644
 --- a/src/main/java/org/bukkit/command/CommandSender.java
 +++ b/src/main/java/org/bukkit/command/CommandSender.java
 @@ -1,5 +1,7 @@
@@ -133,7 +133,7 @@ index f6ae012..7bc56a8 100644
 +    // SportPaper end
  }
 diff --git a/src/main/java/org/bukkit/entity/Player.java b/src/main/java/org/bukkit/entity/Player.java
-index c6d1043..05c98d2 100644
+index c6d10438..05c98d2e 100644
 --- a/src/main/java/org/bukkit/entity/Player.java
 +++ b/src/main/java/org/bukkit/entity/Player.java
 @@ -1536,4 +1536,12 @@ public interface Player extends HumanEntity, Conversable, CommandSender, Offline
@@ -150,5 +150,5 @@ index c6d1043..05c98d2 100644
 +    java.util.Locale getLocale();
  }
 -- 
-2.6.4
+2.54.0
 

@@ -1,4 +1,4 @@
-From 2c31c3ffcb5672f6bbc966341acbd34c06200e4c Mon Sep 17 00:00:00 2001
+From fbb21d27eff24b45388667043d2f3c3af7841ed6 Mon Sep 17 00:00:00 2001
 From: md_5 <git@md-5.net>
 Date: Tue, 1 Mar 2016 08:30:03 +1100
 Subject: [PATCH] Add Attribute and AttributeModifier API.
@@ -396,5 +396,5 @@ index e51b65e5..739a3bef 100644
      @SuppressWarnings("javadoc")
      ItemMeta clone();
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

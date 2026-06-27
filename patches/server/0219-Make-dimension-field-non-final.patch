@@ -1,4 +1,4 @@
-From 3d7de0fe713994265c11c2f5c1e75706b8c64639 Mon Sep 17 00:00:00 2001
+From b306f21482a83bac06bc5e88c6c36944ec92b68a Mon Sep 17 00:00:00 2001
 From: "BT (calcastor/mame)" <43831917+calcastor@users.noreply.github.com>
 Date: Sun, 31 Dec 2023 22:03:05 -0800
 Subject: [PATCH] Make dimension field non-final
@@ -18,5 +18,5 @@ index 9a2508c81..e536ae29d 100644
      // Add env and gen to constructor
      public WorldServer(MinecraftServer minecraftserver, IDataManager idatamanager, WorldData worlddata, int i, MethodProfiler methodprofiler, org.bukkit.World.Environment env, org.bukkit.generator.ChunkGenerator gen) {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

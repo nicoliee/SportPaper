@@ -1,4 +1,4 @@
-From aaf539ebafb5af9bed8a6545b497ff735622c238 Mon Sep 17 00:00:00 2001
+From f89c3c8707f600e3d730e937a18bcac29baf24ab Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Mon, 19 Dec 2016 23:07:42 -0500
 Subject: [PATCH] Prevent Pathfinding out of World Border
@@ -38,5 +38,5 @@ index 7ea40468e..b1fbcd1b6 100644
          return (double) (blockposition.getX() + 1) > this.b() && (double) blockposition.getX() < this.d() && (double) (blockposition.getZ() + 1) > this.c() && (double) blockposition.getZ() < this.e();
      }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

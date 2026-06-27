@@ -1,4 +1,4 @@
-From 4e96d2ff523379ace9427f78e5221f4cecfe1397 Mon Sep 17 00:00:00 2001
+From e3fd5abc37c80b063b429d030f4c9c4e864adc8f Mon Sep 17 00:00:00 2001
 From: Pablete1234 <pabloherrerapalacio@gmail.com>
 Date: Sun, 9 Aug 2020 08:29:58 +0200
 Subject: [PATCH] Prevent 1.7 players glitching in carpet
@@ -17,27 +17,29 @@ index b34ff4341..b18bea110 100644
  public class BlockCarpet extends Block {
  
      public static final BlockStateEnum<EnumColor> COLOR = BlockStateEnum.of("color", EnumColor.class);
-@@ -34,11 +36,17 @@ public class BlockCarpet extends Block {
+@@ -34,12 +36,18 @@ public class BlockCarpet extends Block {
      }
  
      protected void b(int i) {
 -        byte b0 = 0;
 -        float f = (float) (1 * (1 + b0)) / 16.0F;
-+        this.a(0.0F, 0.0F, 0.0F, 1.0F, 0.0625F, 1.0F);
-+    }
- 
+-
 -        this.a(0.0F, 0.0F, 0.0F, 1.0F, f, 1.0F);
++        this.a(0.0F, 0.0F, 0.0F, 1.0F, 0.0625F, 1.0F);
+     }
+ 
 +    // SportPaper start - No height on carpet in feet height, avoid 1.7 players glitching
 +    public void a(World world, BlockPosition blockposition, IBlockData iblockdata, AxisAlignedBB axisalignedbb, List<AxisAlignedBB> list, Entity entity) {
 +        if (entity instanceof EntityHuman && blockposition.getY() == (int) entity.getBoundingBox().b) {
 +            return;
 +        }
 +        super.a(world, blockposition, iblockdata, axisalignedbb, list, entity);
-     }
++    }
 +    // SportPaper end
- 
++
      public boolean canPlace(World world, BlockPosition blockposition) {
          return super.canPlace(world, blockposition) && this.e(world, blockposition);
+     }
 diff --git a/src/main/java/net/minecraft/server/EntityHuman.java b/src/main/java/net/minecraft/server/EntityHuman.java
 index 51fd9d4b3..0e68599d1 100644
 --- a/src/main/java/net/minecraft/server/EntityHuman.java
@@ -67,5 +69,5 @@ index 51fd9d4b3..0e68599d1 100644
  
          static final int[] a = new int[EnumDirection.values().length];
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

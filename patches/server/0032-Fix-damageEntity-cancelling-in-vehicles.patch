@@ -1,4 +1,4 @@
-From b698ceac1fdbc480c6b41a21d09db64f3b2e195c Mon Sep 17 00:00:00 2001
+From 48bab10fd98b8bb94dbc68e8776a0c3e01b7b5f0 Mon Sep 17 00:00:00 2001
 From: ShinyDialga45 <shinydialga45@gmail.com>
 Date: Sat, 25 Oct 2014 16:04:15 -0500
 Subject: [PATCH] Fix damageEntity cancelling in vehicles
@@ -31,5 +31,5 @@ index 4bf790cdf..70a8a679a 100644
  
                  f = (float) event.getDamage();
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

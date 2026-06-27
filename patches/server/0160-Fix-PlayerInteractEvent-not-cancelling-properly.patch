@@ -1,4 +1,4 @@
-From d4dd7cb286a19eb69af6646da42d2de921b2141e Mon Sep 17 00:00:00 2001
+From 42a42b570f5f1483a77d649c5348c68bfc3a71f8 Mon Sep 17 00:00:00 2001
 From: cswhite2000 <18whitechristop@gmail.com>
 Date: Thu, 6 Sep 2018 01:25:56 -0700
 Subject: [PATCH] Fix PlayerInteractEvent not cancelling properly
@@ -35,5 +35,5 @@ index 429c1d57b..21747b92b 100644
              }
              }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

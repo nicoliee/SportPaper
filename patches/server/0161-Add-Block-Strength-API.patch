@@ -1,4 +1,4 @@
-From 91ffc5864a8a4fbb63e4f1f36eef95e0d65030b5 Mon Sep 17 00:00:00 2001
+From c80db7dead21e56b941d1255d281fde86aa10988 Mon Sep 17 00:00:00 2001
 From: cswhite2000 <18whitechristop@gmail.com>
 Date: Sat, 15 Sep 2018 01:44:04 -0700
 Subject: [PATCH] Add Block Strength API
@@ -108,5 +108,5 @@ index ecef909a5..9897e0b47 100644
      public Block getFace(final BlockFace face) {
          return getRelative(face, 1);
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

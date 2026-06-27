@@ -1,4 +1,4 @@
-From c8e1e60578f92be3fec2adc6468ebe18272a986d Mon Sep 17 00:00:00 2001
+From cfaad4db66d30a1d1b71746250a8d2e0a4db9490 Mon Sep 17 00:00:00 2001
 From: Ashcon Partovi <ashcon@partovi.net>
 Date: Mon, 29 Apr 2019 10:10:42 -0700
 Subject: [PATCH] Add entity ID allocation API
@@ -41,5 +41,5 @@ index ea8b6391..c136cb6d 100644
      {
          @Deprecated
 -- 
-2.20.1
+2.54.0
 

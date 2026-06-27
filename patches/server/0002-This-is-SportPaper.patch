@@ -1,4 +1,4 @@
-From b8791ddf31e3c636367c29fd8f078e5fdcbb48e5 Mon Sep 17 00:00:00 2001
+From 8e45d01317616050d3ec213278600d757308437e Mon Sep 17 00:00:00 2001
 From: Austin Mayes <austin@avicus.net>
 Date: Mon, 16 Oct 2017 11:45:28 -0500
 Subject: [PATCH] This is SportPaper
@@ -6,7 +6,7 @@ Subject: [PATCH] This is SportPaper
   Also includes some legacy mc-dev imports
 
 diff --git a/pom.xml b/pom.xml
-index 644305e6..bc242390 100644
+index 644305e68..bc242390e 100644
 --- a/pom.xml
 +++ b/pom.xml
 @@ -1,12 +1,10 @@
@@ -135,7 +135,7 @@ index 644305e6..bc242390 100644
                              <Specification-Title>Bukkit</Specification-Title>
                              <Specification-Version>${api.version}</Specification-Version>
 diff --git a/src/main/java/net/minecraft/server/MinecraftServer.java b/src/main/java/net/minecraft/server/MinecraftServer.java
-index b400ce04..bbca20fa 100644
+index b400ce04d..bbca20fa0 100644
 --- a/src/main/java/net/minecraft/server/MinecraftServer.java
 +++ b/src/main/java/net/minecraft/server/MinecraftServer.java
 @@ -1084,7 +1084,7 @@ public abstract class MinecraftServer implements Runnable, ICommandListener, IAs
@@ -148,7 +148,7 @@ index b400ce04..bbca20fa 100644
  
      public CrashReport b(CrashReport crashreport) {
 diff --git a/src/main/java/org/bukkit/craftbukkit/util/Versioning.java b/src/main/java/org/bukkit/craftbukkit/util/Versioning.java
-index 3a4b1424..36bb612a 100644
+index 3a4b14246..36bb612a9 100644
 --- a/src/main/java/org/bukkit/craftbukkit/util/Versioning.java
 +++ b/src/main/java/org/bukkit/craftbukkit/util/Versioning.java
 @@ -11,7 +11,7 @@ public final class Versioning {
@@ -161,5 +161,5 @@ index 3a4b1424..36bb612a 100644
  
          if (stream != null) {
 -- 
-2.50.0
+2.54.0
 

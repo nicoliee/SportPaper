@@ -1,4 +1,4 @@
-From 71b83673e846c88f13f06010eb8870ee727f7ffd Mon Sep 17 00:00:00 2001
+From 1f6c89e3483cc3bf2313149004dd8042e5cbf9b7 Mon Sep 17 00:00:00 2001
 From: Mark Vainomaa <mikroskeem@mikroskeem.eu>
 Date: Mon, 26 Mar 2018 18:30:53 +0300
 Subject: [PATCH] Make player data saving configurable
@@ -45,5 +45,5 @@ index fa1414bc1..ebb6e4797 100644
      public static double weaknessEffectModifier;
      private static void effectModifiers()
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

@@ -1,4 +1,4 @@
-From b853250b96fd2ee2f42c58e75a79008b46a2d2ca Mon Sep 17 00:00:00 2001
+From 2128a538016f1d2c6d0b46ccad118715859911f3 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Fri, 4 Mar 2016 04:18:12 -0500
 Subject: [PATCH] Multi-trade API
@@ -24,5 +24,5 @@ index 053e61da..8112f5cf 100644
       * Opens an empty workbench inventory window with the player's inventory
       * on the bottom.
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

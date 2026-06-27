@@ -1,4 +1,4 @@
-From 429d3a053f5c060cf6a5c7aa4b6d7e900fbbce7e Mon Sep 17 00:00:00 2001
+From d598fe420a5045aeb2465c24fc0f1aa7a5664d29 Mon Sep 17 00:00:00 2001
 From: William Jeffcock <jeffcockw@gmail.com>
 Date: Sat, 28 Aug 2021 23:32:33 +0100
 Subject: [PATCH] Fix getPlayer not respecting viewer when looking for an exact
@@ -19,5 +19,5 @@ index c90241cdb..52b2d106b 100644
          if (found != null) {
              return found;
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

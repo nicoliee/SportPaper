@@ -1,4 +1,4 @@
-From 3c114d5066939a36edad8bfff9c94b4dcbb4277b Mon Sep 17 00:00:00 2001
+From 5025948247cb2340e1f0ac888597071011a131eb Mon Sep 17 00:00:00 2001
 From: "BT (calcastor/mame)" <43831917+calcastor@users.noreply.github.com>
 Date: Mon, 24 Nov 2025 19:59:11 -0800
 Subject: [PATCH] Backport teleportAsync from Paper 1.13.2+
@@ -39,5 +39,5 @@ index 060d2d5f..238178e1 100644
       * Returns a list of entities within a bounding box centered around this
       * entity
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

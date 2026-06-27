@@ -1,4 +1,4 @@
-From c42b7abaf997e7b11bb898cc815f1098641961e4 Mon Sep 17 00:00:00 2001
+From c354cb8b9125bde0d396b019ec49091331e9629d Mon Sep 17 00:00:00 2001
 From: "BT (calcastor/mame)" <43831917+calcastor@users.noreply.github.com>
 Date: Tue, 28 Oct 2025 11:05:36 -0700
 Subject: [PATCH] Update JUnit, Apache Commons, and SnakeYAML
@@ -1382,5 +1382,5 @@ index d0af4a01..47b0ec5d 100644
              assertThat(preEncoded, is(string));
          } catch (Throwable t) {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

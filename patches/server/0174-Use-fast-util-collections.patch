@@ -1,4 +1,4 @@
-From e64ebb7983b6665ece3e0246d5b8c50257c4aac1 Mon Sep 17 00:00:00 2001
+From 5a0ef429859744611f55f97e7be04d3518067b70 Mon Sep 17 00:00:00 2001
 From: Ashcon Partovi <ashcon@partovi.net>
 Date: Sat, 27 Apr 2019 12:36:37 -0700
 Subject: [PATCH] Use fast util collections
@@ -204,5 +204,5 @@ index e184d4168..34b232714 100644
              }
  
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

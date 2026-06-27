@@ -1,4 +1,4 @@
-From cd0cc21d7abc52f1ab54a543d591de434f0a2831 Mon Sep 17 00:00:00 2001
+From fa8668ab408127ad9d93943a77be081208f7fe09 Mon Sep 17 00:00:00 2001
 From: Austin Mayes <almayes@trevecca.edu>
 Date: Tue, 5 Feb 2019 00:59:06 -0600
 Subject: [PATCH] Add fast block change API
@@ -67,5 +67,5 @@ index 4135d5954..dc81e2607 100644
      // Spigot start
          save(true);
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

@@ -1,4 +1,4 @@
-From ef8e52201ee92ed400e2d6d1ea344c89543416b4 Mon Sep 17 00:00:00 2001
+From fdf56ff1162bb32481a0dd12b7fd9d53b44a1f21 Mon Sep 17 00:00:00 2001
 From: Ashcon Partovi <ashcon@partovi.net>
 Date: Sat, 27 Apr 2019 15:28:42 -0700
 Subject: [PATCH] Rebrand and bump version to 1.8-SNAPSHOT
@@ -140,5 +140,5 @@ index 34b232714..913bfbed7 100644
  import org.bukkit.BlockChangeDelegate;
  import org.bukkit.Bukkit;
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

@@ -1,4 +1,4 @@
-From 7acf1c05c1dfa42662e61910c2bfa3b046d777d5 Mon Sep 17 00:00:00 2001
+From ffcbc80543cbfc9b21c675529bb65dda1a4e463d Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Mon, 26 Sep 2016 01:51:30 -0400
 Subject: [PATCH] Disable Vanilla Chunk GC
@@ -27,5 +27,5 @@ index 665d97d44..e8cdce2aa 100644
          }
      }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

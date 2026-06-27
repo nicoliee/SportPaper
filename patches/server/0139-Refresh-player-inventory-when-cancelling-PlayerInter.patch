@@ -1,4 +1,4 @@
-From af23db762d536fdaee725dacecb01570a101b745 Mon Sep 17 00:00:00 2001
+From fb3d7a8f532865a32dafd60ac25a28f2d11bd17c Mon Sep 17 00:00:00 2001
 From: Minecrell <minecrell@minecrell.net>
 Date: Fri, 13 Jul 2018 14:54:43 +0200
 Subject: [PATCH] Refresh player inventory when cancelling
@@ -64,5 +64,5 @@ index e25543aca..97394ed5e 100644
                      }
                      // CraftBukkit end
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

@@ -1,4 +1,4 @@
-From 9c17e14f2a7ca5a11bd20075cfba9b645128c97a Mon Sep 17 00:00:00 2001
+From 083f01c641d218925de545010b4e41d4cab0e98a Mon Sep 17 00:00:00 2001
 From: Pugzy <pugzy@mail.com>
 Date: Fri, 29 Sep 2023 17:35:55 +0100
 Subject: [PATCH] Fix issues with non-interacting players
@@ -30,5 +30,5 @@ index 3e5332f9e..394b35b14 100644
  
                  if (axisalignedbb1 != null && axisalignedbb1.b(axisalignedbb)) {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

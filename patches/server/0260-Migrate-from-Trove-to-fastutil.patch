@@ -1,4 +1,4 @@
-From dfbd9e0d80b35eb2ba3f95e4dbc3d880c52232ff Mon Sep 17 00:00:00 2001
+From f733feb235bb77a1780ad1d3a0b3916a3c394cbb Mon Sep 17 00:00:00 2001
 From: "BT (calcastor/mame)" <43831917+calcastor@users.noreply.github.com>
 Date: Wed, 10 Dec 2025 03:11:50 -0800
 Subject: [PATCH] Migrate from Trove to fastutil
@@ -253,5 +253,5 @@ index 1ad321639..02edcabe6 100644
      {
          disableStatSaving = getBoolean( "stats.disable-saving", false );
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

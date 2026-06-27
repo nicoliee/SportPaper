@@ -1,4 +1,4 @@
-From 2c3341959248922392f4a1ff8b4721541133f2d3 Mon Sep 17 00:00:00 2001
+From 1403692afb0d1414a94c8f3e0166eab42ff0929f Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Tue, 26 May 2015 04:00:58 -0400
 Subject: [PATCH] Accurate block hit checking
@@ -167,5 +167,5 @@ index 00000000..b1ba1d8d
 +    }
 +}
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

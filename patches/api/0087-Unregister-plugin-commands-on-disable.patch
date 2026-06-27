@@ -1,4 +1,4 @@
-From 03bac23fb92d287dbf4bcba3cbbfdfa97741c27d Mon Sep 17 00:00:00 2001
+From 9a1842b671949e63216e061189ab0f32202d45e1 Mon Sep 17 00:00:00 2001
 From: Austin Mayes <austin@avicus.net>
 Date: Fri, 4 Jan 2019 18:05:48 -0600
 Subject: [PATCH] Unregister plugin commands on disable
@@ -32,5 +32,5 @@ index 3447aae4..5e58e8f8 100644
                  server.getMessenger().unregisterIncomingPluginChannel(plugin);
                  server.getMessenger().unregisterOutgoingPluginChannel(plugin);
 -- 
-2.19.0
+2.54.0
 

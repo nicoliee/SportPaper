@@ -1,4 +1,4 @@
-From f233aabe6ca8de8f6e4f5eb0e84a2f0a6dbb2b69 Mon Sep 17 00:00:00 2001
+From 0920192b1b82e1ac3e4e32fef9a393b61aeeb519 Mon Sep 17 00:00:00 2001
 From: Spottedleaf <Spottedleaf@users.noreply.github.com>
 Date: Sat, 4 Apr 2020 15:27:44 -0700
 Subject: [PATCH] Allow controlled flushing for network manager
@@ -160,5 +160,5 @@ index bdc5eb6b2..a61e8f9b9 100644
          }
          return true;
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

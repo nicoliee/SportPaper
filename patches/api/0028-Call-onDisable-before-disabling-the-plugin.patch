@@ -1,4 +1,4 @@
-From 7dbcd6ccddbd4f8d595bedfbc0482695b0a2d739 Mon Sep 17 00:00:00 2001
+From 24a2777f3e45dee4a85746f5c7ae4d335cb26a99 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Sat, 20 Jun 2015 12:27:57 -0400
 Subject: [PATCH] Call onDisable before disabling the plugin
@@ -34,5 +34,5 @@ index c961b18c..12d797f4 100644
          }
      }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

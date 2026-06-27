@@ -1,4 +1,4 @@
-From 7130a27e195f30547e79c89ac680c71f0533f58f Mon Sep 17 00:00:00 2001
+From b06bf3a846e894d98736c4b2b12afeeef776bd8e Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Wed, 6 May 2020 04:53:35 -0400
 Subject: [PATCH] Optimize Network Manager and add advanced packet support
@@ -71,39 +71,47 @@ index 0c2aab10e..bdc5eb6b2 100644
 -            this.a(packet, (GenericFutureListener[]) null);
 -        } else {
 -            this.j.writeLock().lock();
-+        // Paper - Optimize network
-+        this.a(packet, null);
-+    }
- 
+-
 -            try {
 -                this.i.add(new NetworkManager.QueuedPacket(packet, (GenericFutureListener[]) null));
 -            } finally {
 -                this.j.writeLock().unlock();
 -            }
-+    public void a(Packet packet, GenericFutureListener<? extends Future<? super Void>> genericfuturelistener, GenericFutureListener<? extends Future<? super Void>>... agenericfuturelistener) {
+-        }
+-
++        // Paper - Optimize network
++        this.a(packet, null);
+     }
+ 
+     public void a(Packet packet, GenericFutureListener<? extends Future<? super Void>> genericfuturelistener, GenericFutureListener<? extends Future<? super Void>>... agenericfuturelistener) {
+-        if (this.g()) {
+-            this.m();
+-            this.a(packet, (GenericFutureListener[]) ArrayUtils.add(agenericfuturelistener, 0, genericfuturelistener));
+-        } else {
+-            this.j.writeLock().lock();
+-
+-            try {
+-                this.i.add(new NetworkManager.QueuedPacket(packet, (GenericFutureListener[]) ArrayUtils.add(agenericfuturelistener, 0, genericfuturelistener)));
+-            } finally {
+-                this.j.writeLock().unlock();
+-            }
 +        // Paper start - Optimize network: Handle oversized packets better
 +        GenericFutureListener<? extends Future<? super Void>>[] listeners = null;
 +        if (genericfuturelistener != null || agenericfuturelistener != null) { // cannot call ArrayUtils.add with both null arguments
 +            listeners = ArrayUtils.insert(0, agenericfuturelistener, genericfuturelistener);
          }
  
--    }
 +        final boolean connected = this.isConnected();
 +        if (!connected && !this.preparing) {
 +            return;
 +        }
- 
--    public void a(Packet packet, GenericFutureListener<? extends Future<? super Void>> genericfuturelistener, GenericFutureListener<? extends Future<? super Void>>... agenericfuturelistener) {
--        if (this.g()) {
--            this.m();
--            this.a(packet, (GenericFutureListener[]) ArrayUtils.add(agenericfuturelistener, 0, genericfuturelistener));
++
 +        packet.onPacketDispatch(this.getPlayer());
 +        if (connected && (InnerUtil.canSendImmediate(this, packet)
 +            || (MinecraftServer.getServer().isMainThread() && packet.isReady() && this.getQueuedPackets().isEmpty()
 +            && (packet.getExtraPackets() == null || packet.getExtraPackets().isEmpty())))) {
 +            this.a(packet, listeners);
-         } else {
--            this.j.writeLock().lock();
++        } else {
 +            // Write the packets to the queue, then flush - antixray hooks there already
 +            final java.util.List<Packet<?>> extraPackets = InnerUtil.buildExtraPackets(packet);
 +            final boolean hasExtraPackets = extraPackets != null && !extraPackets.isEmpty();
@@ -112,11 +120,7 @@ index 0c2aab10e..bdc5eb6b2 100644
 +            } else {
 +                final java.util.List<QueuedPacket> actions = new java.util.ArrayList<>(1 + extraPackets.size());
 +                actions.add(new QueuedPacket(packet, (GenericFutureListener<? extends Future<? super Void>>) null)); // Delay the future listener until the end of the extra packets
- 
--            try {
--                this.i.add(new NetworkManager.QueuedPacket(packet, (GenericFutureListener[]) ArrayUtils.add(agenericfuturelistener, 0, genericfuturelistener)));
--            } finally {
--                this.j.writeLock().unlock();
++
 +                for (int i = 0, len = extraPackets.size(); i < len;) {
 +                    final Packet<?> extraPacket = extraPackets.get(i);
 +                    final boolean end = ++i == len;
@@ -124,9 +128,8 @@ index 0c2aab10e..bdc5eb6b2 100644
 +                }
 +
 +                this.getQueuedPackets().addAll(actions);
-             }
--        }
- 
++            }
++
 +            this.m();
 +        }
 +        // Paper end - Optimize network
@@ -144,7 +147,7 @@ index 0c2aab10e..bdc5eb6b2 100644
 +        } else {
 +            this.channel.eventLoop().execute(() -> doSendPacket(packet, enumprotocol, enumprotocol1, agenericfuturelistener));
 +        }
-+
+ 
 +    }
 +
 +    // SportPaper start - move common code to helper method
@@ -152,7 +155,7 @@ index 0c2aab10e..bdc5eb6b2 100644
 +        if (enumprotocol != enumprotocol1) {
 +            this.a(enumprotocol);
 +        }
- 
++
 +        // Paper start - Optimize network
 +        EntityPlayer player = getPlayer();
 +        if (!this.isConnected()) {
@@ -168,21 +171,19 @@ index 0c2aab10e..bdc5eb6b2 100644
                  channelfuture.addListeners(agenericfuturelistener);
              }
  
--            channelfuture.addListener(ChannelFutureListener.FIRE_EXCEPTION_ON_FAILURE);
++            // Paper start - Optimize network
++            if (packet.hasFinishListener()) {
++                channelfuture.addListener((ChannelFutureListener) channelFuture -> packet.onPacketDispatchFinish(player, channelFuture));
++            }
++            // Paper end - Optimize network
++
+             channelfuture.addListener(ChannelFutureListener.FIRE_EXCEPTION_ON_FAILURE);
 -        } else {
 -            this.channel.eventLoop().execute(new Runnable() {
 -                public void run() {
 -                    if (enumprotocol != enumprotocol1) {
 -                        NetworkManager.this.a(enumprotocol);
 -                    }
-+            // Paper start - Optimize network
-+            if (packet.hasFinishListener()) {
-+                channelfuture.addListener((ChannelFutureListener) channelFuture -> packet.onPacketDispatchFinish(player, channelFuture));
-+            }
-+            // Paper end - Optimize network
- 
--                    ChannelFuture channelfuture = NetworkManager.this.channel.writeAndFlush(packet);
-+            channelfuture.addListener(ChannelFutureListener.FIRE_EXCEPTION_ON_FAILURE);
 +        // Paper start - Optimize network
 +        } catch (Exception e) {
 +            g.error("NetworkException: " + player, e);
@@ -193,18 +194,21 @@ index 0c2aab10e..bdc5eb6b2 100644
 +    }
 +    // SportPaper end
  
+-                    ChannelFuture channelfuture = NetworkManager.this.channel.writeAndFlush(packet);
+-
 -                    if (agenericfuturelistener != null) {
 -                        channelfuture.addListeners(agenericfuturelistener);
 -                    }
+-
+-                    channelfuture.addListener(ChannelFutureListener.FIRE_EXCEPTION_ON_FAILURE);
+-                }
+-            });
 +    // Paper start - Optimize network: Rewrite this to be safer if ran off main thread
 +    private boolean m() {
 +        if (!this.isConnected()) {
 +            return true;
-+        }
+         }
  
--                    channelfuture.addListener(ChannelFutureListener.FIRE_EXCEPTION_ON_FAILURE);
--                }
--            });
 +        if (MinecraftServer.getServer().isMainThread()) {
 +            return this.processQueue();
 +        } else if (this.isPending) {
@@ -212,8 +216,8 @@ index 0c2aab10e..bdc5eb6b2 100644
 +            synchronized (this.getQueuedPackets()) {
 +                return this.processQueue();
 +            }
-         }
- 
++        }
++
 +        return false;
      }
  
@@ -241,8 +245,8 @@ index 0c2aab10e..bdc5eb6b2 100644
 +            // Fix NPE (Spigot bug caused by handleDisconnection())
 +            if (queued == null) {
 +                return true;
-+            }
-+
+             }
+ 
 +            if (queued.isConsumed()) {
 +                continue;
 +            }
@@ -250,8 +254,8 @@ index 0c2aab10e..bdc5eb6b2 100644
 +            final Packet<?> packet = queued.getPacket();
 +            if (!packet.isReady()) {
 +                return false;
-             }
- 
++            }
++
 +            iterator.remove();
 +            if (queued.tryMarkConsumed()) {
 +                this.a(packet, queued.getListener());
@@ -446,5 +450,5 @@ index e64c8c4c3..e4566014a 100644
                      channel.pipeline().addLast("timeout", new ReadTimeoutHandler(30))
                              .addLast("legacy_query", new LegacyPingHandler(ServerConnection.this))
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

@@ -1,4 +1,4 @@
-From 6bfcf44bf3ff1f93a84841f71ded4198fd06f75a Mon Sep 17 00:00:00 2001
+From 6c055c459e6282278303f283566a71c36bffb29d Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Wed, 30 Mar 2016 02:13:24 -0400
 Subject: [PATCH] Use Optimized Collections
@@ -51,5 +51,5 @@ index 573303e3e..7c81324d9 100644
          public Chunk get(long key) {
              if (lastChunkByPos != null && key == lastChunkByPos.chunkKey) {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

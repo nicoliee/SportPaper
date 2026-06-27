@@ -1,4 +1,4 @@
-From 4af8efd177ab5417ecc777ac98dc4e4d2774f099 Mon Sep 17 00:00:00 2001
+From 2b83e427804deef1f832832b65d5512045082434 Mon Sep 17 00:00:00 2001
 From: "BT (calcastor/mame)" <43831917+calcastor@users.noreply.github.com>
 Date: Tue, 22 Aug 2023 10:10:54 -0700
 Subject: [PATCH] Update Gson and build plugins
@@ -39,5 +39,5 @@ index 912ad1ac..f36b2b53 100644
                      <execution>
                          <phase>package</phase>
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

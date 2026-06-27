@@ -1,4 +1,4 @@
-From 3416df20b3e6ef7dac850076711be437e3ead8f7 Mon Sep 17 00:00:00 2001
+From 9e93cfa476e900c87ecfe18040c10cbb94fb4521 Mon Sep 17 00:00:00 2001
 From: "BT (calcastor/mame)" <43831917+calcastor@users.noreply.github.com>
 Date: Mon, 6 Feb 2023 23:30:48 -0800
 Subject: [PATCH] Resolve build issues with Java 17
@@ -46,5 +46,5 @@ index d67184ab8..285e0eaea 100644
              <plugin>
                  <groupId>org.apache.maven.plugins</groupId>
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

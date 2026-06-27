@@ -1,4 +1,4 @@
-From 90cd13430a009a2139e4c12d52c0cb8044fe5e62 Mon Sep 17 00:00:00 2001
+From 2e142a983d4b771f143e6a1cfa1cf845620ffd99 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Tue, 22 Mar 2016 00:55:23 -0400
 Subject: [PATCH] Don't teleport dead entities
@@ -20,5 +20,5 @@ index 6482842b4..d3c54d38e 100644
              WorldServer worldserver1 = ((CraftWorld) exit.getWorld()).getHandle();
              int i = worldserver1.dimension;
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

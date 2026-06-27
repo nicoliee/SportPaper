@@ -1,4 +1,4 @@
-From 4a246d822451f15c1d0fec1b68e189ab13ccd6b3 Mon Sep 17 00:00:00 2001
+From dd89bd6ae5a900acf47dcf90595aa4d6f90891e2 Mon Sep 17 00:00:00 2001
 From: Austin Mayes <almayes@trevecca.edu>
 Date: Mon, 21 Jan 2019 23:32:28 -0600
 Subject: [PATCH] Make PlayerInfo non-static again
@@ -53,5 +53,5 @@ index 8475668e2..e92e90f04 100644
                  getHandle().playerInteractManager.getGameMode(),
                  getHandle().listName));
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

@@ -1,4 +1,4 @@
-From 8cf9a341abcd9b580fa6e8cd4d79868261a1614a Mon Sep 17 00:00:00 2001
+From 3f213023038a415aa7ce1d646288ecd61d3e70c3 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Fri, 19 Jun 2015 15:02:55 -0400
 Subject: [PATCH] Retrieve metadata by plugin
@@ -86,5 +86,5 @@ index b1eb145cc..b5018b649 100644
      public List<MetadataValue> getMetadata(String metadataKey) {
          return server.getPlayerMetadata().getMetadata(this, metadataKey);
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

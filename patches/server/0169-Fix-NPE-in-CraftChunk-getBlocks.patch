@@ -1,4 +1,4 @@
-From 434a904c3bf1512f1922c4962b22d7e212f5afb2 Mon Sep 17 00:00:00 2001
+From a266468cbb8e81684c96fc24a01af4023f1c8e6d Mon Sep 17 00:00:00 2001
 From: Austin Mayes <austin@avicus.net>
 Date: Thu, 28 Mar 2019 18:09:05 -0500
 Subject: [PATCH] Fix NPE in CraftChunk#getBlocks
@@ -18,5 +18,5 @@ index 7907c983c..abab23d6e 100644
                  }
              }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

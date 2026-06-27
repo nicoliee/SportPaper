@@ -1,4 +1,4 @@
-From 275911975138eeab9b9b2a0328765639b3783d20 Mon Sep 17 00:00:00 2001
+From 84b1f91eaceae8e48d441c20b2f81d48eb7deb14 Mon Sep 17 00:00:00 2001
 From: VytskaLT <VytskaLT@protonmail.com>
 Date: Tue, 15 Dec 2020 18:59:08 +0200
 Subject: [PATCH] Update MySQL Connector and SQLite JDBC
@@ -80,5 +80,5 @@ index f16c27bfb..c97310f0d 100644
                      </execution>
                  </executions>
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

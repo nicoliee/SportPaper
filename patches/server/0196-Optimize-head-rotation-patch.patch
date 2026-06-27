@@ -1,4 +1,4 @@
-From 7e2f219cc11ea1bb4cf3d12900f9c8bfe0aa7116 Mon Sep 17 00:00:00 2001
+From ef514d122b80d6e8fc980fd1dafcfd4e0bee86e1 Mon Sep 17 00:00:00 2001
 From: RoccoDev <hey@rocco.dev>
 Date: Fri, 19 Mar 2021 16:55:19 +0100
 Subject: [PATCH] Optimize head rotation patch
@@ -27,5 +27,5 @@ index 5fda01c3d..45d611f34 100644
                      // CraftBukkit end
  
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

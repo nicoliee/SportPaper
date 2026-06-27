@@ -1,4 +1,4 @@
-From 41cb1dd10f011225ea22ac19336dd13df41d4cfe Mon Sep 17 00:00:00 2001
+From f4d142de556eaffba941efd3f0c3cd28fb5cb769 Mon Sep 17 00:00:00 2001
 From: mrapple <tony@oc.tc>
 Date: Fri, 27 Jun 2014 21:53:44 -0500
 Subject: [PATCH] Add log4j's exception marker to log messages with exceptions
@@ -42,5 +42,5 @@ index 74ce4b2ec..e35c6cf2e 100644
      }
  
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

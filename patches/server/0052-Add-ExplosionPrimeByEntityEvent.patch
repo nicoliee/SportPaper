@@ -1,4 +1,4 @@
-From 3d1c82e665cea37d693bc6e59de95edb695a0aa6 Mon Sep 17 00:00:00 2001
+From f1441384523dd724afd7d39a188d245c99961c99 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Sun, 14 Jun 2015 04:13:52 -0400
 Subject: [PATCH] Add ExplosionPrimeByEntityEvent
@@ -148,5 +148,5 @@ index 07533e4a6..0e348cf4b 100644
                          if (event.isCancelled()) {
                              this.dead = false;
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

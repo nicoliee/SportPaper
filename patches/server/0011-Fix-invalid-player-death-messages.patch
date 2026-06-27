@@ -1,4 +1,4 @@
-From a4ac8d1d6dad238f375836bd2dc45b9ef49427b8 Mon Sep 17 00:00:00 2001
+From 4e6e9748b4dc2ceef718c310cd773c2f6d45e003 Mon Sep 17 00:00:00 2001
 From: mrapple <tony@oc.tc>
 Date: Thu, 4 Apr 2013 21:36:54 -0500
 Subject: [PATCH] Fix invalid player death messages
@@ -29,5 +29,5 @@ index 0c49a256c..593a12dca 100644
  
              if (entitytypes_monsteregginfo != null) {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

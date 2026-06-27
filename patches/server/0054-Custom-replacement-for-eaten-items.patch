@@ -1,4 +1,4 @@
-From 04c42182fb22683339a447e79c34f2a4151a4e4f Mon Sep 17 00:00:00 2001
+From 75338d29fd3d3a37e0b16d65960088330c5ad514 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Sun, 21 Jun 2015 15:07:20 -0400
 Subject: [PATCH] Custom replacement for eaten items
@@ -17,7 +17,7 @@ index 0ad4edb83..9bc418b1a 100644
                      // Spigot Start
                      ((EntityPlayer) this).getBukkitEntity().updateInventory();
                      ((EntityPlayer) this).getBukkitEntity().updateScaledHealth();
-@@ -309,19 +309,43 @@ public abstract class EntityHuman extends EntityLiving {
+@@ -309,20 +309,44 @@ public abstract class EntityHuman extends EntityLiving {
                  return;
              }
  
@@ -26,15 +26,19 @@ index 0ad4edb83..9bc418b1a 100644
 +            ItemStack defaultConsumed = this.g;
              if (!craftItem.equals(event.getItem())) {
 -                CraftItemStack.asNMSCopy(event.getItem()).b(this.world, this);
-+                this.g = CraftItemStack.asNMSCopy(event.getItem());
-+            }
-+            // CraftBukkit end
- 
+-
 -                // Update client
 -                if (this instanceof EntityPlayer) {
 -                    ((EntityPlayer) this).playerConnection.sendPacket(new PacketPlayOutSetSlot((byte) 0, activeContainer.getSlot((IInventory) this.inventory, this.inventory.itemInHandIndex).index, this.g));
-+            ItemStack itemstack = this.g.b(this.world, this);
+-                }
+-                return;
++                this.g = CraftItemStack.asNMSCopy(event.getItem());
+             }
+             // CraftBukkit end
+-            
 +
+             ItemStack itemstack = this.g.b(this.world, this);
+ 
 +            // CraftBukkit start
 +            // Save the default replacement item and check if we need to change it
 +            ItemStack defaultReplacement = itemstack;
@@ -47,8 +51,7 @@ index 0ad4edb83..9bc418b1a 100644
 +                if(itemstack == null) {
 +                    itemstack = defaultReplacement.cloneItemStack();
 +                    itemstack.count = 0;
-                 }
--                return;
++                }
 +            } else if(this.g != defaultConsumed) {
 +                // If the consumed item was changed, don't replace the original item at all.
 +                // We don't know what the original item would have been replaced with, so
@@ -62,13 +65,12 @@ index 0ad4edb83..9bc418b1a 100644
 +            // If the replacement is anything but the default, update the client
 +            if(itemstack != defaultReplacement && this instanceof EntityPlayer) {
 +                ((EntityPlayer) this).playerConnection.sendPacket(new PacketPlayOutSetSlot((byte) 0, activeContainer.getSlot((IInventory) this.inventory, this.inventory.itemInHandIndex).rawSlotIndex, itemstack));
-             }
-             // CraftBukkit end
--            
--            ItemStack itemstack = this.g.b(this.world, this);
- 
++            }
++            // CraftBukkit end
++
              if (itemstack != this.g || itemstack != null && itemstack.count != i) {
                  this.inventory.items[this.inventory.itemInHandIndex] = itemstack;
+                 if (itemstack.count == 0) {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

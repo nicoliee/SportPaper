@@ -1,4 +1,4 @@
-From 018fa372a089ace421db63d10ed4ab6c0d58712b Mon Sep 17 00:00:00 2001
+From afe3ae87e0f2e4d35fb2a4b678f63c41f8da0497 Mon Sep 17 00:00:00 2001
 From: cswhite2000 <18whitechristop@gmail.com>
 Date: Mon, 27 Aug 2018 02:31:21 -0700
 Subject: [PATCH] Per World Custom Crafting API
@@ -639,5 +639,5 @@ index 53b53b799..5563c8691 100644
              return new CraftFurnaceRecipe(stack, CraftItemStack.asCraftMirror(item));
          }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

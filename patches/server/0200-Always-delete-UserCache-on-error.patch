@@ -1,4 +1,4 @@
-From 4de729303cdb4ce5995b4b7d88f5ee7916c21dd3 Mon Sep 17 00:00:00 2001
+From b7f05c5cd4be24d80f3feb27d329f62ca9830708 Mon Sep 17 00:00:00 2001
 From: linsaftw <linsaftw@users.noreply.github.com>
 Date: Tue, 27 Apr 2021 10:26:42 -0300
 Subject: [PATCH] Always delete UserCache on error
@@ -27,5 +27,5 @@ index c3bdb881e..700c60699 100644
              IOUtils.closeQuietly(bufferedreader);
          }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

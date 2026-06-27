@@ -1,11 +1,11 @@
-From ea9c5a552ef2960441b51d982cf1c3d7f44f55c9 Mon Sep 17 00:00:00 2001
+From 99bec1e954af6e15f0f1bc845ed01b03ed7aa949 Mon Sep 17 00:00:00 2001
 From: Austin Mayes <almayes@trevecca.edu>
 Date: Tue, 5 Mar 2019 21:25:40 -0600
 Subject: [PATCH] Personalized component API
 
 
 diff --git a/src/main/java/network/stratus/sportpaper/api/text/TranslatableComponent.java b/src/main/java/network/stratus/sportpaper/api/text/PersonalizedComponent.java
-similarity index 50%
+similarity index 51%
 rename from src/main/java/network/stratus/sportpaper/api/text/TranslatableComponent.java
 rename to src/main/java/network/stratus/sportpaper/api/text/PersonalizedComponent.java
 index 2c4ebfcc..f4494edc 100644
@@ -153,5 +153,5 @@ index 0726b5ea..6faad290 100644
      }
      // SportPaper end
 -- 
-2.20.1
+2.54.0
 

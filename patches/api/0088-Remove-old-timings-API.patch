@@ -1,4 +1,4 @@
-From e443b240244cdf661ee140d87340b0ce59cbf3ac Mon Sep 17 00:00:00 2001
+From 2d7731f422af19c1461de9c933801307b8016c1f Mon Sep 17 00:00:00 2001
 From: Austin Mayes <austin@avicus.net>
 Date: Fri, 4 Jan 2019 18:28:50 -0600
 Subject: [PATCH] Remove old timings API
@@ -27,8 +27,9 @@ index 80e0b0f1..b5f70e77 100644
 -import org.bukkit.plugin.RegisteredListener;
 -import org.bukkit.plugin.TimedRegisteredListener;
 -import org.bukkit.util.StringUtil;
++
  
--import com.google.common.collect.ImmutableList;
+ import com.google.common.collect.ImmutableList;
  
 -// Spigot start
 -import java.io.ByteArrayOutputStream;
@@ -37,8 +38,7 @@ index 80e0b0f1..b5f70e77 100644
 -import java.net.URL;
 -import java.net.URLEncoder;
 -import java.util.logging.Level;
-+import com.google.common.collect.ImmutableList;
- 
+-
 -import org.bukkit.command.RemoteConsoleCommandSender;
 -import org.bukkit.plugin.SimplePluginManager;
 -import org.spigotmc.CustomTimingsHandler;
@@ -197,5 +197,5 @@ index 7e89b97b..25f9b5dd 100644
  
  }
 -- 
-2.19.0
+2.54.0
 

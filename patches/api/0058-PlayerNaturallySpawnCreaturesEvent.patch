@@ -1,4 +1,4 @@
-From 908b0ce46f21f81493dd6e0aec0f5017c1944269 Mon Sep 17 00:00:00 2001
+From 8f895f7f9a5909337f2df1ba80022b32d23ffb07 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Sun, 14 Jan 2018 17:31:37 -0500
 Subject: [PATCH] PlayerNaturallySpawnCreaturesEvent
@@ -75,5 +75,5 @@ index 00000000..85cb04f5
 +    }
 +}
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

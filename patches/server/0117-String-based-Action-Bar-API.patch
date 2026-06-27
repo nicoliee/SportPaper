@@ -1,4 +1,4 @@
-From 842c58c448cab809a68bf972dc30c74afb23cfe0 Mon Sep 17 00:00:00 2001
+From 8ffffd404dbcdc26eae075723912a3796e556ab7 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Tue, 27 Dec 2016 15:02:42 -0500
 Subject: [PATCH] String based Action Bar API
@@ -91,5 +91,5 @@ index 8aba4665e..ccb5377d3 100644
      public void setPlayerListHeaderFooter(BaseComponent[] header, BaseComponent[] footer) {
          PacketPlayOutPlayerListHeaderFooter packet = new PacketPlayOutPlayerListHeaderFooter();
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

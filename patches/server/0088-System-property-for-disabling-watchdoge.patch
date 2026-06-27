@@ -1,4 +1,4 @@
-From 21152b1be6f8d2264054be5d7f79ab8c7b8bc3d3 Mon Sep 17 00:00:00 2001
+From dfdd665f75d461a032767a8786e468fb4d51169d Mon Sep 17 00:00:00 2001
 From: Zach Brown <zach.brown@destroystokyo.com>
 Date: Thu, 12 May 2016 23:02:58 -0500
 Subject: [PATCH] System property for disabling watchdoge
@@ -18,5 +18,5 @@ index c8f619a7e..06ad3826c 100644
                  Logger log = Bukkit.getServer().getLogger();
                  log.log( Level.SEVERE, "The server has stopped responding!" );
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

@@ -1,4 +1,4 @@
-From 98bb7ba1c95f6b63c8d29c8a3339b4a4325db93a Mon Sep 17 00:00:00 2001
+From c9ceff7d4eaa96e0d4b1f19e8b7e7b6cc0a03194 Mon Sep 17 00:00:00 2001
 From: VytskaLT <VytskaLT@protonmail.com>
 Date: Fri, 4 Dec 2020 13:56:52 +0200
 Subject: [PATCH] Make unknown and internal command messages customisable in
@@ -81,5 +81,5 @@ index 1ec81732..649b5654 100644
       * Sets the player that this command will be executed as.
       *
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

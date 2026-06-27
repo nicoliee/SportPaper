@@ -1,4 +1,4 @@
-From 50af26f3ba06aae65f236b1770350256044e94d1 Mon Sep 17 00:00:00 2001
+From 3fdb970dd62500fff6e4e4dd9c057370477ed893 Mon Sep 17 00:00:00 2001
 From: Techcable <Techcable@outlook.com>
 Date: Fri, 16 Dec 2016 21:25:39 -0600
 Subject: [PATCH] Add ProjectileCollideEvent
@@ -150,5 +150,5 @@ index a23dc558c..eb28b261d 100644
          Projectile bukkitEntity = (Projectile) entity.getBukkitEntity();
          ProjectileLaunchEvent event = new ProjectileLaunchEvent(bukkitEntity);
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

@@ -1,4 +1,4 @@
-From 56020874ea7794b5a1ab94d10ebc657efe878b74 Mon Sep 17 00:00:00 2001
+From 78d14bb1d45e4a6f1f0f2cd145829f0f23f4ff0c Mon Sep 17 00:00:00 2001
 From: BlackHole <black-hole@live.com>
 Date: Fri, 22 Apr 2016 16:43:47 +0200
 Subject: [PATCH] Don't tick blocks if neighbor chunks aren't loaded
@@ -17,5 +17,5 @@ index 55a454614..d55a8f348 100644
                  int i1;
                  BlockPosition blockposition;
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

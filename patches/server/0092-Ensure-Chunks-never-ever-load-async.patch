@@ -1,4 +1,4 @@
-From 4c1650f09f1a43751e9acd44b88f32b77a9318be Mon Sep 17 00:00:00 2001
+From 0a5e27f0c445847bbe63a53053a6f0fe62ed8f53 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Fri, 27 May 2016 21:41:26 -0400
 Subject: [PATCH] Ensure Chunks never ever load async
@@ -50,5 +50,5 @@ index 1178ad7f7..ef8e34cd1 100644
              return;
          }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

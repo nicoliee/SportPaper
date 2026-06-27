@@ -1,4 +1,4 @@
-From 6263bda08626d939bb2d3a595706f71f007c4727 Mon Sep 17 00:00:00 2001
+From 695d0ba240e8c534beade6a7834899031fc207ed Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Tue, 19 May 2015 06:30:47 -0400
 Subject: [PATCH] Attribute API
@@ -703,5 +703,5 @@ index 19e35cbe2..37fde0ecb 100644
                          CraftMetaMap.MAP_SCALING.NBT,
                          CraftMetaPotion.POTION_EFFECTS.NBT,
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

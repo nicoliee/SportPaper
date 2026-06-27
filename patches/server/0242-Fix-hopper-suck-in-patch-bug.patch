@@ -1,4 +1,4 @@
-From 9c16b0675d1df8d5ecc404715d19a58e6895ae1e Mon Sep 17 00:00:00 2001
+From 8c37bfd3f3aa9d3bf8e361bca35f667bc25ee0f9 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Thu, 5 May 2016 20:22:01 -0400
 Subject: [PATCH] Fix hopper suck in patch bug
@@ -19,5 +19,5 @@ index c6cf87949..2c92e1766 100644
          } else if (IInventory.class.isAssignableFrom(oclass)) {
              counts = inventoryEntityCounts;
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

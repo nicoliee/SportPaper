@@ -1,4 +1,4 @@
-From b65cc2f86b75679af4a712f3bc595a45898d241c Mon Sep 17 00:00:00 2001
+From 5e1142843de4e6f7188512c56d6f129b04ea5937 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Sun, 29 Jul 2018 22:58:47 -0400
 Subject: [PATCH] MC-111480: Start Entity ID's at 1
@@ -18,5 +18,5 @@ index 9ab157cdc..c1791616b 100644
      public double j;
      public boolean k; public boolean blocksEntitySpawning() { return k; } // Paper - OBFHELPER
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

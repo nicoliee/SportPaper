@@ -1,4 +1,4 @@
-From 482c7aa3d2284b8b143a27048391d66c8c920bb5 Mon Sep 17 00:00:00 2001
+From db5ae68a4fd68066d2f61db2c7d59fc566a3052b Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Mon, 28 Mar 2016 20:55:47 -0400
 Subject: [PATCH] MC Utils
@@ -237,5 +237,5 @@ index b46ac6abc..18343f7c3 100644
          return System.nanoTime() / 1000000L;
      }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

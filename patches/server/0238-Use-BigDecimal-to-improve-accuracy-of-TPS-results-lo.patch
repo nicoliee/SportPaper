@@ -1,4 +1,4 @@
-From 4a383e2644c61b87d5031d264991ca0611ec12a5 Mon Sep 17 00:00:00 2001
+From 8a9ee2f364cf83b63b0d8ae581962a19bc025ebe Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Mon, 17 Sep 2018 22:32:37 -0400
 Subject: [PATCH] Use BigDecimal to improve accuracy of TPS results - long live
@@ -127,5 +127,5 @@ index 3e6c2858f..766fb5931 100644
      }
  }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

@@ -1,4 +1,4 @@
-From f2835f0356770170f0e1c6856c878866c91e950a Mon Sep 17 00:00:00 2001
+From fe8e0c2701539b7cdebc1935dd254892f03e34c9 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Fri, 3 Jul 2015 01:08:46 -0400
 Subject: [PATCH] Physical interface
@@ -69,5 +69,5 @@ index b8bf7541f..70a1023f6 100644
      public <T extends Projectile> T launchProjectile(Class<? extends T> projectile) {
          return launchProjectile(projectile, null);
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

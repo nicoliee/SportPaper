@@ -1,0 +1,138 @@
+From 1215968eca12477330d94a2afdf59596a04e62bc Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Oscar=20Mej=C3=ADa?=
+ <163463944+nicoliee@users.noreply.github.com>
+Date: Sat, 27 Jun 2026 13:06:41 -0600
+Subject: [PATCH] feat: add knockback.scaling toggle for always-upward
+ knockback
+
+
+diff --git a/src/main/java/app/ashcon/sportpaper/server/KnockbackModificationCommand.java b/src/main/java/app/ashcon/sportpaper/server/KnockbackModificationCommand.java
+index e141ded1a..d84e18f81 100644
+--- a/src/main/java/app/ashcon/sportpaper/server/KnockbackModificationCommand.java
++++ b/src/main/java/app/ashcon/sportpaper/server/KnockbackModificationCommand.java
+@@ -12,7 +12,7 @@ import java.util.List;
+ 
+ public class KnockbackModificationCommand extends Command {
+ 
+-    private static final List<String> ARGUMENTS = ImmutableList.of("friction", "horizontal", "vertical", "vertical-limit", "extra-horizontal", "extra-vertical", "reset", "show");
++    private static final List<String> ARGUMENTS = ImmutableList.of("friction", "horizontal", "vertical", "vertical-limit", "extra-horizontal", "extra-vertical", "scaling", "reset", "show");
+ 
+     // Default values
+     private final double knockbackFriction, knockbackHorizontal, knockbackVertical, knockbackVerticalLimit,
+@@ -24,7 +24,7 @@ public class KnockbackModificationCommand extends Command {
+         super(name);
+         this.description = "Modify the knockback configuration";
+         this.usageMessage = "/knockback " +
+-                "<friction|horizontal|vertical|vertical-limit|extra-horizontal|extra-vertical|reset|show> <value>";
++                "<friction|horizontal|vertical|vertical-limit|extra-horizontal|extra-vertical|scaling|reset|show> <value>";
+         this.setPermission("bukkit.command.knockback");
+         this.knockbackFriction = knockbackFriction;
+         this.knockbackHorizontal = knockbackHorizontal;
+@@ -75,6 +75,13 @@ public class KnockbackModificationCommand extends Command {
+                     updated(sender, "vertical limit", oldVal, newVal);
+                     break;
+                 }
++                case "scaling": {
++                    boolean oldVal = PaperConfig.knockbackScaling;
++                    boolean newVal = parseBoolean(args);
++                    PaperConfig.knockbackScaling = newVal;
++                    updated(sender, "scaling", oldVal, newVal);
++                    break;
++                }
+                 case "extra-horizontal": {
+                     double oldVal = PaperConfig.knockbackExtraHorizontal;
+                     double newVal = parseValue(args);
+@@ -96,6 +103,7 @@ public class KnockbackModificationCommand extends Command {
+                     PaperConfig.knockbackVerticalLimit = knockbackVerticalLimit;
+                     PaperConfig.knockbackExtraHorizontal = knockbackExtraHorizontal;
+                     PaperConfig.knockbackExtraVertical = knockbackExtraVertical;
++                    PaperConfig.knockbackScaling = true;
+                     sender.sendMessage(ChatColor.GREEN + "Knockback config reset to values from file.");
+                     break;
+                 case "show":
+@@ -106,6 +114,7 @@ public class KnockbackModificationCommand extends Command {
+                     sendValue(sender, "Vertical Limit", PaperConfig.knockbackVerticalLimit);
+                     sendValue(sender, "Horizontal (Extra)", PaperConfig.knockbackExtraHorizontal);
+                     sendValue(sender, "Vertical (Extra)", PaperConfig.knockbackExtraVertical);
++                    sendValue(sender, "Scaling", PaperConfig.knockbackScaling);
+                     break;
+                 default:
+                     sender.sendMessage(ChatColor.RED + "Usage: " + usageMessage);
+@@ -125,6 +134,16 @@ public class KnockbackModificationCommand extends Command {
+         return ImmutableList.of();
+     }
+ 
++    private boolean parseBoolean(String[] args) {
++        if (args.length != 2)
++            throw new RuntimeException("Please specify a single value to set the option to.");
++
++        if (args[1].equalsIgnoreCase("true") || args[1].equalsIgnoreCase("false")) {
++            return Boolean.parseBoolean(args[1]);
++        }
++        throw new RuntimeException("Invalid value specified! Use true or false.");
++    }
++
+     private double parseValue(String[] args) {
+         if (args.length != 2)
+             throw new RuntimeException("Please specify a single value to set the option to.");
+@@ -145,4 +164,14 @@ public class KnockbackModificationCommand extends Command {
+         viewer.sendMessage(ChatColor.AQUA + ChatColor.BOLD.toString() + name + ChatColor.RESET +
+                 ": " + ChatColor.BLUE + value);
+     }
++
++    private void updated(CommandSender viewer, String name, boolean oldVal, boolean newVal) {
++        viewer.sendMessage(ChatColor.GREEN + "Updated " + ChatColor.GOLD + name + ChatColor.GREEN + " from " +
++                ChatColor.BLUE + oldVal + ChatColor.GREEN + " to " + ChatColor.BLUE + newVal);
++    }
++
++    private void sendValue(CommandSender viewer, String name, boolean value) {
++        viewer.sendMessage(ChatColor.AQUA + ChatColor.BOLD.toString() + name + ChatColor.RESET +
++                ": " + ChatColor.BLUE + value);
++    }
+ }
+diff --git a/src/main/java/com/destroystokyo/paper/PaperConfig.java b/src/main/java/com/destroystokyo/paper/PaperConfig.java
+index 7963419dd..e4313c9c1 100644
+--- a/src/main/java/com/destroystokyo/paper/PaperConfig.java
++++ b/src/main/java/com/destroystokyo/paper/PaperConfig.java
+@@ -196,6 +196,7 @@ public class PaperConfig
+     public static double knockbackVerticalLimit;
+     public static double knockbackExtraHorizontal;
+     public static double knockbackExtraVertical;
++    public static boolean knockbackScaling;
+     private static void knockback() {
+         knockbackFriction = getDouble( "knockback.friction", 2.0D );
+         knockbackHorizontal = getDouble( "knockback.horizontal", 0.4D );
+@@ -203,6 +204,7 @@ public class PaperConfig
+         knockbackVerticalLimit = getDouble( "knockback.vertical-limit", 0.4D );
+         knockbackExtraHorizontal = getDouble( "knockback.extra-horizontal", 0.5D );
+         knockbackExtraVertical = getDouble( "knockback.extra-vertical", 0.1D );
++        knockbackScaling = getBoolean( "knockback.scaling", true );
+         commands.put("knockback", new KnockbackModificationCommand( "knockback", knockbackFriction,
+                 knockbackHorizontal, knockbackVertical, knockbackVerticalLimit, knockbackExtraHorizontal,
+                 knockbackExtraVertical));
+diff --git a/src/main/java/net/minecraft/server/EntityLiving.java b/src/main/java/net/minecraft/server/EntityLiving.java
+index 10442cffe..8312eb096 100644
+--- a/src/main/java/net/minecraft/server/EntityLiving.java
++++ b/src/main/java/net/minecraft/server/EntityLiving.java
+@@ -949,11 +949,16 @@ public abstract class EntityLiving extends Entity {
+             double oldMotZ = this.motZ;
+ 
+             this.motX /= friction;
+-            this.motY /= friction;
+             this.motZ /= friction;
+ 
++            if (PaperConfig.knockbackScaling) {
++                this.motY /= friction;
++                this.motY += verticalKnockback;
++            } else {
++                this.motY = verticalKnockback;
++            }
++
+             this.motX -= d0 / magnitude * horizontalKnockback;
+-            this.motY += verticalKnockback;
+             this.motZ -= d1 / magnitude * horizontalKnockback;
+ 
+             if (this.motY > PaperConfig.knockbackVerticalLimit) {
+-- 
+2.54.0
+

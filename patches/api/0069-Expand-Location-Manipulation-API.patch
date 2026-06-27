@@ -1,4 +1,4 @@
-From 8c1175a3ae49c6d3f679dfc4ebfefb12a0f9b4cb Mon Sep 17 00:00:00 2001
+From 0f757da17c7992c510157d3d8fa4ebbc87575968 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Wed, 25 Jul 2018 01:36:07 -0400
 Subject: [PATCH] Expand Location Manipulation API
@@ -61,5 +61,5 @@ index 28e40c94..bef4379c 100644
          return world.isChunkLoaded(locToBlock(x) >> 4, locToBlock(z) >> 4);
      }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

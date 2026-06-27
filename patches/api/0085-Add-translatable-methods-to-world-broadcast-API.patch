@@ -1,4 +1,4 @@
-From a087c2b3c13b136d42411ddf5c4c8d75234d92cf Mon Sep 17 00:00:00 2001
+From 7e922374ddea3dba6a26fad5650aade67ff426ee Mon Sep 17 00:00:00 2001
 From: Austin Mayes <austin@avicus.net>
 Date: Thu, 27 Sep 2018 08:31:49 -0500
 Subject: [PATCH] Add translatable methods to world broadcast API
@@ -63,5 +63,5 @@ index 7bc56a8c..0726b5ea 100644
      // SportPaper end
  }
 -- 
-2.19.0
+2.54.0
 

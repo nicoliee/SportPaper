@@ -1,4 +1,4 @@
-From 01d827ca2b85c1f25c31af1ea3521d36149c7cc8 Mon Sep 17 00:00:00 2001
+From 530275373388a0f388b55b32ff8de549c780d64a Mon Sep 17 00:00:00 2001
 From: Ashcon Partovi <ashcon@partovi.net>
 Date: Mon, 29 Apr 2019 14:59:30 -0700
 Subject: [PATCH] Expose some entity packet constructors
@@ -113,5 +113,5 @@ index 1541921ce..bb65af143 100644
 -    }
  }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

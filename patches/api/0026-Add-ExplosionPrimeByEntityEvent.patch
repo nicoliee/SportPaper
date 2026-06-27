@@ -1,4 +1,4 @@
-From b47614109da6935040e94e6726b21c507601d816 Mon Sep 17 00:00:00 2001
+From 93fbfed3ad8a7831003f7b98a7ea56097a67a2bc Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Sun, 14 Jun 2015 04:13:42 -0400
 Subject: [PATCH] Add ExplosionPrimeByEntityEvent
@@ -45,5 +45,5 @@ index 00000000..6b7d13f6
 +    }
 +}
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

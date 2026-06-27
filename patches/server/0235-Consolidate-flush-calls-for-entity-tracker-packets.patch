@@ -1,4 +1,4 @@
-From bfb2856067d6042fed1d01241f66bd7f66a27002 Mon Sep 17 00:00:00 2001
+From 365f0adbbe31ca2823f94a747084f8d9605725f9 Mon Sep 17 00:00:00 2001
 From: Spottedleaf <Spottedleaf@users.noreply.github.com>
 Date: Sat, 4 Apr 2020 17:00:20 -0700
 Subject: [PATCH] Consolidate flush calls for entity tracker packets
@@ -52,5 +52,5 @@ index 505a815b7..3b55faf98 100644
                  this.methodProfiler.b();
                  this.methodProfiler.b();
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

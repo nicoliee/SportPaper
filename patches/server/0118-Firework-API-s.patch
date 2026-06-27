@@ -1,4 +1,4 @@
-From c2bb8f42a424b810c14a9304acbcfc69413eefed Mon Sep 17 00:00:00 2001
+From 5fd4a072cab13a088f4e0a5ae18f292301115a81 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Wed, 28 Dec 2016 07:18:33 +0100
 Subject: [PATCH] Firework API's
@@ -70,5 +70,5 @@ index 76a9bdba7..5f1c3332e 100644
 +    }
  }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

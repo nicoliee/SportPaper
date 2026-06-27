@@ -1,4 +1,4 @@
-From 23ff7744bb078b4148be740aa80c23a3c73c5c91 Mon Sep 17 00:00:00 2001
+From d2000e6518e07bdfc22d2a47bd181188c49ed175 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Sat, 9 Jul 2016 05:27:03 -0400
 Subject: [PATCH] Yielding event handlers
@@ -383,33 +383,15 @@ index ce9839ec..3447aae4 100644
 +    private void callEventSynchronously(final Event event, EventPriority priority, final EventCallback body) {
 +        dispatchEvent(event, priority, body, event.getHandlers().getRegisteredListeners(), 0);
 +    }
- 
--        for (RegisteredListener registration : listeners) {
--            if (!registration.getPlugin().isEnabled()) {
--                continue;
--            }
- 
--            try {
--                registration.callEvent(event);
--            } catch (AuthorNagException ex) {
--                Plugin plugin = registration.getPlugin();
--
--                if (plugin.isNaggable()) {
--                    plugin.setNaggable(false);
--
--                    server.getLogger().log(Level.SEVERE, String.format(
--                            "Nag author(s): '%s' of '%s' about the following: %s",
--                            plugin.getDescription().getAuthors(),
--                            plugin.getDescription().getFullName(),
--                            ex.getMessage()
--                            ));
++
++
 +    private void dispatchEvent(final Event event, final EventPriority priority, final EventCallback body, final RegisteredListener[] handlers, final int index) {
 +        if(index < handlers.length) {
 +            // If there are more handlers, call the current one, with a continuation that calls the next one
 +            callEventHandler(event, priority, handlers[index], new EventCallback() {
 +                @Override public void callEvent(Event event) throws Exception {
 +                    dispatchEvent(event, priority, body, handlers, index + 1);
-                 }
++                }
 +            });
 +        } else {
 +            // If there are no more handlers, call the event body
@@ -438,9 +420,27 @@ index ce9839ec..3447aae4 100644
 +        if(plugin.isEnabled() && (priority == null || priority.equals(handler.getPriority()))) {
 +            // Save the continuation in a thread-local, and call the handler
 +            eventBodies.get().put(event, body);
-+
-+
-+            try {
+ 
+-        for (RegisteredListener registration : listeners) {
+-            if (!registration.getPlugin().isEnabled()) {
+-                continue;
+-            }
+ 
+             try {
+-                registration.callEvent(event);
+-            } catch (AuthorNagException ex) {
+-                Plugin plugin = registration.getPlugin();
+-
+-                if (plugin.isNaggable()) {
+-                    plugin.setNaggable(false);
+-
+-                    server.getLogger().log(Level.SEVERE, String.format(
+-                            "Nag author(s): '%s' of '%s' about the following: %s",
+-                            plugin.getDescription().getAuthors(),
+-                            plugin.getDescription().getFullName(),
+-                            ex.getMessage()
+-                            ));
+-                }
 +                handler.callEvent(event);
              } catch (Throwable ex) {
 -                // Paper start - error reporting
@@ -537,5 +537,5 @@ index ce9839ec..3447aae4 100644
      }
  
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

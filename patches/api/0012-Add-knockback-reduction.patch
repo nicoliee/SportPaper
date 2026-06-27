@@ -1,4 +1,4 @@
-From f9d6d4b3f60c3a2e04ae8f7588ce4a6886b7b305 Mon Sep 17 00:00:00 2001
+From 54dc6a9a9070e9e18df036d25cb3e16bacd10965 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Sun, 18 May 2014 03:16:26 -0400
 Subject: [PATCH] Add knockback reduction
@@ -20,5 +20,5 @@ index 7fb08af4..7b7596c3 100644
       * Returns true if the entity is supported by a block. This value is a
       * state updated by the server and is not recalculated unless the entity
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

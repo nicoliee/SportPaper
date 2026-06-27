@@ -1,4 +1,4 @@
-From 34b2588c5e53edc7f81f39b4ac2c4fac12a4490c Mon Sep 17 00:00:00 2001
+From 848fa430f027a120da02bdf346aa56d965fa5971 Mon Sep 17 00:00:00 2001
 From: cswhite2000 <18whitechristop@gmail.com>
 Date: Sat, 25 Aug 2018 00:37:04 -0700
 Subject: [PATCH] Add DebugUtils
@@ -39,5 +39,5 @@ index 00000000..c7bb59ea
 +
 +}
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

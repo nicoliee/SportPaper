@@ -1,4 +1,4 @@
-From 4be7f446a67fa15441e8c9df633f789c3e14bdd2 Mon Sep 17 00:00:00 2001
+From 45480d60a9e30a770039458c17c37487733c17d1 Mon Sep 17 00:00:00 2001
 From: ThatApplePieGuy <necrozma999@gmail.com>
 Date: Mon, 26 Jan 2026 17:35:56 -0700
 Subject: [PATCH] Fix entity position rounding
@@ -92,5 +92,5 @@ index 8a6accf55..20f2d2bf9 100644
          this.i = MathHelper.d(entity.yaw * 256.0F / 360.0F);
          this.j = i;
 -- 
-2.52.0
+2.54.0
 

@@ -1,4 +1,4 @@
-From ecd39aae98384941e6220414ec7b883cb9b0cb83 Mon Sep 17 00:00:00 2001
+From 258610df56e892991dd5445e74add30d7c1a632c Mon Sep 17 00:00:00 2001
 From: Mark Vainomaa <mikroskeem@mikroskeem.eu>
 Date: Sun, 1 Apr 2018 02:29:37 +0300
 Subject: [PATCH] Add method to open already placed sign
@@ -27,5 +27,5 @@ index 4e5db758a..a12806d41 100644
 +    // Paper end
  }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

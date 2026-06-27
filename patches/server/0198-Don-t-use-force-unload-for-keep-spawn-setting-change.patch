@@ -1,4 +1,4 @@
-From ca9558d7096f9774fec983d38bbc7ac65df3c032 Mon Sep 17 00:00:00 2001
+From 849ec747e256b78392d6e372147118b832ff5878 Mon Sep 17 00:00:00 2001
 From: VytskaLT <VytskaLT@protonmail.com>
 Date: Sat, 17 Apr 2021 10:39:04 +0300
 Subject: [PATCH] Don't use force unload for keep spawn setting change
@@ -18,5 +18,5 @@ index cb97f4425..2c66dbee1 100644
  
      public boolean unloadChunk(int x, int z, boolean save) {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

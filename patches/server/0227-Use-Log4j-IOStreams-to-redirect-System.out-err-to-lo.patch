@@ -1,4 +1,4 @@
-From fd6ff484bb6e6027589d6f52abd484b319615f8f Mon Sep 17 00:00:00 2001
+From 64eeb0e605d86d0bc41e6f80583eb5c93c02b4c4 Mon Sep 17 00:00:00 2001
 From: Minecrell <minecrell@minecrell.net>
 Date: Mon, 18 Sep 2017 12:00:03 +0200
 Subject: [PATCH] Use Log4j IOStreams to redirect System.out/err to logger
@@ -12,7 +12,7 @@ results in a separate line, even though it should not result in
 a line break. Log4j's implementation handles it correctly.
 
 diff --git a/pom.xml b/pom.xml
-index 2da3da915..b30518b36 100644
+index 503854bb4..20bc1ad26 100644
 --- a/pom.xml
 +++ b/pom.xml
 @@ -116,6 +116,10 @@
@@ -72,5 +72,5 @@ index 93526ab60..7dd83f9b2 100644
 +    */
  }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

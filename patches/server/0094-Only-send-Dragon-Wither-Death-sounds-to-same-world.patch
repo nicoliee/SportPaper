@@ -1,4 +1,4 @@
-From 0008f7f99c0eca65a5c5957713dce728334a5ab0 Mon Sep 17 00:00:00 2001
+From 289cb6a65ed15cbffd0022cfb24957464e9357f9 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Tue, 31 May 2016 22:53:50 -0400
 Subject: [PATCH] Only send Dragon/Wither Death sounds to same world
@@ -44,5 +44,5 @@ index fb19bad3c..ef87df160 100644
                      double deltaZ = this.locZ - player.locZ;
                      double distanceSquared = deltaX * deltaX + deltaZ * deltaZ;
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

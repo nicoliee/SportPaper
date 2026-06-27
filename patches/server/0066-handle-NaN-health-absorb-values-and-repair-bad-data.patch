@@ -1,4 +1,4 @@
-From 460292cfc531a810e4a718b18361e30ab5fde061 Mon Sep 17 00:00:00 2001
+From 6df79ed36222db6bb7824b39aa7a81b4ba73d37b Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Sun, 27 Sep 2015 01:18:02 -0400
 Subject: [PATCH] handle NaN health/absorb values and repair bad data
@@ -56,5 +56,5 @@ index b5018b649..8aba4665e 100644
      }
  
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

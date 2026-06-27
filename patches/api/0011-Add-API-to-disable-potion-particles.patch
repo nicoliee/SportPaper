@@ -1,4 +1,4 @@
-From 3ccadaeab99de7145916174f7ccfdcac96e8aa56 Mon Sep 17 00:00:00 2001
+From 3d32e3c631e80541327089ab5d68c60bfbf654b6 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Fri, 9 May 2014 23:44:41 -0400
 Subject: [PATCH] Add API to disable potion particles
@@ -23,5 +23,5 @@ index b4c7a045..a9df62b6 100644
       * Checks whether the living entity has block line of sight to another.
       * <p>
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

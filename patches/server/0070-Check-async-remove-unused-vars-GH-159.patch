@@ -1,4 +1,4 @@
-From 83d68318ff3a340f9ba730d570db1ac114dd84a3 Mon Sep 17 00:00:00 2001
+From 7661010d542d09def36ca2cba4fff836f662d618 Mon Sep 17 00:00:00 2001
 From: Zach Brown <zach.brown@destroystokyo.com>
 Date: Sun, 27 Mar 2016 20:24:05 -0500
 Subject: [PATCH] Check async, remove unused vars, GH-159
@@ -28,5 +28,5 @@ index 284f4bf2f..a12ae12de 100644
                      if ((mobcnt = getEntityCount(worldserver, enumcreaturetype.a())) <= limit * i / 256) {
                          Iterator iterator1 = this.b.iterator();
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

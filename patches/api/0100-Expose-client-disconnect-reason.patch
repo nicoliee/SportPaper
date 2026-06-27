@@ -1,4 +1,4 @@
-From 4ba1212a50edb7bfbc8836dbd6df45d0f7acbcb9 Mon Sep 17 00:00:00 2001
+From f1ab15aadc4b90b1fe3d38245b409cd05d49389a Mon Sep 17 00:00:00 2001
 From: Austin L Mayes <me@austinlm.me>
 Date: Wed, 17 Feb 2021 16:31:29 -0600
 Subject: [PATCH] Expose client disconnect reason
@@ -45,5 +45,5 @@ index 5c8dc1b9..f9a45c84 100644
       *
       * @return string quit message
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

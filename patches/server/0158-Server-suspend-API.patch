@@ -1,4 +1,4 @@
-From b2e9d03fd1971f88136ab72475da51f8622477c0 Mon Sep 17 00:00:00 2001
+From bbb1af8ecee21b76619ac200c2933aecf3a976d8 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Sat, 10 Dec 2016 20:28:26 -0500
 Subject: [PATCH] Server suspend API
@@ -436,5 +436,5 @@ index 06ad3826c..8eba42e31 100644
              {
                  Logger log = Bukkit.getServer().getLogger();
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

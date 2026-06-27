@@ -1,4 +1,4 @@
-From e0743199ad3feda5d711ee3b2257958335277af8 Mon Sep 17 00:00:00 2001
+From 25c091676d453770fdd2067c1689b9be9229ba47 Mon Sep 17 00:00:00 2001
 From: Chad Waters <authorblues@gmail.com>
 Date: Thu, 2 Aug 2012 16:47:02 -0700
 Subject: [PATCH] Fire ExplosionPrimeEvent properly. Fixes BUKKIT-770
@@ -123,5 +123,5 @@ index 872d9659c..b1a49452e 100644
  
          // PaperSpigot start - Force load chunks during TNT explosions
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

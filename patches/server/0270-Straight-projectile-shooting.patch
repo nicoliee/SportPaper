@@ -1,4 +1,4 @@
-From cae625347031269ffa343467fdb7c82d33cea6fe Mon Sep 17 00:00:00 2001
+From f1918070333a745cf1807a85f64bf706719b40a5 Mon Sep 17 00:00:00 2001
 From: ThatApplePieGuy <necrozma999@gmail.com>
 Date: Mon, 26 Jan 2026 20:35:47 -0700
 Subject: [PATCH] Straight projectile shooting
@@ -29,5 +29,5 @@ index dd35ee083..d4289ee48 100644
  
      public EntityProjectile(World world, double d0, double d1, double d2) {
 -- 
-2.52.0
+2.54.0
 

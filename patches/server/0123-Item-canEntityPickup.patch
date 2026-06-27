@@ -1,4 +1,4 @@
-From 61071f9d5309621a51ec10d8cacb798766de6fc1 Mon Sep 17 00:00:00 2001
+From 9b375d3fdcd06edb5f42e4c68d252569323c96b3 Mon Sep 17 00:00:00 2001
 From: BillyGalbreath <Blake.Galbreath@GMail.com>
 Date: Fri, 5 May 2017 03:57:17 -0500
 Subject: [PATCH] Item#canEntityPickup
@@ -55,5 +55,5 @@ index a17a537d6..1df17f09b 100644
      public String toString() {
          return "CraftItem";
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

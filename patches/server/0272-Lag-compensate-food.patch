@@ -1,4 +1,4 @@
-From 6f1a659a4e38cff4f7070141348d1f5a0461eb92 Mon Sep 17 00:00:00 2001
+From 5fd75d14d8ec2d60eb48add31b92670df3b0bac3 Mon Sep 17 00:00:00 2001
 From: ThatApplePieGuy <necrozma999@gmail.com>
 Date: Mon, 26 Jan 2026 22:15:09 -0700
 Subject: [PATCH] Lag compensate food
@@ -45,5 +45,5 @@ index 134c13760..ce7b2bcb7 100644
          }
      }
 -- 
-2.52.0
+2.54.0
 

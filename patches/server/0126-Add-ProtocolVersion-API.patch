@@ -1,4 +1,4 @@
-From c50c8aa539fa95e5302cf85a0657fa1cbe349ce0 Mon Sep 17 00:00:00 2001
+From 303c6f502d273a9a462a3b1b8be7b9e5be164e63 Mon Sep 17 00:00:00 2001
 From: cswhite2000 <18whitechristop@gmail.com>
 Date: Fri, 17 Aug 2018 23:30:04 -0700
 Subject: [PATCH] Add ProtocolVersion API
@@ -70,5 +70,5 @@ index ccb5377d3..65ed6db36 100644
      private final Player.Spigot spigot = new Player.Spigot()
      {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

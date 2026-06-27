@@ -1,4 +1,4 @@
-From d06a64b51c72d3004af6da233a3b47f1955f248f Mon Sep 17 00:00:00 2001
+From ef8b623d452557a7f062ae2d19523b13361db700 Mon Sep 17 00:00:00 2001
 From: Austin Mayes <almayes@trevecca.edu>
 Date: Fri, 8 Mar 2019 16:01:32 -0600
 Subject: [PATCH] Expose PacketPlayOutSpawnEntity constructor
@@ -49,5 +49,5 @@ index 69dd590a4..8a6accf55 100644
 -    }
  }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

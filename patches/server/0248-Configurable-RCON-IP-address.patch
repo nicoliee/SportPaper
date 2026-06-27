@@ -1,4 +1,4 @@
-From fb1ff6b333b7f6cbf149ac182c93f06113036f10 Mon Sep 17 00:00:00 2001
+From 03dd9f17b6ab61a98fdf397ec27c36da4c304177 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Sat, 16 Apr 2016 00:39:33 -0400
 Subject: [PATCH] Configurable RCON IP address
@@ -33,5 +33,5 @@ index a4da2b46f..80d4c6401 100644
          this.f();
          this.k = null;
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

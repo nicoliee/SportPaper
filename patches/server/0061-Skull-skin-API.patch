@@ -1,4 +1,4 @@
-From 672c541f47794d5dd3726563476c7401e5b9c8d5 Mon Sep 17 00:00:00 2001
+From f4ff3e510e3befaea6e5067355b7b6f8cfb9e075 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Thu, 6 Aug 2015 22:18:57 -0400
 Subject: [PATCH] Skull skin API
@@ -85,5 +85,5 @@ index 55bbad76b..ee1fd938b 100644
      int applyHash() {
          final int original;
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

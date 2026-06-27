@@ -1,4 +1,4 @@
-From 87163392f0a5138f4f81b78b40789292cebbbf50 Mon Sep 17 00:00:00 2001
+From dac5296b36c8e80205cf4c3bb44538e98b90f119 Mon Sep 17 00:00:00 2001
 From: Ashcon Partovi <ashcon@partovi.net>
 Date: Thu, 2 May 2019 15:46:23 -0700
 Subject: [PATCH] Add willBeOnline API
@@ -63,5 +63,5 @@ index e92e90f04..ff4236cc8 100644
          if (getHandle().playerConnection == null) return null;
  
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

@@ -1,4 +1,4 @@
-From 30a3cb782f0f2369631503204b44397ca5451fce Mon Sep 17 00:00:00 2001
+From 760490d45bd724e8b6716873fc0907df7f51cec4 Mon Sep 17 00:00:00 2001
 From: Alfie Cleveland <alfeh@me.com>
 Date: Fri, 25 Nov 2016 13:22:40 +0000
 Subject: [PATCH] Optimise removeQueue
@@ -59,5 +59,5 @@ index 09b07f7cc..2ec19bfbe 100644
  
      protected void a(MobEffect mobeffect) {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

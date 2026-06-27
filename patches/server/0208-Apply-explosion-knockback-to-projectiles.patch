@@ -1,4 +1,4 @@
-From 3bbf877d64c9adfb0225924b19859e3cef2a2dd9 Mon Sep 17 00:00:00 2001
+From f3af228c5f1b404c20d557a13d034414fd4a1a49 Mon Sep 17 00:00:00 2001
 From: woofdoggo <woofwoofdoggo@protonmail.com>
 Date: Wed, 11 May 2022 16:49:54 -0400
 Subject: [PATCH] Apply explosion knockback to projectiles
@@ -23,5 +23,5 @@ index 0d6ccbf73..e90b1c237 100644
                          double d14 = entity instanceof EntityHuman && world.paperSpigotConfig.disableExplosionKnockback ? 0 : EnchantmentProtection.a(entity, d13); // PaperSpigot
  
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

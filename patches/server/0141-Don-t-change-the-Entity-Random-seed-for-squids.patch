@@ -1,4 +1,4 @@
-From 03f2ecac1ca149e210687b861661e961e7dbc9a9 Mon Sep 17 00:00:00 2001
+From b0cea7968f9bad01bc5d117368f98fe2b9b4e6c1 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Thu, 19 Jul 2018 01:05:00 -0400
 Subject: [PATCH] Don't change the Entity Random seed for squids
@@ -18,5 +18,5 @@ index 31996b462..aaaece35e 100644
          this.goalSelector.a(0, new EntitySquid.PathfinderGoalSquid(this));
      }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

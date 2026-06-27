@@ -1,4 +1,4 @@
-From b71ae25cd3d2c05661b404764414c3b3c32f1e1f Mon Sep 17 00:00:00 2001
+From 4c54e910adc4c30f0e3d9db416def28dcb08ca68 Mon Sep 17 00:00:00 2001
 From: Zach Brown <zach.brown@destroystokyo.com>
 Date: Thu, 28 Sep 2017 17:21:44 -0400
 Subject: [PATCH] Add PlayerJumpEvent
@@ -48,5 +48,5 @@ index 4baf692b7..e25543aca 100644
  
                      this.player.move(d11, d12, d13);
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

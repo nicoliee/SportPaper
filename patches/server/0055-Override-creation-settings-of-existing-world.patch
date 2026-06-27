@@ -1,4 +1,4 @@
-From bc007fcb850d8b6363554089bf4a450e4a08aa20 Mon Sep 17 00:00:00 2001
+From 59496b89d9584dfad55bb04430bc70111ce54d07 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Sun, 28 Jun 2015 03:39:14 -0400
 Subject: [PATCH] Override creation settings of existing world
@@ -54,5 +54,5 @@ index dd04d211d..e1e1b1e85 100644
          worlddata.checkName(name); // CraftBukkit - Migration did not rewrite the level.dat; This forces 1.8 to take the last loaded world as respawn (in this case the end)
          WorldServer internal = (WorldServer) new WorldServer(console, sdm, worlddata, dimension, console.methodProfiler, creator.environment(), generator).b();
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

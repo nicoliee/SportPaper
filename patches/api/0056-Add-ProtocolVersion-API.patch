@@ -1,4 +1,4 @@
-From e05d8e6c07fce630a822de9a111acf130cdc8d83 Mon Sep 17 00:00:00 2001
+From 71ee74fc804841eaae168eb2aaab287228816153 Mon Sep 17 00:00:00 2001
 From: cswhite2000 <18whitechristop@gmail.com>
 Date: Fri, 17 Aug 2018 23:30:52 -0700
 Subject: [PATCH] Add ProtocolVersion API
@@ -18,5 +18,5 @@ index 3cd5a669..c6d10438 100644
      public class Spigot extends Entity.Spigot
      {
 -- 
-2.18.0
+2.54.0
 

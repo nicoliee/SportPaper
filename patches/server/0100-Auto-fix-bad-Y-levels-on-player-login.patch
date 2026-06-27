@@ -1,4 +1,4 @@
-From 69ea32b3d4d0c1bd84a0635fff01ba5034b2ff8a Mon Sep 17 00:00:00 2001
+From e74a926a5f4480bf66dcfdb2937d2711010e69dc Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Wed, 21 Sep 2016 23:48:39 -0400
 Subject: [PATCH] Auto fix bad Y levels on player login
@@ -18,5 +18,5 @@ index e0e2b9938..09b07f7cc 100644
              if (MinecraftServer.getServer().getForceGamemode()) {
                  this.playerInteractManager.setGameMode(MinecraftServer.getServer().getGamemode());
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

@@ -1,4 +1,4 @@
-From 4e46a82e3959b6aa474ca66446a44b8d37917283 Mon Sep 17 00:00:00 2001
+From 1901ff0fea3be248e76e7cb78c30a5724622a0b5 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Sun, 18 May 2014 15:09:16 -0400
 Subject: [PATCH] Add knockback reduction
@@ -57,5 +57,5 @@ index 4f9179908..a2024f7e3 100644
          if (entity instanceof EntityArrow) {
              return ((EntityArrow) entity).isInGround();
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

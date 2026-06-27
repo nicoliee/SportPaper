@@ -1,4 +1,4 @@
-From e007598e8614b3ddbc7b8765bc1ddf82cae3f02d Mon Sep 17 00:00:00 2001
+From 39768dab7a5c4e08d55c2102b6b290934ed28fb4 Mon Sep 17 00:00:00 2001
 From: hpfxd <me@hpfxd.com>
 Date: Wed, 27 Oct 2021 06:29:44 -0400
 Subject: [PATCH] Update Netty
@@ -396,5 +396,5 @@ index e2eb30546..baa12427d 100644
 +    // SportPaper end
  }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

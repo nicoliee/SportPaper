@@ -1,4 +1,4 @@
-From bdcf49eefed052802614701ed1a317d0d700fdeb Mon Sep 17 00:00:00 2001
+From be18b7cb37fdb07ae2399eb89726b1a3d82837fa Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Thu, 27 Aug 2015 01:15:02 -0400
 Subject: [PATCH] Optimize Chunk Access
@@ -61,5 +61,5 @@ index c4dab42bd..573303e3e 100644
  
      public ChunkProviderServer(WorldServer worldserver, IChunkLoader ichunkloader, IChunkProvider ichunkprovider) {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

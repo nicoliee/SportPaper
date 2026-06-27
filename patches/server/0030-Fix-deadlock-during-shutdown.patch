@@ -1,4 +1,4 @@
-From 4d656e4caba9cee77efa394f899ba304cbc5559d Mon Sep 17 00:00:00 2001
+From 6ecf44f65e57e175968b722bc0f3e8e5799ee889 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Thu, 25 Sep 2014 18:42:47 -0400
 Subject: [PATCH] Fix deadlock during shutdown
@@ -54,5 +54,5 @@ index f13182c18..eb2231062 100644
      }
  
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

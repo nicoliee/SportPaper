@@ -1,4 +1,4 @@
-From ec05d842142601a384a1ef7eac6d4ed8ffbc321a Mon Sep 17 00:00:00 2001
+From 150a005503adcf1e9487a390c79c057a85836093 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Fri, 3 Jul 2015 01:08:40 -0400
 Subject: [PATCH] Physical interface
@@ -581,5 +581,5 @@ index cf909461..bd2d3a1d 100644
      /**
       * Launches a {@link Projectile} from the ProjectileSource.
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

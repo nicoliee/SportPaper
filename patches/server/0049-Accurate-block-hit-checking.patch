@@ -1,4 +1,4 @@
-From 6e058f182caeb3be748987b0253b27392eebafde Mon Sep 17 00:00:00 2001
+From 501bcbf9dce6fae94192512d2f00dac53157805d Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Tue, 26 May 2015 04:01:46 -0400
 Subject: [PATCH] Accurate block hit checking
@@ -124,5 +124,5 @@ index c78313678..b1eb145cc 100644
      private final Player.Spigot spigot = new Player.Spigot()
      {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

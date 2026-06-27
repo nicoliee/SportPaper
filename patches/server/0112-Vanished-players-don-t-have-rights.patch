@@ -1,4 +1,4 @@
-From f20548fbb4b8a66fc9bc91096a3fb6edbee18ed9 Mon Sep 17 00:00:00 2001
+From 9f797ebc4dc4adb789019789fcfffd214ac4c42e Mon Sep 17 00:00:00 2001
 From: Zach Brown <zach.brown@destroystokyo.com>
 Date: Sat, 7 Mar 2015 19:50:01 -0600
 Subject: [PATCH] Vanished players don't have rights
@@ -92,5 +92,5 @@ index eb28b261d..6ad5f4923 100644
          return event;
      }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

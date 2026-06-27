@@ -1,4 +1,4 @@
-From 39eae3d808da245abcd82d38fa343f87dc085495 Mon Sep 17 00:00:00 2001
+From aec1dc317d39385b5359e329686476d8f34b5d79 Mon Sep 17 00:00:00 2001
 From: md_5 <git@md-5.net>
 Date: Sat, 30 Jul 2016 11:29:14 +1000
 Subject: [PATCH] Branchless NibbleArray
@@ -68,5 +68,5 @@ index 000000000..0131ff04a
 +    }
 +}
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

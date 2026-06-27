@@ -1,4 +1,4 @@
-From cb79efa591755aceef6a39feacdabfd705d593ee Mon Sep 17 00:00:00 2001
+From 44c12429b8e1ea5ffefb313dee12fe099142d2c1 Mon Sep 17 00:00:00 2001
 From: Ashcon Partovi <ashcon@partovi.net>
 Date: Tue, 30 Apr 2019 08:03:51 -0700
 Subject: [PATCH] Mutable ChunkSnapshot API
@@ -75,5 +75,5 @@ index 83fccc85..37349b39 100644
 +    void updateBlock(BlockState state);
  }
 -- 
-2.20.1
+2.54.0
 

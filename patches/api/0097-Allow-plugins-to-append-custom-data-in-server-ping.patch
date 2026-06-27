@@ -1,4 +1,4 @@
-From 165a6a65aadb10c6c52c803d4d0771c2604c82ba Mon Sep 17 00:00:00 2001
+From b3d2b18da69ac172ae0f761a0ea9031dda7104ae Mon Sep 17 00:00:00 2001
 From: TheMolkaPL <themolkapl@gmail.com>
 Date: Tue, 31 Dec 2019 03:02:34 +0100
 Subject: [PATCH] Allow plugins to append custom data in server ping
@@ -86,5 +86,5 @@ index 3c38d857..215e5e08 100644
       * Sets the server-icon sent to the client.
       *
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

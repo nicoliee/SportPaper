@@ -1,4 +1,4 @@
-From 36d29b42461354736116ebb563eb2b5d29fc6acc Mon Sep 17 00:00:00 2001
+From 13047b5fd4cfe868807a02bdc561fd57d58479f8 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Thu, 3 Nov 2016 20:28:12 -0400
 Subject: [PATCH] Don't load Chunks from Hoppers and other things
@@ -32,5 +32,5 @@ index eed516e22..26160dbe1 100644
                      if (block == this) {
                          if (this.n(world, blockposition1)) {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

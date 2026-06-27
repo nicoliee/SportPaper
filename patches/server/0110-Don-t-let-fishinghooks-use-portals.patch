@@ -1,4 +1,4 @@
-From 51dfc9d205e40c4f8d9a757e27b88598cc3443b9 Mon Sep 17 00:00:00 2001
+From 76d9263587e0e92a7edc08cbd3956639d1f2eb85 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Fri, 16 Dec 2016 16:03:19 -0600
 Subject: [PATCH] Don't let fishinghooks use portals
@@ -37,5 +37,5 @@ index df6ce0dbb..6ff95184c 100644
          }
      }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

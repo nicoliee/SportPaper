@@ -1,4 +1,4 @@
-From d3c559c3931aba8368b2af97434d8c1f116e239f Mon Sep 17 00:00:00 2001
+From b86b4873126311c5ad73a092a7c1a7588ff62342 Mon Sep 17 00:00:00 2001
 From: Minecrell <minecrell@minecrell.net>
 Date: Fri, 9 Jun 2017 19:03:43 +0200
 Subject: [PATCH] Use TerminalConsoleAppender for console improvements
@@ -627,5 +627,5 @@ index 63cb069fe..a3fcd8711 100644
              <AppenderRef ref="TerminalConsole" level="info"/>
          </Root>
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

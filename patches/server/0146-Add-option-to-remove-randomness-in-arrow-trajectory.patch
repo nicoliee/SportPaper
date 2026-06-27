@@ -1,4 +1,4 @@
-From 7ad09ae6078a6bebbe0ac7e51453c3e1eaf88014 Mon Sep 17 00:00:00 2001
+From e510e5539e57642c2c34bae0efd1ad973d8b9fd9 Mon Sep 17 00:00:00 2001
 From: cswhite2000 <18whitechristop@gmail.com>
 Date: Fri, 24 Aug 2018 01:01:48 -0700
 Subject: [PATCH] Add option to remove randomness in arrow trajectory
@@ -57,5 +57,5 @@ index 0d643309c..bf847c28d 100644
      public static double weaknessEffectModifier;
      private static void effectModifiers()
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

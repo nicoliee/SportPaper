@@ -1,4 +1,4 @@
-From ecb34536ce2c2c634941dac98699b3afb1cc8fe7 Mon Sep 17 00:00:00 2001
+From a37763b12d7a5017a499c6cbfb91a5fec03dbf06 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Mon, 28 Mar 2016 22:03:09 -0400
 Subject: [PATCH] Prevent Waterflow BlockFromToEvent from loading chunks
@@ -48,5 +48,5 @@ index b1168dfef..2c91d6d54 100644
                  if (this.material == Material.LAVA) {
                      this.fizz(world, blockposition);
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

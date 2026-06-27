@@ -1,4 +1,4 @@
-From 078dd735ad293c8ac7de70b2c6ad6dde2b4947b6 Mon Sep 17 00:00:00 2001
+From 5ec694d021f2db058fa392254a206a9cf701fe8a Mon Sep 17 00:00:00 2001
 From: Austin Mayes <austin@avicus.net>
 Date: Wed, 26 Sep 2018 23:04:03 -0500
 Subject: [PATCH] Improve locale API and add methods for translating components
@@ -64,5 +64,5 @@ index 65ed6db36..8475668e2 100644
 +    // SportPaper end
  }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

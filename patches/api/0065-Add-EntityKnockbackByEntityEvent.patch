@@ -1,4 +1,4 @@
-From 726260f881dac2bc9c262bf47953579cc2d0abcc Mon Sep 17 00:00:00 2001
+From a6aab51e931ac03c81d5de578da7ac5774b9a818 Mon Sep 17 00:00:00 2001
 From: Brokkonaut <hannos17@gmx.de>
 Date: Mon, 18 Jun 2018 15:40:39 +0200
 Subject: [PATCH] Add EntityKnockbackByEntityEvent
@@ -87,5 +87,5 @@ index 00000000..c34fb1a3
 +    }
 +}
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

@@ -1,4 +1,4 @@
-From 3cd2ac47d8b61607f3ff644188a92a0bfd1bf8ba Mon Sep 17 00:00:00 2001
+From e852a142bfd196b6f01af55d15818dc8c0be0b2d Mon Sep 17 00:00:00 2001
 From: Pablete1234 <pabloherrerapalacio@gmail.com>
 Date: Sun, 5 Dec 2021 06:18:48 +0100
 Subject: [PATCH] Optimize toLegacyData removing sanity checks
@@ -22,5 +22,5 @@ index db09989eb..874af8a32 100644
  
      public IBlockData updateState(IBlockData iblockdata, IBlockAccess iblockaccess, BlockPosition blockposition) {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

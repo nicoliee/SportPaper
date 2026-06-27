@@ -1,4 +1,4 @@
-From 7e5e3d479124a0911cd5b7c907504191338b86b3 Mon Sep 17 00:00:00 2001
+From 92089d9cddc20b9b116a7bcc93072bd1396ebed2 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Sun, 20 Mar 2016 06:45:01 -0400
 Subject: [PATCH] Access items by EquipmentSlot
@@ -48,5 +48,5 @@ index dba8d5ba1..f341f7593 100644
      public void setItem(int index, ItemStack item) {
          super.setItem(index, item);
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

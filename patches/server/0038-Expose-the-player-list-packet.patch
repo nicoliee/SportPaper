@@ -1,4 +1,4 @@
-From e6c8de769cb3b7e23f6fedb2eb6d4ce04aea92ff Mon Sep 17 00:00:00 2001
+From 4e586f7afa7e01fc445c336c8a5cb37946283ae6 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Fri, 13 Feb 2015 02:34:42 -0500
 Subject: [PATCH] Expose the player list packet
@@ -50,5 +50,5 @@ index 658c42389..ad6bdace0 100644
          private final WorldSettings.EnumGamemode c;
          private final GameProfile d;
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

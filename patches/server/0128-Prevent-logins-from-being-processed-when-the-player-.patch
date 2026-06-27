@@ -1,4 +1,4 @@
-From 0a7bd9220d14ff200e4d1671942ef6f0134ebbaf Mon Sep 17 00:00:00 2001
+From 556c4b8043c5f90614bf56f4f391eee5f5818071 Mon Sep 17 00:00:00 2001
 From: killme <killme-git@ibts.me>
 Date: Sun, 12 Nov 2017 19:40:01 +0100
 Subject: [PATCH] Prevent logins from being processed when the player has
@@ -23,5 +23,5 @@ index 2fc69519c..4cb90b23c 100644
              EntityPlayer entityplayer = this.server.getPlayerList().a(this.i.getId());
  
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

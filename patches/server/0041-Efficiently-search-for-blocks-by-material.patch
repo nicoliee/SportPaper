@@ -1,4 +1,4 @@
-From 936f45c345a3475b3e2cfbff41ecfbb252967511 Mon Sep 17 00:00:00 2001
+From b7c0b247d6b42ca7692f330d29f438d0f9f543f0 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Mon, 16 Feb 2015 04:58:46 -0500
 Subject: [PATCH] Efficiently search for blocks by material
@@ -56,5 +56,5 @@ index b425a7d37..80de4eb16 100644
          int count = 0, index = 0;
          net.minecraft.server.Chunk chunk = getHandle();
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

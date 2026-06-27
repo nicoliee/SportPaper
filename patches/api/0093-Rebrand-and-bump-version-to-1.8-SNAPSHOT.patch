@@ -1,4 +1,4 @@
-From 31a321c9809bcdef61f362177992ea5acf97563a Mon Sep 17 00:00:00 2001
+From 8b5fa7d269c7639f7208eae5de9fb845ac275ff1 Mon Sep 17 00:00:00 2001
 From: Ashcon Partovi <ashcon@partovi.net>
 Date: Sat, 27 Apr 2019 15:21:49 -0700
 Subject: [PATCH] Rebrand and bump version to 1.8-SNAPSHOT
@@ -112,5 +112,5 @@ index 6faad290..eae8ddce 100644
  import org.bukkit.permissions.Permissible;
  
 -- 
-2.20.1
+2.54.0
 

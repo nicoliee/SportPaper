@@ -1,4 +1,4 @@
-From 3b7ec08ec83726130d686eeec204025e1ef2f908 Mon Sep 17 00:00:00 2001
+From 53e795d1fd478456ed6b5893eb99726431d70bff Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Sun, 11 Mar 2018 14:13:33 -0400
 Subject: [PATCH] Disable Explicit Network Manager Flushing
@@ -33,5 +33,5 @@ index 9e35715a3..0c2aab10e 100644
  
      public SocketAddress getSocketAddress() {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

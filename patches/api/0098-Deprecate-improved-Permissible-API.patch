@@ -1,4 +1,4 @@
-From 2554fe5e47c9b504a0edbdfb9a5214b246591634 Mon Sep 17 00:00:00 2001
+From 0802728ac3c84a92051bb2f2c2f987180b257415 Mon Sep 17 00:00:00 2001
 From: Ashcon Partovi <ashcon@partovi.net>
 Date: Sat, 20 Jun 2020 09:07:01 -0700
 Subject: [PATCH] Deprecate improved Permissible API
@@ -265,5 +265,5 @@ index 7a617309..ed093a16 100644
  
      @Override
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

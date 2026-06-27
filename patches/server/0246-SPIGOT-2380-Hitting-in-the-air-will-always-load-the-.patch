@@ -1,4 +1,4 @@
-From 77f645a671e7b033841ad71de337e969040f9df5 Mon Sep 17 00:00:00 2001
+From b9c0951b926ef9c6634e438aa52e1825106eb4aa Mon Sep 17 00:00:00 2001
 From: md_5 <git@md-5.net>
 Date: Sat, 11 Jun 2016 09:21:44 +1000
 Subject: [PATCH] SPIGOT-2380: Hitting in the air will always load the chunk at
@@ -43,5 +43,5 @@ index 64d091ea5..808c09d5c 100644
          if (itemInHand.getType() == Material.AIR || itemInHand.getAmount() == 0) {
              itemInHand = null;
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

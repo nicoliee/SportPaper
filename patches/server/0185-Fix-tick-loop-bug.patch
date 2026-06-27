@@ -1,4 +1,4 @@
-From d39fba5a65b58cae271c6edf5dcdb8772af1978e Mon Sep 17 00:00:00 2001
+From dbd79c74ca3969f61989be5a273ef38424a29031 Mon Sep 17 00:00:00 2001
 From: chickeneer <emcchickeneer@gmail.com>
 Date: Fri, 10 Mar 2017 03:01:46 -0500
 Subject: [PATCH] Fix tick loop bug
@@ -39,5 +39,5 @@ index e61380a13..513e2c361 100644
                      }
  
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

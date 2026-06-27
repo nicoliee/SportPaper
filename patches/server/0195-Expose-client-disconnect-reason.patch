@@ -1,4 +1,4 @@
-From 065fbcf218dc72d2c7cd0203993a3c61078290d1 Mon Sep 17 00:00:00 2001
+From 7a205b6a5eee52fc9d975e2018681b12db347768 Mon Sep 17 00:00:00 2001
 From: Austin L Mayes <me@austinlm.me>
 Date: Wed, 17 Feb 2021 16:37:59 -0600
 Subject: [PATCH] Expose client disconnect reason
@@ -99,5 +99,5 @@ index d09f7453a..cb6a3be08 100644
          entityplayer1.copyTo(entityplayer, flag);
          entityplayer1.d(entityplayer.getId());
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

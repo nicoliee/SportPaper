@@ -1,4 +1,4 @@
-From 48f9e92b50013d66d1bd063b821ecd658532a823 Mon Sep 17 00:00:00 2001
+From 443f5db25f096dc141e940963db1f12d114bc0c6 Mon Sep 17 00:00:00 2001
 From: md_5 <git@md-5.net>
 Date: Mon, 28 Nov 2016 10:13:49 +1100
 Subject: [PATCH] SPIGOT-1401: Issues placing blocks adjacent to eachother
@@ -18,5 +18,5 @@ index 0abe08d6d..6ae86ab5f 100644
                      }
  
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

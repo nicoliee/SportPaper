@@ -1,4 +1,4 @@
-From d851fdc66aa4e4848e414786c69083c42ecae4fb Mon Sep 17 00:00:00 2001
+From a4b1d917599a781d6128decc43db29288d003014 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Sun, 31 Oct 2021 09:46:32 -0400
 Subject: [PATCH] Set cap on JDK per-thread native byte buffer cache
@@ -29,5 +29,5 @@ index d1ce7a86b..737904d4d 100644
              {
                  acceptsAll(asList("?", "help"), "Show the help");
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

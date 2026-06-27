@@ -1,4 +1,4 @@
-From d0d86f6c660232672be84c0f0d98e93392ceb1a3 Mon Sep 17 00:00:00 2001
+From f04b3fbe348d951a50aca6e5f960ca00bcf2384c Mon Sep 17 00:00:00 2001
 From: Christopher White <18whitechristop@gmail.com>
 Date: Fri, 8 Dec 2023 17:37:15 -0800
 Subject: [PATCH] Optimize CraftPlayer.playEffect
@@ -76,5 +76,5 @@ index ff4236cc8..910075094 100644
                  }
                  if ( extra == null )
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

@@ -1,4 +1,4 @@
-From 08ddc9eda5fcee3db4ab384288b4ff801ce54a05 Mon Sep 17 00:00:00 2001
+From d4ee8a29e7c592c99f820cfb4bf7f61baeb66259 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Wed, 22 Jul 2015 18:50:41 -0400
 Subject: [PATCH] Add sender name to commands.yml replacement
@@ -41,5 +41,5 @@ index f89ad075..a3e9c633 100644
          while (index != -1) {
              int start = index;
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

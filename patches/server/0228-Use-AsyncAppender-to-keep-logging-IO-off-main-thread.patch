@@ -1,11 +1,11 @@
-From aeb73b79590bf0ef9b3dd22581217e765e7dd68f Mon Sep 17 00:00:00 2001
+From bfc8808e45ec569470dd9866892a561d1abf040f Mon Sep 17 00:00:00 2001
 From: Jason Penilla <11360596+jpenilla@users.noreply.github.com>
 Date: Thu, 12 Aug 2021 04:46:41 -0700
 Subject: [PATCH] Use AsyncAppender to keep logging IO off main thread
 
 
 diff --git a/pom.xml b/pom.xml
-index b30518b36..83388df3a 100644
+index 20bc1ad26..58a2abcab 100644
 --- a/pom.xml
 +++ b/pom.xml
 @@ -166,6 +166,13 @@
@@ -47,5 +47,5 @@ index a3fcd8711..128f6ece8 100644
      </Loggers>
  </Configuration>
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

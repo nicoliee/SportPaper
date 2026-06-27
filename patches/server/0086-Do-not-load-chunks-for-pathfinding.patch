@@ -1,4 +1,4 @@
-From f2f132300b8a24098bcf54540e3eeacf4e18acd6 Mon Sep 17 00:00:00 2001
+From 0ea0deb894a08aa584874fc9adfd6ed09144547c Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Thu, 31 Mar 2016 19:17:58 -0400
 Subject: [PATCH] Do not load chunks for pathfinding
@@ -18,5 +18,5 @@ index 45d385d31..15e735252 100644
          }
  
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

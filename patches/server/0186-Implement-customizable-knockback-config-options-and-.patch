@@ -1,4 +1,4 @@
-From f9e3df1a1b36bdec7e16420403520198f4b4be8c Mon Sep 17 00:00:00 2001
+From 8cf1aaa4fbcb8a2af3e62dfd4bb85e8cdee8c92c Mon Sep 17 00:00:00 2001
 From: Rafi Baum <rafi@ukbaums.com>
 Date: Mon, 27 Apr 2020 18:25:50 -0400
 Subject: [PATCH] Implement customizable knockback config options and command
@@ -284,5 +284,5 @@ index 9360eac7f..038137dc0 100644
 +
  }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

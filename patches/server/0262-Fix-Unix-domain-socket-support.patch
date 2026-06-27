@@ -1,4 +1,4 @@
-From 26ef7af84b15867a09168f84e633b458de64e2f9 Mon Sep 17 00:00:00 2001
+From ca507dc6f40bea4ece94950c9fb83d691e0515a7 Mon Sep 17 00:00:00 2001
 From: imkunet <im@kunet.dev>
 Date: Sun, 1 Feb 2026 05:49:47 -0500
 Subject: [PATCH] Fix Unix domain socket support
@@ -46,5 +46,5 @@ index 2be41afae..c849c380b 100644
  
          if (getProfileBans().isBanned(gameprofile) && !getProfileBans().get(gameprofile).hasExpired()) {
 -- 
-2.52.0
+2.54.0
 

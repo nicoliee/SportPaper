@@ -1,4 +1,4 @@
-From c5bb2a0805db190ffe4cd3fd7d3c66cb40546a81 Mon Sep 17 00:00:00 2001
+From d507dc3466684bc41fc0362333845586a203df9b Mon Sep 17 00:00:00 2001
 From: imkunet <im@kunet.dev>
 Date: Wed, 18 Feb 2026 21:09:53 -0500
 Subject: [PATCH] Tighter tick times
@@ -52,5 +52,5 @@ index a5b28b466..fc8c747bb 100644
  
                      catchupTime = Math.min(MAX_CATCHUP_BUFFER, catchupTime - wait);
 -- 
-2.52.0
+2.54.0
 

@@ -1,4 +1,4 @@
-From 43e46aa7b7122f345814029d0f9f8aa0e9404d9e Mon Sep 17 00:00:00 2001
+From c2376fb08bb3b18ec40acb137753b2ca545cfd13 Mon Sep 17 00:00:00 2001
 From: imkunet <im@kunet.dev>
 Date: Fri, 6 Jun 2025 02:28:20 -0400
 Subject: [PATCH] Add MCCoroutine compatibility
@@ -24,5 +24,5 @@ index c5e6e39d..d392a6da 100644
          return permissions.get(name.toLowerCase());
      }
 -- 
-2.52.0
+2.54.0
 

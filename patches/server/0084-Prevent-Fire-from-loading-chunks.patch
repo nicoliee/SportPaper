@@ -1,4 +1,4 @@
-From ee6865b8a8462c91d1538cab587e53e7b239d55a Mon Sep 17 00:00:00 2001
+From e9960ac62810faf02db90404d6ca69ec8f6843e8 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Sun, 17 Apr 2016 17:27:09 -0400
 Subject: [PATCH] Prevent Fire from loading chunks
@@ -43,5 +43,5 @@ index 76cd51296..d32552ff8 100644
              }
  
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

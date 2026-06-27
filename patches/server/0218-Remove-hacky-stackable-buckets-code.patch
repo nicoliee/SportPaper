@@ -1,4 +1,4 @@
-From 093b2ddd0a6a29c35b0322c98155a77a8c7d9060 Mon Sep 17 00:00:00 2001
+From 877fe4f896d7ba155c6c7bad5974a2b95bb04b18 Mon Sep 17 00:00:00 2001
 From: hpfxd <me@hpfxd.com>
 Date: Wed, 27 Oct 2021 20:46:41 -0400
 Subject: [PATCH] Remove hacky stackable buckets code
@@ -65,5 +65,5 @@ index 8cdcaf3a4..065dcdf62 100644
  
      public static boolean warnForExcessiveVelocity;
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

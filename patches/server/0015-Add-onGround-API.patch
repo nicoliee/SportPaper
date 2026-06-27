@@ -1,4 +1,4 @@
-From 403d0ec1357a304dedb3c7925f4be9c8dd2fef18 Mon Sep 17 00:00:00 2001
+From c7de7d5f235c3e528ea11a94b365c4b45e58b334 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Tue, 22 Jan 2013 14:12:03 -0500
 Subject: [PATCH] Add onGround API
@@ -30,5 +30,5 @@ index 6c6850962..5a80c00f1 100644
                  } else if (this.e - this.f > 20) {
                      this.a(this.o, this.p, this.q, this.player.yaw, this.player.pitch);
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

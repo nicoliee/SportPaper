@@ -1,4 +1,4 @@
-From 35fb7f8924937d749a29acc4f7e22fc214dd8588 Mon Sep 17 00:00:00 2001
+From 3b659e0616f28c4ad5bd0fe73edba686bf426620 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Thu, 23 Jun 2016 23:33:57 -0400
 Subject: [PATCH] IllegalPacketEvent
@@ -77,5 +77,5 @@ index 00000000..e79b3c9b
 +    }
 +}
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

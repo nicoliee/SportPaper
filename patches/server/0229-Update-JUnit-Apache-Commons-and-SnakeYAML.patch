@@ -1,11 +1,11 @@
-From fe401781cb6c7746f2afaa9774e8e4ddc8814c7a Mon Sep 17 00:00:00 2001
+From 51fe5855e7f2e0c5bd2e1193e78ac0c4ab5c7cba Mon Sep 17 00:00:00 2001
 From: "BT (calcastor/mame)" <43831917+calcastor@users.noreply.github.com>
 Date: Tue, 28 Oct 2025 11:04:05 -0700
 Subject: [PATCH] Update JUnit, Apache Commons, and SnakeYAML
 
 
 diff --git a/pom.xml b/pom.xml
-index 83388df3a..69e592264 100644
+index 58a2abcab..571da0320 100644
 --- a/pom.xml
 +++ b/pom.xml
 @@ -10,7 +10,6 @@
@@ -703,5 +703,5 @@ index 6140edeec..727abecab 100644
          ObjectInputStream ois = null;
  
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

@@ -1,4 +1,4 @@
-From fa79c8c20d8f85d637aa76da0cf9bf1357e81dee Mon Sep 17 00:00:00 2001
+From d1049242128d49a251c44c07e2705b61e5c3346f Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Fri, 18 Mar 2016 14:24:53 -0400
 Subject: [PATCH] Fix Furnace cook time bug
@@ -22,5 +22,5 @@ index 0e3f35a6e..37a43fdc8 100644
                  this.burn();
                  flag1 = true;
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

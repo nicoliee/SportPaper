@@ -1,4 +1,4 @@
-From c10cd35d0aa7dcb538b339499ec6094d791605e9 Mon Sep 17 00:00:00 2001
+From 374931f95747bac43eb2ff97f23ec1bdf66df7c4 Mon Sep 17 00:00:00 2001
 From: Axel Uhl <axel.uhl@sap.com>
 Date: Thu, 11 Jan 2018 10:34:56 +1100
 Subject: [PATCH] Cache BlockState.hashCode
@@ -53,5 +53,5 @@ index 7eefc2261..e4e61b8e9 100644
      public static BlockStateInteger of(String s, int i, int j) {
          return new BlockStateInteger(s, i, j);
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

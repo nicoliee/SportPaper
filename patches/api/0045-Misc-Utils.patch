@@ -1,4 +1,4 @@
-From e517d2e320102b1276dcdb118cdb6c89853eda7d Mon Sep 17 00:00:00 2001
+From dd050b955c09beee0ba287f4babfae38fef4e430 Mon Sep 17 00:00:00 2001
 From: vemacs <d@nkmem.es>
 Date: Wed, 23 Nov 2016 12:53:43 -0500
 Subject: [PATCH] Misc Utils
@@ -42,5 +42,5 @@ index 00000000..c45e2f36
 +    }
 +}
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

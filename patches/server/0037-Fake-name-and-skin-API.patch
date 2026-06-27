@@ -1,4 +1,4 @@
-From 40eaac8391c89b883d023e7638dade312e6f50e5 Mon Sep 17 00:00:00 2001
+From a187ed96dc5a92a48cd848652d1981de33aaf717 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Tue, 11 Feb 2014 22:12:50 -0600
 Subject: [PATCH] Fake name and skin API
@@ -805,5 +805,5 @@ index 000000000..43345fa51
 +    }
 +}
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

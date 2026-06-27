@@ -1,4 +1,4 @@
-From 161f82f3324382330b2748db445a452ede8795fa Mon Sep 17 00:00:00 2001
+From fd1b74d8ef07930f8ff10f727af87d3b057b2c67 Mon Sep 17 00:00:00 2001
 From: Austin Mayes <almayes@trevecca.edu>
 Date: Tue, 5 Mar 2019 21:25:54 -0600
 Subject: [PATCH] Personalized component API
@@ -33,5 +33,5 @@ index dc81e2607..e184d4168 100644
      }
  
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

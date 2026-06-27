@@ -1,4 +1,4 @@
-From 027828a04b805bc68a66976fcc6887d966216213 Mon Sep 17 00:00:00 2001
+From 3828a3c88a92e6dfa4d0b4caf9cabab0d8663c19 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Tue, 9 Dec 2014 02:08:38 -0500
 Subject: [PATCH] Better handling of plugin startup errors
@@ -118,5 +118,5 @@ index 312799839..9360eac7f 100644
      public static double weaknessEffectModifier;
      private static void effectModifiers()
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

@@ -1,4 +1,4 @@
-From 1f85d42190ec716efa7d384920e24b9c0342ed2d Mon Sep 17 00:00:00 2001
+From 57f2ca03442c60e1c9ba569705bed0ed0798f4ea Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Fri, 22 May 2015 00:46:32 -0400
 Subject: [PATCH] Add CanDestroy and CanPlaceOn to ItemMeta
@@ -190,5 +190,5 @@ index eaaa6a11a..16fc76ad8 100644
                          REPAIR.NBT,
                          ENCHANTMENTS.NBT,
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

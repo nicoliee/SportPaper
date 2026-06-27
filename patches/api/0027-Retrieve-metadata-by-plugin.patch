@@ -1,4 +1,4 @@
-From 593f6ae574bfe0a969850d7c7688740fa04ecc55 Mon Sep 17 00:00:00 2001
+From e309a78a93f600c33e909a10f141f816a08a8ed6 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Fri, 19 Jun 2015 14:50:13 -0400
 Subject: [PATCH] Retrieve metadata by plugin
@@ -64,5 +64,5 @@ index b47cf2b0..b1df863a 100644
       * Returns a list of previously set metadata values from the implementing
       * object's metadata store.
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

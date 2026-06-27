@@ -1,4 +1,4 @@
-From 8002d55dcecce2a4db48e721db291d8e7c4d9d8b Mon Sep 17 00:00:00 2001
+From 35bf8e1537d4d3cde36472c1dc127dfd79c87045 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Tue, 3 Jun 2014 08:02:58 -0400
 Subject: [PATCH] Fix head rotation packet spam
@@ -22,5 +22,5 @@ index 1fc2388ea..12112ce7a 100644
  
                      if (this.tracker instanceof EntityLiving) {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

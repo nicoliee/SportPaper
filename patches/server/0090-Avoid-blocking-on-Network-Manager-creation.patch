@@ -1,4 +1,4 @@
-From add201f5ae8f2809cbe1c676a7e074766436b419 Mon Sep 17 00:00:00 2001
+From edf246ccc01f475c3715829a1afcbf54684c11f2 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Mon, 16 May 2016 23:19:16 -0400
 Subject: [PATCH] Avoid blocking on Network Manager creation
@@ -43,5 +43,5 @@ index eb2231062..b2021dcd6 100644
              if ( org.spigotmc.SpigotConfig.playerShuffle > 0 && MinecraftServer.currentTick % org.spigotmc.SpigotConfig.playerShuffle == 0 )
              {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

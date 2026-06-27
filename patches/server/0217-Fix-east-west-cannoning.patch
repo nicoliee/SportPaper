@@ -1,4 +1,4 @@
-From 15a35c6d8e2ed99a2eb8ec9b1a1c85205c173d15 Mon Sep 17 00:00:00 2001
+From 3d28e806ba83be4744840fef40c8619d2eb7be94 Mon Sep 17 00:00:00 2001
 From: AmbrosL <AmbrosL@users.noreply.github.com>
 Date: Sat, 10 Mar 2018 02:33:28 +0100
 Subject: [PATCH] Fix east/west cannoning
@@ -54,5 +54,5 @@ index c1791616b..934e8073d 100644
                  double d10 = d0;
                  double d11 = d1;
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

@@ -1,4 +1,4 @@
-From 2c82b29aa9349902468c1d1af0aaf5d64f607090 Mon Sep 17 00:00:00 2001
+From 4852841869eb28f6a081e8b3e56e273c015ad38c Mon Sep 17 00:00:00 2001
 From: VytskaLT <VytskaLT@protonmail.com>
 Date: Fri, 4 Dec 2020 13:56:51 +0200
 Subject: [PATCH] Make unknown and internal command messages customisable in
@@ -91,5 +91,5 @@ index ec9952936..2b9358b2f 100644
          outdatedClientMessage = transform( getString( "messages.outdated-client", outdatedClientMessage ) );
          outdatedServerMessage = transform( getString( "messages.outdated-server", outdatedServerMessage ) );
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

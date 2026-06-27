@@ -1,4 +1,4 @@
-From 34f7a1827041a360565837d7c8a33dc21c7bed6c Mon Sep 17 00:00:00 2001
+From d781e3d3e8ad363b9e104ccfb134b82e41299aa3 Mon Sep 17 00:00:00 2001
 From: Indicado <indicado@walrus.gg>
 Date: Wed, 15 Jul 2020 09:52:19 +0200
 Subject: [PATCH] Add option to remove randomness in arrow damage
@@ -34,5 +34,5 @@ index 038137dc0..8d58d1f3f 100644
      private static void tickEmptyWorlds() {
          tickEmptyWorlds = getBoolean("settings.tick-empty-worlds", tickEmptyWorlds);
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

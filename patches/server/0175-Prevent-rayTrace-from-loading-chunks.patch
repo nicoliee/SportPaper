@@ -1,4 +1,4 @@
-From f0d99a8c0e06e2587ae192c4f8c54be15a3e00e5 Mon Sep 17 00:00:00 2001
+From db0eb0622ef0095b2996c3841c2cdfd6237f718a Mon Sep 17 00:00:00 2001
 From: Ashcon Partovi <ashcon@partovi.net>
 Date: Sat, 27 Apr 2019 12:44:20 -0700
 Subject: [PATCH] Prevent rayTrace from loading chunks
@@ -29,5 +29,5 @@ index 0bb29ec79..3e5332f9e 100644
  
                      if (!flag1 || block1.a(this, blockposition, iblockdata1) != null) {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

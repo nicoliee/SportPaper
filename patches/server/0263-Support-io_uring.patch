@@ -1,4 +1,4 @@
-From f7a73a7c0bce81338743b845859ac3548e4e43ad Mon Sep 17 00:00:00 2001
+From 859132942bac1c2f6318e526dd28c9887ae77614 Mon Sep 17 00:00:00 2001
 From: ThatApplePieGuy <necrozma999@gmail.com>
 Date: Sun, 1 Feb 2026 18:16:25 -0700
 Subject: [PATCH] Support io_uring
@@ -82,5 +82,5 @@ index acfa52d6e..f83547550 100644
                  if (address instanceof io.netty.channel.unix.DomainSocketAddress) {
                      oclass = io.netty.channel.epoll.EpollServerDomainSocketChannel.class;
 -- 
-2.52.0
+2.54.0
 

@@ -1,4 +1,4 @@
-From 9835999c48a7ad86a7e13c7807367e80bf85e065 Mon Sep 17 00:00:00 2001
+From 5cd37ee5137f8cc1ef7233f860e6eae1ebebab40 Mon Sep 17 00:00:00 2001
 From: hpfxd <me@hpfxd.com>
 Date: Wed, 27 Oct 2021 20:45:30 -0400
 Subject: [PATCH] Add internal setMaxStackSize method for materials
@@ -41,5 +41,5 @@ index 0fb26055..f1ce4017 100644
       * Gets the maximum durability of this material
       *
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

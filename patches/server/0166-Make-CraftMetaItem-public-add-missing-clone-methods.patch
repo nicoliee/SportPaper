@@ -1,4 +1,4 @@
-From a1789d86ef5d384f3abe786ce7443a04f5a714dc Mon Sep 17 00:00:00 2001
+From 90577e2cc370257c40675093dbe1920a70512b6a Mon Sep 17 00:00:00 2001
 From: Austin Mayes <almayes@trevecca.edu>
 Date: Mon, 25 Feb 2019 15:08:18 -0600
 Subject: [PATCH] Make CraftMetaItem public, add missing clone() methods
@@ -66,5 +66,5 @@ index 37fde0ecb..04e783c31 100644
      static class ItemMetaKey {
  
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

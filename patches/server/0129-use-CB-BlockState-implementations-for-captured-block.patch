@@ -1,4 +1,4 @@
-From 87bed5cebf54436e48064c8dddefbd3733d1887c Mon Sep 17 00:00:00 2001
+From f062a9df8a71437ddb160b6cd1f146ddeee87942 Mon Sep 17 00:00:00 2001
 From: Shane Freeder <theboyetronic@gmail.com>
 Date: Thu, 16 Nov 2017 12:12:41 +0000
 Subject: [PATCH] use CB BlockState implementations for captured blocks
@@ -31,5 +31,5 @@ index 6cc644017..07427860f 100644
              }
              // CraftBukkit end
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

@@ -1,4 +1,4 @@
-From f897fda531a20c9d1174c70feb7162fe7a7027e6 Mon Sep 17 00:00:00 2001
+From f37bb34e825b8902b38b44bada899002553c2801 Mon Sep 17 00:00:00 2001
 From: "BT (calcastor/mame)" <43831917+calcastor@users.noreply.github.com>
 Date: Mon, 24 Nov 2025 18:11:14 -0800
 Subject: [PATCH] Move Paper-specific code to com.destroystokyo namespace
@@ -1279,5 +1279,5 @@ index 6438268d4..8181ba441 100644
  public class SpigotWorldConfig
  {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

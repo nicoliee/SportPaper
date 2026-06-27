@@ -1,4 +1,4 @@
-From 41bcf2e13dd28c27b5d355e548c0413ee0232acd Mon Sep 17 00:00:00 2001
+From 46eed50b74ff7d13498a1a29e6718c372cfe82d8 Mon Sep 17 00:00:00 2001
 From: cswhite2000 <18whitechristop@gmail.com>
 Date: Sat, 25 Aug 2018 18:36:14 -0700
 Subject: [PATCH] Unify Configs
@@ -138,7 +138,8 @@ index 5c2a18dd3..4dc6ebfcf 100644
 -        commandsConfiguration.options().copyDefaults(true);
 -        commandsConfiguration.setDefaults(YamlConfiguration.loadConfiguration(new InputStreamReader(getClass().getClassLoader().getResourceAsStream("configurations/commands.yml"), Charsets.UTF_8)));
 -        saveCommandsConfig();
--
++        SharedConfig.init((File) console.options.valueOf("sportpaper-settings")); // SportPaper
+ 
 -        // Migrate aliases from old file and add previously implicit $1- to pass all arguments
 -        if (legacyAlias != null) {
 -            ConfigurationSection aliases = commandsConfiguration.createSection("aliases");
@@ -156,8 +157,7 @@ index 5c2a18dd3..4dc6ebfcf 100644
 -                aliases.set(key, commands);
 -            }
 -        }
-+        SharedConfig.init((File) console.options.valueOf("sportpaper-settings")); // SportPaper
- 
+-
 -        saveCommandsConfig();
 -        overrideAllCommandBlockCommands = commandsConfiguration.getStringList("command-block-overrides").contains("*");
 -        ((SimplePluginManager) pluginManager).useTimings(configuration.getBoolean("settings.plugin-profiling"));
@@ -561,21 +561,21 @@ index 8a4a0d84d..337c665c5 100644
  
 -                // Spigot Start
 -                acceptsAll(asList("S", "spigot-settings"), "File for spigot settings")
--                        .withRequiredArg()
--                        .ofType(File.class)
--                        .defaultsTo(new File("spigot.yml"))
--                        .describedAs("Yml file");
--                // Spigot End
--
--                // PaperSpigot Start
--                acceptsAll(asList("paper", "paper-settings"), "File for paperspigot settings")
 +                // SportPaper start
 +                acceptsAll(asList("SP", "sportpaper-settings"), "File for sportpaper settings")
                          .withRequiredArg()
                          .ofType(File.class)
--                        .defaultsTo(new File("paper.yml"))
+-                        .defaultsTo(new File("spigot.yml"))
 +                        .defaultsTo(new File("sportpaper.yml"))
                          .describedAs("Yml file");
+-                // Spigot End
+-
+-                // PaperSpigot Start
+-                acceptsAll(asList("paper", "paper-settings"), "File for paperspigot settings")
+-                        .withRequiredArg()
+-                        .ofType(File.class)
+-                        .defaultsTo(new File("paper.yml"))
+-                        .describedAs("Yml file");
 -                // PaperSpigot End
 +                // SportPaper end
  
@@ -756,9 +756,10 @@ index 142a5faf6..9e3cdff84 100644
 -    static int version;
      static Map<String, Command> commands;
 -    /*========================================================================*/
--
+ 
 -    public static void init(File configFile)
--    {
++    public static void init()
+     {
 -        CONFIG_FILE = configFile;
 -        config = new YamlConfiguration();
 -        try
@@ -820,10 +821,9 @@ index 142a5faf6..9e3cdff84 100644
 -            Bukkit.getLogger().log( Level.SEVERE, "Could not save " + CONFIG_FILE, ex );
 -        }
 -    }
- 
+-
 -    private static void set(String path, Object val)
-+    public static void init()
-     {
+-    {
 -        config.set( path, val );
 +        config = SharedConfig.config;
 +        commands = SharedConfig.commands;
@@ -886,24 +886,24 @@ index abfa8a717..abe82f366 100644
 -    private boolean verbose;
 -
 -    public PaperSpigotWorldConfig(String worldName)
--    {
++    public static void init()
+     {
 -        this.worldName = worldName;
 -        this.config = PaperSpigotConfig.config;
 -        init();
--    }
--
--    public void init()
-+    public static void init()
-     {
--        this.verbose = getBoolean( "verbose", true );
--
--        log( "-------- World Settings For [" + worldName + "] --------" );
--        PaperSpigotConfig.readConfig( PaperSpigotWorldConfig.class, this );
 +        config = SharedConfig.config;
 +        verbose = getBoolean( "verbose", true );
 +        SharedConfig.readConfig( PaperSpigotWorldConfig.class, null );
      }
  
+-    public void init()
+-    {
+-        this.verbose = getBoolean( "verbose", true );
+-
+-        log( "-------- World Settings For [" + worldName + "] --------" );
+-        PaperSpigotConfig.readConfig( PaperSpigotWorldConfig.class, this );
+-    }
+-
 -    private void log(String s)
 +    private static void log(String s)
      {
@@ -1796,24 +1796,25 @@ index 8e86212aa..6438268d4 100644
 -    private boolean verbose;
 -
 -    public SpigotWorldConfig(String worldName)
--    {
++    public static void init()
+     {
 -        this.worldName = worldName;
 -        this.config = SpigotConfig.config;
 -        init();
--    }
--
--    public void init()
-+    public static void init()
-     {
--        this.verbose = getBoolean( "verbose", true );
 +        config = SharedConfig.config;
 +        verbose = getBoolean( "verbose", true );
- 
--        log( "-------- World Settings For [" + worldName + "] --------" );
--        SpigotConfig.readConfig( SpigotWorldConfig.class, this );
++
 +        SharedConfig.readConfig( SpigotWorldConfig.class, null );
      }
  
+-    public void init()
+-    {
+-        this.verbose = getBoolean( "verbose", true );
+-
+-        log( "-------- World Settings For [" + worldName + "] --------" );
+-        SpigotConfig.readConfig( SpigotWorldConfig.class, this );
+-    }
+-
 -    private void log(String s)
 +    private static void log(String s)
      {
@@ -2270,5 +2271,5 @@ index 733307c28..000000000
 -    icanhasbukkit:
 -      - "version $1-"
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

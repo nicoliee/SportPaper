@@ -1,4 +1,4 @@
-From 9655a194bbb95729d1c2274a6cb5db0ba657f7d1 Mon Sep 17 00:00:00 2001
+From a6198ff6eb3c19017d45eb6b0fad843d8b831f3c Mon Sep 17 00:00:00 2001
 From: Martin Panzer <postremus1996@googlemail.com>
 Date: Mon, 23 May 2016 12:12:37 +0200
 Subject: [PATCH] Faster redstone torch rapid clock removal
@@ -39,5 +39,5 @@ index 78c6d195a..b105b6a69 100644
          public RedstoneUpdateInfo(BlockPosition blockposition, long i) {
              this.a = blockposition;
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

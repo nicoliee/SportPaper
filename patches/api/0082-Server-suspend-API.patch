@@ -1,4 +1,4 @@
-From 8b7eef4e457f4d2fb718045668da058550f33f2a Mon Sep 17 00:00:00 2001
+From 955e23ecfdac22213e6a764fc7471d71f6918907 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Sat, 9 Jul 2016 05:27:03 -0400
 Subject: [PATCH] Server suspend API
@@ -322,5 +322,5 @@ index 219788fb..00000000
 -    }
 -}
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

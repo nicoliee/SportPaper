@@ -1,4 +1,4 @@
-From f789b2b2bf0444b69ad9c429f8e673e3d91159a1 Mon Sep 17 00:00:00 2001
+From c15578bd1aa9673b6175af7a3825cbaa69e6fb33 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Mon, 19 Sep 2016 23:16:39 -0400
 Subject: [PATCH] Auto Save Improvements
@@ -233,5 +233,5 @@ index 912d2d5a5..eef218476 100644
 +    }
  }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

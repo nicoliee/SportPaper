@@ -1,4 +1,4 @@
-From c4484f313738d9f03324220ab560404b9eaa9e36 Mon Sep 17 00:00:00 2001
+From 91a203ab130376e72873bad12ca6325270d7ef82 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Fri, 9 May 2014 23:48:01 -0400
 Subject: [PATCH] Add API to disable potion particles
@@ -71,5 +71,5 @@ index 0b033fd12..5f544d82f 100644
          return launchProjectile(projectile, null);
      }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

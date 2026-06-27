@@ -1,4 +1,4 @@
-From ff54db4568c2fe902e44d4bff25dbcb8e3a551e1 Mon Sep 17 00:00:00 2001
+From 6766eedab80b0663efe3533c99a3f589f92ff21d Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Wed, 4 Jul 2018 02:25:48 -0400
 Subject: [PATCH] Entity#getChunk API
@@ -30,5 +30,5 @@ index b60e2ff0d..2c1b591a9 100644
          /**
           * Order is *EXTREMELY* important -- keep it right! =D
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

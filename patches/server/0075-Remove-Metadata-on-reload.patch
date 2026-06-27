@@ -1,4 +1,4 @@
-From 491d34999da6f7303b579eaeb03c564d09f9513d Mon Sep 17 00:00:00 2001
+From a129aa3a4a26c0d3ccf256ec478142e5469e5cf4 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Fri, 18 Mar 2016 13:50:14 -0400
 Subject: [PATCH] Remove Metadata on reload
@@ -30,5 +30,5 @@ index e1e1b1e85..5c2a18dd3 100644
          org.spigotmc.SpigotConfig.registerCommands(); // Spigot
          org.github.paperspigot.PaperSpigotConfig.registerCommands(); // PaperSpigot
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

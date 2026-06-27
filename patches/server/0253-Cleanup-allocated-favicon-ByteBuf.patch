@@ -1,4 +1,4 @@
-From e914f197a13bf1543360a31a2746354b0dacb70a Mon Sep 17 00:00:00 2001
+From 2c3393fd9d1069725a2a401b6ebdcad29d968180 Mon Sep 17 00:00:00 2001
 From: Shane Freeder <theboyetronic@gmail.com>
 Date: Tue, 3 Jul 2018 19:14:38 +0100
 Subject: [PATCH] Cleanup allocated favicon ByteBuf
@@ -39,5 +39,5 @@ index 82a70a5ec..a5b28b466 100644
          }
  
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

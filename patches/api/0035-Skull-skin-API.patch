@@ -1,4 +1,4 @@
-From 9a87404558c723f33d6d8ea36fbbdc10303de3ee Mon Sep 17 00:00:00 2001
+From e66da64dc943cfa06415dd45146efff1f8a123d8 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Thu, 6 Aug 2015 22:18:43 -0400
 Subject: [PATCH] Skull skin API
@@ -76,5 +76,5 @@ index fab31190..cc5497a0 100644
 +    void clearOwner();
  }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

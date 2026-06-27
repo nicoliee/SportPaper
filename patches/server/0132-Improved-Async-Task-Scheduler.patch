@@ -1,4 +1,4 @@
-From 1a7b09eb10a3c688833dc267acb3417394391f04 Mon Sep 17 00:00:00 2001
+From 238b47a546478660235cd4200330e63ea6fb8d21 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Fri, 16 Mar 2018 22:59:43 -0400
 Subject: [PATCH] Improved Async Task Scheduler
@@ -380,5 +380,5 @@ index 4b1e35236..44cbcdac8 100644
       * -1 means no repeating <br>
       * -2 means cancel <br>
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

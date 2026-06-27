@@ -1,4 +1,4 @@
-From b54df6e12b954fdd62956dcec3f10af3950a97c5 Mon Sep 17 00:00:00 2001
+From b34e4f7de5a9c5e94c74029e2391daa693eac7e0 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Sat, 14 Feb 2015 08:18:51 -0500
 Subject: [PATCH] Add invis override API
@@ -94,5 +94,5 @@ index 2c2666497..462fb45e7 100644
      public Map<String, Object> serialize() {
          Map<String, Object> result = new LinkedHashMap<String, Object>();
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

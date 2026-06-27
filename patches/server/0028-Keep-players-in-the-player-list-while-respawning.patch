@@ -1,4 +1,4 @@
-From 3abdc625454f01121b00ef6d03abdda1a5f261cd Mon Sep 17 00:00:00 2001
+From 87b719ac31ba134b920f6321de66794a4d500434 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Sun, 7 Sep 2014 21:17:24 -0400
 Subject: [PATCH] Keep players in the player list while respawning
@@ -32,5 +32,5 @@ index 3c2d3197f..f38ab7156 100644
              this.j.put(entityplayer1.getUniqueID(), entityplayer1);
          }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

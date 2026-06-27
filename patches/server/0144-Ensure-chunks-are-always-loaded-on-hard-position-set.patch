@@ -1,4 +1,4 @@
-From 1d9b8819a810d9fcf31ebe4dd1947c7ad116e86d Mon Sep 17 00:00:00 2001
+From 358e7e37cc1ecb08785a0cc869538f093afce6d4 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Thu, 16 Aug 2018 17:36:41 -0400
 Subject: [PATCH] Ensure chunks are always loaded on hard position sets
@@ -29,5 +29,5 @@ index f11069392..70d70c038 100644
          this.setYawPitch(f, f1);
      }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

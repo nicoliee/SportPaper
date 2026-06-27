@@ -1,4 +1,4 @@
-From 6504f79322f7f24992eef410548388c2b1a663aa Mon Sep 17 00:00:00 2001
+From 8b4b0f47795e0d7378c284e06f9917075bcab146 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Mon, 16 Mar 2015 22:44:22 -0400
 Subject: [PATCH] Force update player velocity
@@ -32,5 +32,5 @@ index 462fb45e7..c7e96decd 100644
      private final Player.Spigot spigot = new Player.Spigot()
      {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

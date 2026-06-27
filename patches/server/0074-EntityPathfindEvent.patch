@@ -1,4 +1,4 @@
-From 6f8028b313d3c2da81f00d863688c3b8fd5b6bda Mon Sep 17 00:00:00 2001
+From 671ba20c062d2d882a7d84792792b8d6123878f6 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Mon, 28 Mar 2016 21:22:26 -0400
 Subject: [PATCH] EntityPathfindEvent
@@ -35,5 +35,5 @@ index 8ebe58495..6c1a8547b 100644
              ChunkCache chunkcache = new ChunkCache(this.c, blockposition.a(-i, -i, -i), blockposition.a(i, i, i), 0);
              PathEntity pathentity = this.j.a((IBlockAccess) chunkcache, (Entity) this.b, entity, f);
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

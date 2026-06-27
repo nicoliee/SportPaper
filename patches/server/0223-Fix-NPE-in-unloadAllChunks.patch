@@ -1,4 +1,4 @@
-From 4704a88dbb882ff87c469617db74aa395e6f4b4b Mon Sep 17 00:00:00 2001
+From 1a0362ecaa8a97637a3b2aa775911df917bc1e3f Mon Sep 17 00:00:00 2001
 From: Christopher White <18whitechristop@gmail.com>
 Date: Sun, 1 Oct 2023 13:24:05 -0700
 Subject: [PATCH] Fix NPE in unloadAllChunks
@@ -20,5 +20,5 @@ index 812686d56..8cdc6568d 100644
  
      public void unloadChunk(Chunk chunk) {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

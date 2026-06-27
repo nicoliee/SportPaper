@@ -1,4 +1,4 @@
-From 221a0c4bcb72cf0e16631b52d163cc43a537e7d7 Mon Sep 17 00:00:00 2001
+From 5fc80574cedcd9ea6bc76b8d179f76aa1f50f9d0 Mon Sep 17 00:00:00 2001
 From: Austin Mayes <austin@avicus.net>
 Date: Thu, 27 Sep 2018 08:31:55 -0500
 Subject: [PATCH] Add translatable methods to world broadcast API
@@ -34,5 +34,5 @@ index 19835eac7..4135d5954 100644
      // Spigot start
          save(true);
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

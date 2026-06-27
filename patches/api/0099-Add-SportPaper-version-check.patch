@@ -1,4 +1,4 @@
-From 9f6f716bb40cc6eb910c03c749c9661b90717e9c Mon Sep 17 00:00:00 2001
+From a8a6eac988d937d985aca32af69dbaf5d98d253b Mon Sep 17 00:00:00 2001
 From: Austin Mayes <austin@avicus.net>
 Date: Mon, 22 Jun 2020 11:39:34 -0500
 Subject: [PATCH] Add SportPaper version check
@@ -23,5 +23,5 @@ index e91e1d8c..45dce10e 100644
              int paperSpigotVersions = getDistance("paperspigot", parts[0]);
              if (paperSpigotVersions == -1) {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

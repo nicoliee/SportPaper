@@ -1,4 +1,4 @@
-From 6e43ccf1060e37622fe896bd29040a020a8a90e4 Mon Sep 17 00:00:00 2001
+From 3c1accda71db977f363c876367e471cbf07d1fd0 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Tue, 16 Jul 2013 21:26:50 -0400
 Subject: [PATCH] Add MetadataStoreBase.removeAll(Plugin)
@@ -37,5 +37,5 @@ index 9cf5c0ed..e459372b 100644
       * Creates a unique name for the object receiving metadata by combining
       * unique data from the subject with a metadataKey.
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

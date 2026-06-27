@@ -1,4 +1,4 @@
-From afe91808d7f4ebaf2a76df39eca9aa24c7f7aea0 Mon Sep 17 00:00:00 2001
+From 62822815a18e52387c97d98f5491eaaa5e7e09de Mon Sep 17 00:00:00 2001
 From: Spottedleaf <Spottedleaf@users.noreply.github.com>
 Date: Wed, 15 Aug 2018 12:05:12 -0700
 Subject: [PATCH] Optimize BlockPosition helper methods
@@ -123,5 +123,5 @@ index 0d0e0abb6..4160d545a 100644
  
      public BlockPosition c(BaseBlockPosition baseblockposition) {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

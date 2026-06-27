@@ -1,4 +1,4 @@
-From 73f48ba14202fd205ef51dc00ac9bd13343c4c84 Mon Sep 17 00:00:00 2001
+From b3a7f1f2e67b3226ed213e1cae16f9ba1f2ec321 Mon Sep 17 00:00:00 2001
 From: Austin Mayes <almayes@trevecca.edu>
 Date: Tue, 5 Feb 2019 00:58:54 -0600
 Subject: [PATCH] Add fast block change API
@@ -35,5 +35,5 @@ index aedb1f40..9daad1b6 100644
  
      /**
 -- 
-2.20.1
+2.54.0
 

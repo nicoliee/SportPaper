@@ -1,4 +1,4 @@
-From 20b51fb46aea7b502ef6efa2537b87c344e0c5d0 Mon Sep 17 00:00:00 2001
+From 9fd06b60555c58cac35016104b7242d702e5f111 Mon Sep 17 00:00:00 2001
 From: Austin Mayes <austin@avicus.net>
 Date: Fri, 4 Jan 2019 18:05:36 -0600
 Subject: [PATCH] Add command unregistration API
@@ -75,5 +75,5 @@ index 10d07114..af311aaa 100644
       * {@inheritDoc}
       */
 -- 
-2.19.0
+2.54.0
 

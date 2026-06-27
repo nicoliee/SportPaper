@@ -1,4 +1,4 @@
-From aff7e29b4bf1e1ad6add11fcb373dea11e2103ca Mon Sep 17 00:00:00 2001
+From 4553c9fd2c21b3179f10aff882ccbd4a1a658236 Mon Sep 17 00:00:00 2001
 From: YukonAppleGeek <yukonvinecki@gmail.com>
 Date: Fri, 12 Apr 2013 21:34:01 -0700
 Subject: [PATCH] Add BlockDispenseEntityEvent
@@ -195,5 +195,5 @@ index e9fc40e93..90221acba 100644
              if (itemstack.hasName()) {
                  entityminecartabstract.setCustomName(itemstack.getName());
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

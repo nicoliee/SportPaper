@@ -1,4 +1,4 @@
-From 2b9879d2938eec7fef8dab7a48109bd6c7ad6568 Mon Sep 17 00:00:00 2001
+From b1d4f2889af7631fdd14e99787a38a13c0c99dd6 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Mon, 1 Jun 2015 06:29:07 -0400
 Subject: [PATCH] Improve BlockState API
@@ -53,5 +53,5 @@ index 4a8c8141b..8a2a578af 100644
  
      public MaterialData getData() {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

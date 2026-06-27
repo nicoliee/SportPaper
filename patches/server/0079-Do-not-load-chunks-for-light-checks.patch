@@ -1,4 +1,4 @@
-From 47cc1ed3438479518209777c895af8dcc0a5b2a0 Mon Sep 17 00:00:00 2001
+From 2a6fc9e76a237418d2d8fbd01366e5a7d8df025e Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Thu, 31 Mar 2016 19:17:58 -0400
 Subject: [PATCH] Do not load chunks for light checks
@@ -19,5 +19,5 @@ index 34774bc29..72c72f871 100644
                  Chunk chunk = this.getChunkAtWorldCoords(blockposition);
  
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

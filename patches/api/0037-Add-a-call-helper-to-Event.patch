@@ -1,4 +1,4 @@
-From 760ac97bc2c63738cfc39133979454a975969377 Mon Sep 17 00:00:00 2001
+From d2df1a48868c47e8a804830cd11a4bfc6e4e4525 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Sun, 19 May 2013 20:36:58 -0400
 Subject: [PATCH] Add a call helper to Event
@@ -40,5 +40,5 @@ index 6677e1bd..e7061112 100644
       * Convenience method for providing a user-friendly identifier. By
       * default, it is the event's class's {@linkplain Class#getSimpleName()
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

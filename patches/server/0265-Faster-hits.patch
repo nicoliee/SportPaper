@@ -1,4 +1,4 @@
-From a2332dd346ab86d806ee8c8c699459da3c8ab14b Mon Sep 17 00:00:00 2001
+From e57a19de0eb6b8e3e741b1c0c1a786c3b69ce590 Mon Sep 17 00:00:00 2001
 From: imkunet <im@kunet.dev>
 Date: Wed, 18 Feb 2026 10:00:48 -0500
 Subject: [PATCH] Faster hits
@@ -55,5 +55,5 @@ index 1a4fbc825..1e3cae432 100644
  
          final EnumProtocol enumprotocol = EnumProtocol.a(packet);
 -- 
-2.52.0
+2.54.0
 

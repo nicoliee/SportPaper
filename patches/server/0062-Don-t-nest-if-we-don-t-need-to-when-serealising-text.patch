@@ -1,4 +1,4 @@
-From 9099b5d54c5be9f022dc356cf549a2474c8de583 Mon Sep 17 00:00:00 2001
+From 832e4d78a9dd56060c4fe23cdcecb0686a873c66 Mon Sep 17 00:00:00 2001
 From: kashike <kashike@vq.lc>
 Date: Tue, 8 Mar 2016 18:28:43 -0800
 Subject: [PATCH] Don't nest if we don't need to when serealising text
@@ -26,5 +26,5 @@ index 6cd5df2e8..63bb0fc7e 100644
              packetdataserializer.a(this.a);
          }
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 

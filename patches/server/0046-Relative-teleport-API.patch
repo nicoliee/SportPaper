@@ -1,4 +1,4 @@
-From 25871f4e3029059ce8706d508ee8fb63f1064cb6 Mon Sep 17 00:00:00 2001
+From 3b839d835d680db9f7b49842c2ea5276b2bb7c64 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Tue, 17 Mar 2015 04:29:17 -0400
 Subject: [PATCH] Relative teleport API
@@ -47,5 +47,5 @@ index c7e96decd..c78313678 100644
      private final Player.Spigot spigot = new Player.Spigot()
      {
 -- 
-2.50.1 (Apple Git-155)
+2.54.0
 
