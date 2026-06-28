@@ -1,4 +1,4 @@
-From f1ab15aadc4b90b1fe3d38245b409cd05d49389a Mon Sep 17 00:00:00 2001
+From 1bf3834424874fcdcf574b89f4a619fbbd747462 Mon Sep 17 00:00:00 2001
 From: Austin L Mayes <me@austinlm.me>
 Date: Wed, 17 Feb 2021 16:31:29 -0600
 Subject: [PATCH] Expose client disconnect reason

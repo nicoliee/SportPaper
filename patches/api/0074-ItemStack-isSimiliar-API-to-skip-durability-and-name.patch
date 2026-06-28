@@ -1,4 +1,4 @@
-From d663154dbebe0173f6afe325718f9ea8350e0000 Mon Sep 17 00:00:00 2001
+From 88954307eb40ded51dc8bd3d102a3b0d9b6c78c4 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Sat, 15 Jun 2013 23:19:03 -0400
 Subject: [PATCH] ItemStack isSimiliar API to skip durability and name checks

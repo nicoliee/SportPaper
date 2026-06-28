@@ -1,4 +1,4 @@
-From 5ec694d021f2db058fa392254a206a9cf701fe8a Mon Sep 17 00:00:00 2001
+From 8813b0c2c49f290851a181ecf6df7173ccc3e60d Mon Sep 17 00:00:00 2001
 From: Austin Mayes <austin@avicus.net>
 Date: Wed, 26 Sep 2018 23:04:03 -0500
 Subject: [PATCH] Improve locale API and add methods for translating components

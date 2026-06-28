@@ -1,4 +1,4 @@
-From 556c4b8043c5f90614bf56f4f391eee5f5818071 Mon Sep 17 00:00:00 2001
+From f9b4ae52aefa5d1c6a1ae6918de7760ef1db393e Mon Sep 17 00:00:00 2001
 From: killme <killme-git@ibts.me>
 Date: Sun, 12 Nov 2017 19:40:01 +0100
 Subject: [PATCH] Prevent logins from being processed when the player has

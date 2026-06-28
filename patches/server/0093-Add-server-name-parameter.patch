@@ -1,4 +1,4 @@
-From 6bc836cba9de3e50ee68d1e017999a7b44f47e20 Mon Sep 17 00:00:00 2001
+From 0e9bc760722878702f4e9dd178e0f53c5d1291b8 Mon Sep 17 00:00:00 2001
 From: Martin Panzer <postremus1996@googlemail.com>
 Date: Sat, 28 May 2016 16:54:03 +0200
 Subject: [PATCH] Add server-name parameter

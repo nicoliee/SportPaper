@@ -1,4 +1,4 @@
-From 79568c79d924868805275863fc847938b678ed03 Mon Sep 17 00:00:00 2001
+From 5380bdd26cadee83538eb24c21717bb02b87499d Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Wed, 18 Feb 2015 03:36:10 -0500
 Subject: [PATCH] Fix sending irrelevant block updates to the client

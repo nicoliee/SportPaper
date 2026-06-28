@@ -1,4 +1,4 @@
-From 84b1f91eaceae8e48d441c20b2f81d48eb7deb14 Mon Sep 17 00:00:00 2001
+From f0b9d97a0fffbfbc11b2c15b591e7e98854ae6dc Mon Sep 17 00:00:00 2001
 From: VytskaLT <VytskaLT@protonmail.com>
 Date: Tue, 15 Dec 2020 18:59:08 +0200
 Subject: [PATCH] Update MySQL Connector and SQLite JDBC

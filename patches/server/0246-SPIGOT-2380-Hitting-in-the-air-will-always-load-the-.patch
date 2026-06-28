@@ -1,4 +1,4 @@
-From b9c0951b926ef9c6634e438aa52e1825106eb4aa Mon Sep 17 00:00:00 2001
+From 9838c0da814263c02810bc6c00b4a1c73cc6f6f5 Mon Sep 17 00:00:00 2001
 From: md_5 <git@md-5.net>
 Date: Sat, 11 Jun 2016 09:21:44 +1000
 Subject: [PATCH] SPIGOT-2380: Hitting in the air will always load the chunk at

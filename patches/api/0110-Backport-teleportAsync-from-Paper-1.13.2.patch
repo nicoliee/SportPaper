@@ -1,4 +1,4 @@
-From 5025948247cb2340e1f0ac888597071011a131eb Mon Sep 17 00:00:00 2001
+From a14cb56631af7de06bbe92a45d53ded8cca4b0b9 Mon Sep 17 00:00:00 2001
 From: "BT (calcastor/mame)" <43831917+calcastor@users.noreply.github.com>
 Date: Mon, 24 Nov 2025 19:59:11 -0800
 Subject: [PATCH] Backport teleportAsync from Paper 1.13.2+

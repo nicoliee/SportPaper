@@ -1,4 +1,4 @@
-From d507dc3466684bc41fc0362333845586a203df9b Mon Sep 17 00:00:00 2001
+From 5e2e75be07636e7438262cc807bb9a00d73bbeb3 Mon Sep 17 00:00:00 2001
 From: imkunet <im@kunet.dev>
 Date: Wed, 18 Feb 2026 21:09:53 -0500
 Subject: [PATCH] Tighter tick times

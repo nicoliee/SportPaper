@@ -1,4 +1,4 @@
-From 4e6e9748b4dc2ceef718c310cd773c2f6d45e003 Mon Sep 17 00:00:00 2001
+From 3be0fd7558f9ada2bfb707f5a102c189dae09761 Mon Sep 17 00:00:00 2001
 From: mrapple <tony@oc.tc>
 Date: Thu, 4 Apr 2013 21:36:54 -0500
 Subject: [PATCH] Fix invalid player death messages

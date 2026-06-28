@@ -1,4 +1,4 @@
-From 949af74205f5b3c9639fa261e9b5539bdd4373a2 Mon Sep 17 00:00:00 2001
+From 66b08163769f04a987724bb525234c7f1e90d8bb Mon Sep 17 00:00:00 2001
 From: "BT (calcastor/mame)" <43831917+calcastor@users.noreply.github.com>
 Date: Mon, 6 Feb 2023 23:31:31 -0800
 Subject: [PATCH] Resolve build issues with Java 17

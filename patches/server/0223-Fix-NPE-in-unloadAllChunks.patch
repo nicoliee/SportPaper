@@ -1,4 +1,4 @@
-From 1a0362ecaa8a97637a3b2aa775911df917bc1e3f Mon Sep 17 00:00:00 2001
+From d3a380c19e52584f31059ab9e0759ccf0dbcc74b Mon Sep 17 00:00:00 2001
 From: Christopher White <18whitechristop@gmail.com>
 Date: Sun, 1 Oct 2023 13:24:05 -0700
 Subject: [PATCH] Fix NPE in unloadAllChunks

@@ -1,4 +1,4 @@
-From f77d56380257256dfc07260edc0c17d3abd045b0 Mon Sep 17 00:00:00 2001
+From a7b7c3b9a5e99c6c742583654e9260144ee7f376 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Wed, 21 Sep 2016 22:54:28 -0400
 Subject: [PATCH] Chunk registration fixes

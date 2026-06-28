@@ -1,4 +1,4 @@
-From a8a6eac988d937d985aca32af69dbaf5d98d253b Mon Sep 17 00:00:00 2001
+From 51c1dc5d42cda233cd816b1844985e22e862d13a Mon Sep 17 00:00:00 2001
 From: Austin Mayes <austin@avicus.net>
 Date: Mon, 22 Jun 2020 11:39:34 -0500
 Subject: [PATCH] Add SportPaper version check

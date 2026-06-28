@@ -1,4 +1,4 @@
-From 6dbcedc7d3f113f60a8876cd5ec449bf97d528ef Mon Sep 17 00:00:00 2001
+From f9c3471474ebb4537c8c630f7742bd4057fca9ad Mon Sep 17 00:00:00 2001
 From: cswhite2000 <18whitechristop@gmail.com>
 Date: Fri, 24 Aug 2018 02:33:02 -0700
 Subject: [PATCH] isChunkGenerated API

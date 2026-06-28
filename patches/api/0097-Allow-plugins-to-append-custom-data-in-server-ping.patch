@@ -1,4 +1,4 @@
-From b3d2b18da69ac172ae0f761a0ea9031dda7104ae Mon Sep 17 00:00:00 2001
+From 4d1c2db86b25fcdba6a5dd115acdf7f33f7fcee5 Mon Sep 17 00:00:00 2001
 From: TheMolkaPL <themolkapl@gmail.com>
 Date: Tue, 31 Dec 2019 03:02:34 +0100
 Subject: [PATCH] Allow plugins to append custom data in server ping

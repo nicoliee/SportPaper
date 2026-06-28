@@ -1,4 +1,4 @@
-From dd89bd6ae5a900acf47dcf90595aa4d6f90891e2 Mon Sep 17 00:00:00 2001
+From bcb42f6338210a191e827c365926394f2792ecfd Mon Sep 17 00:00:00 2001
 From: Austin Mayes <almayes@trevecca.edu>
 Date: Mon, 21 Jan 2019 23:32:28 -0600
 Subject: [PATCH] Make PlayerInfo non-static again

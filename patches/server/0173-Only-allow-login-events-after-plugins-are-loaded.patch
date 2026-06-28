@@ -1,4 +1,4 @@
-From 26a3d61ca5388fb1b94deeb7eb18061fa9eb9b95 Mon Sep 17 00:00:00 2001
+From 58fb68f4da3b98c757918c35839f9c323cc68e0b Mon Sep 17 00:00:00 2001
 From: Ashcon Partovi <ashcon@partovi.net>
 Date: Sat, 27 Apr 2019 11:45:53 -0700
 Subject: [PATCH] Only allow login events after plugins are loaded

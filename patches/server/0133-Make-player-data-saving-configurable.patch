@@ -1,4 +1,4 @@
-From 1f6c89e3483cc3bf2313149004dd8042e5cbf9b7 Mon Sep 17 00:00:00 2001
+From c9fe6c6db79cbedf5639f16bcc44f26e424c89ce Mon Sep 17 00:00:00 2001
 From: Mark Vainomaa <mikroskeem@mikroskeem.eu>
 Date: Mon, 26 Mar 2018 18:30:53 +0300
 Subject: [PATCH] Make player data saving configurable

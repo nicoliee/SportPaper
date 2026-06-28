@@ -1,4 +1,4 @@
-From d2df1a48868c47e8a804830cd11a4bfc6e4e4525 Mon Sep 17 00:00:00 2001
+From 4aa5a243e1c82944212a7bc15a2943c78ace04d7 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Sun, 19 May 2013 20:36:58 -0400
 Subject: [PATCH] Add a call helper to Event

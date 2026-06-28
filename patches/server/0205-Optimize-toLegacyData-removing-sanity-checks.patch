@@ -1,4 +1,4 @@
-From e852a142bfd196b6f01af55d15818dc8c0be0b2d Mon Sep 17 00:00:00 2001
+From 8bbb0c4c2f349ee930a2d754f9ba90b2bb72fb27 Mon Sep 17 00:00:00 2001
 From: Pablete1234 <pabloherrerapalacio@gmail.com>
 Date: Sun, 5 Dec 2021 06:18:48 +0100
 Subject: [PATCH] Optimize toLegacyData removing sanity checks

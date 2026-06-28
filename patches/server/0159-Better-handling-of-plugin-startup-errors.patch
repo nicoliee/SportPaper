@@ -1,4 +1,4 @@
-From 3828a3c88a92e6dfa4d0b4caf9cabab0d8663c19 Mon Sep 17 00:00:00 2001
+From 92db33af815d716747f38ec76c7fece09f3c53fe Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Tue, 9 Dec 2014 02:08:38 -0500
 Subject: [PATCH] Better handling of plugin startup errors

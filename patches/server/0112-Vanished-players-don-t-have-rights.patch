@@ -1,4 +1,4 @@
-From 9f797ebc4dc4adb789019789fcfffd214ac4c42e Mon Sep 17 00:00:00 2001
+From 13cd96dfa17a4a4ad183e0b93f0390e57f035ae8 Mon Sep 17 00:00:00 2001
 From: Zach Brown <zach.brown@destroystokyo.com>
 Date: Sat, 7 Mar 2015 19:50:01 -0600
 Subject: [PATCH] Vanished players don't have rights

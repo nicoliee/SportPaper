@@ -1,4 +1,4 @@
-From 66dd3c2b7b1fbd5dcc652d2b98ec0cec69355cdd Mon Sep 17 00:00:00 2001
+From ce14871c8ebe20c82c5eca9baf0fe8c7ff9461a5 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Mon, 16 May 2016 20:47:41 -0400
 Subject: [PATCH] Optimize UserCache / Thread Safe

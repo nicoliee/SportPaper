@@ -1,4 +1,4 @@
-From 07d54d6f60a8c52f3dd78fe2ef1c8c91a3907be4 Mon Sep 17 00:00:00 2001
+From 38334bc0768c4b409295702d685503174864e9a2 Mon Sep 17 00:00:00 2001
 From: "BT (calcastor/mame)" <43831917+calcastor@users.noreply.github.com>
 Date: Mon, 24 Nov 2025 18:13:00 -0800
 Subject: [PATCH] Move Paper-specific code to com.destroystokyo namespace

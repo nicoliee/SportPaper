@@ -1,4 +1,4 @@
-From 7fe52f77a63e27775dc5e4e430b5359753415ffc Mon Sep 17 00:00:00 2001
+From 8f78fd782fb4de143a990ed1ae7d78a95de53b42 Mon Sep 17 00:00:00 2001
 From: crast <contact@jamescrasta.com>
 Date: Sat, 1 Jun 2013 13:52:30 -0600
 Subject: [PATCH] Reduce thread synchronization in MetadataStoreBase

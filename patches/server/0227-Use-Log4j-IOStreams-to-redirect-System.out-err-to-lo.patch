@@ -1,4 +1,4 @@
-From 64eeb0e605d86d0bc41e6f80583eb5c93c02b4c4 Mon Sep 17 00:00:00 2001
+From c3ae610835054cc53314a04a402cb3948bb89f94 Mon Sep 17 00:00:00 2001
 From: Minecrell <minecrell@minecrell.net>
 Date: Mon, 18 Sep 2017 12:00:03 +0200
 Subject: [PATCH] Use Log4j IOStreams to redirect System.out/err to logger

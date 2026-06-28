@@ -1,4 +1,4 @@
-From 37a373030795392b08f8c080bd7b6bea6823cc6d Mon Sep 17 00:00:00 2001
+From 5086054e3fc6b371509b9eafd502843cc3c2af32 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Sat, 15 Nov 2014 16:17:15 -0500
 Subject: [PATCH] Add PlayerAttackEntityEvent

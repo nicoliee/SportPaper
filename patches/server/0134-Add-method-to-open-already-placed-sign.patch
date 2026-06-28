@@ -1,4 +1,4 @@
-From 258610df56e892991dd5445e74add30d7c1a632c Mon Sep 17 00:00:00 2001
+From 408a3b97f8fcfd692d7b3387e400818a9c8a8da1 Mon Sep 17 00:00:00 2001
 From: Mark Vainomaa <mikroskeem@mikroskeem.eu>
 Date: Sun, 1 Apr 2018 02:29:37 +0300
 Subject: [PATCH] Add method to open already placed sign

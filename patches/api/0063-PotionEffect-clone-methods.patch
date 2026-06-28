@@ -1,4 +1,4 @@
-From 8a9f8201cc733f2d4dd8432679edcfece973adae Mon Sep 17 00:00:00 2001
+From f8844929f665fe7e96a54b5b6905c5f998d2593e Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Sun, 3 Jun 2018 04:10:13 -0400
 Subject: [PATCH] PotionEffect clone methods

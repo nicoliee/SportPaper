@@ -1,4 +1,4 @@
-From e510e5539e57642c2c34bae0efd1ad973d8b9fd9 Mon Sep 17 00:00:00 2001
+From bac1e40d7fa0cf6b53cdf82f03ff044df35b6f9e Mon Sep 17 00:00:00 2001
 From: cswhite2000 <18whitechristop@gmail.com>
 Date: Fri, 24 Aug 2018 01:01:48 -0700
 Subject: [PATCH] Add option to remove randomness in arrow trajectory

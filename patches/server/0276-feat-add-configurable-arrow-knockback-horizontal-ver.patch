@@ -1,0 +1,156 @@
+From 140134f387f8350aebbdd268da893f65bedabc37 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Oscar=20Mej=C3=ADa?=
+ <163463944+nicoliee@users.noreply.github.com>
+Date: Sat, 27 Jun 2026 19:57:22 -0600
+Subject: [PATCH] feat: add configurable arrow knockback (horizontal/vertical)
+ via /knockback command
+
+
+diff --git a/src/main/java/app/ashcon/sportpaper/server/KnockbackModificationCommand.java b/src/main/java/app/ashcon/sportpaper/server/KnockbackModificationCommand.java
+index d84e18f81..b39683822 100644
+--- a/src/main/java/app/ashcon/sportpaper/server/KnockbackModificationCommand.java
++++ b/src/main/java/app/ashcon/sportpaper/server/KnockbackModificationCommand.java
+@@ -12,19 +12,20 @@ import java.util.List;
+ 
+ public class KnockbackModificationCommand extends Command {
+ 
+-    private static final List<String> ARGUMENTS = ImmutableList.of("friction", "horizontal", "vertical", "vertical-limit", "extra-horizontal", "extra-vertical", "scaling", "reset", "show");
++    private static final List<String> ARGUMENTS = ImmutableList.of("friction", "horizontal", "vertical", "vertical-limit", "extra-horizontal", "extra-vertical", "arrow-horizontal", "arrow-vertical", "scaling", "reset", "show");
+ 
+     // Default values
+     private final double knockbackFriction, knockbackHorizontal, knockbackVertical, knockbackVerticalLimit,
+-            knockbackExtraHorizontal, knockbackExtraVertical;
++            knockbackExtraHorizontal, knockbackExtraVertical, knockbackArrowHorizontal, knockbackArrowVertical;
+ 
+     public KnockbackModificationCommand(String name, double knockbackFriction, double knockbackHorizontal,
+                                         double knockbackVertical, double knockbackVerticalLimit,
+-                                        double knockbackExtraHorizontal, double knockbackExtraVertical) {
++                                        double knockbackExtraHorizontal, double knockbackExtraVertical,
++                                        double knockbackArrowHorizontal, double knockbackArrowVertical) {
+         super(name);
+         this.description = "Modify the knockback configuration";
+         this.usageMessage = "/knockback " +
+-                "<friction|horizontal|vertical|vertical-limit|extra-horizontal|extra-vertical|scaling|reset|show> <value>";
++                "<friction|horizontal|vertical|vertical-limit|extra-horizontal|extra-vertical|arrow-horizontal|arrow-vertical|scaling|reset|show> <value>";
+         this.setPermission("bukkit.command.knockback");
+         this.knockbackFriction = knockbackFriction;
+         this.knockbackHorizontal = knockbackHorizontal;
+@@ -32,6 +33,8 @@ public class KnockbackModificationCommand extends Command {
+         this.knockbackVerticalLimit = knockbackVerticalLimit;
+         this.knockbackExtraHorizontal = knockbackExtraHorizontal;
+         this.knockbackExtraVertical = knockbackExtraVertical;
++        this.knockbackArrowHorizontal = knockbackArrowHorizontal;
++        this.knockbackArrowVertical = knockbackArrowVertical;
+     }
+ 
+     @Override
+@@ -82,6 +85,20 @@ public class KnockbackModificationCommand extends Command {
+                     updated(sender, "scaling", oldVal, newVal);
+                     break;
+                 }
++                case "arrow-horizontal": {
++                    double oldVal = PaperConfig.knockbackArrowHorizontal;
++                    double newVal = parseValue(args);
++                    PaperConfig.knockbackArrowHorizontal = newVal;
++                    updated(sender, "arrow horizontal", oldVal, newVal);
++                    break;
++                }
++                case "arrow-vertical": {
++                    double oldVal = PaperConfig.knockbackArrowVertical;
++                    double newVal = parseValue(args);
++                    PaperConfig.knockbackArrowVertical = newVal;
++                    updated(sender, "arrow vertical", oldVal, newVal);
++                    break;
++                }
+                 case "extra-horizontal": {
+                     double oldVal = PaperConfig.knockbackExtraHorizontal;
+                     double newVal = parseValue(args);
+@@ -103,6 +120,8 @@ public class KnockbackModificationCommand extends Command {
+                     PaperConfig.knockbackVerticalLimit = knockbackVerticalLimit;
+                     PaperConfig.knockbackExtraHorizontal = knockbackExtraHorizontal;
+                     PaperConfig.knockbackExtraVertical = knockbackExtraVertical;
++                    PaperConfig.knockbackArrowHorizontal = knockbackArrowHorizontal;
++                    PaperConfig.knockbackArrowVertical = knockbackArrowVertical;
+                     PaperConfig.knockbackScaling = true;
+                     sender.sendMessage(ChatColor.GREEN + "Knockback config reset to values from file.");
+                     break;
+@@ -114,6 +133,8 @@ public class KnockbackModificationCommand extends Command {
+                     sendValue(sender, "Vertical Limit", PaperConfig.knockbackVerticalLimit);
+                     sendValue(sender, "Horizontal (Extra)", PaperConfig.knockbackExtraHorizontal);
+                     sendValue(sender, "Vertical (Extra)", PaperConfig.knockbackExtraVertical);
++                    sendValue(sender, "Arrow Horizontal", PaperConfig.knockbackArrowHorizontal);
++                    sendValue(sender, "Arrow Vertical", PaperConfig.knockbackArrowVertical);
+                     sendValue(sender, "Scaling", PaperConfig.knockbackScaling);
+                     break;
+                 default:
+diff --git a/src/main/java/com/destroystokyo/paper/PaperConfig.java b/src/main/java/com/destroystokyo/paper/PaperConfig.java
+index e4313c9c1..2144e7ac5 100644
+--- a/src/main/java/com/destroystokyo/paper/PaperConfig.java
++++ b/src/main/java/com/destroystokyo/paper/PaperConfig.java
+@@ -197,6 +197,8 @@ public class PaperConfig
+     public static double knockbackExtraHorizontal;
+     public static double knockbackExtraVertical;
+     public static boolean knockbackScaling;
++    public static double knockbackArrowHorizontal;
++    public static double knockbackArrowVertical;
+     private static void knockback() {
+         knockbackFriction = getDouble( "knockback.friction", 2.0D );
+         knockbackHorizontal = getDouble( "knockback.horizontal", 0.4D );
+@@ -205,9 +207,11 @@ public class PaperConfig
+         knockbackExtraHorizontal = getDouble( "knockback.extra-horizontal", 0.5D );
+         knockbackExtraVertical = getDouble( "knockback.extra-vertical", 0.1D );
+         knockbackScaling = getBoolean( "knockback.scaling", true );
++        knockbackArrowHorizontal = getDouble( "knockback.arrow-horizontal", 0.4D );
++        knockbackArrowVertical = getDouble( "knockback.arrow-vertical", 0.4D );
+         commands.put("knockback", new KnockbackModificationCommand( "knockback", knockbackFriction,
+                 knockbackHorizontal, knockbackVertical, knockbackVerticalLimit, knockbackExtraHorizontal,
+-                knockbackExtraVertical));
++                knockbackExtraVertical, knockbackArrowHorizontal, knockbackArrowVertical));
+     }
+ 
+     public static boolean checkLineOfSight = true;
+diff --git a/src/main/java/net/minecraft/server/EntityArrow.java b/src/main/java/net/minecraft/server/EntityArrow.java
+index 7f5fa4249..67844fae7 100644
+--- a/src/main/java/net/minecraft/server/EntityArrow.java
++++ b/src/main/java/net/minecraft/server/EntityArrow.java
+@@ -278,11 +278,13 @@ public class EntityArrow extends Entity implements IProjectile {
+                                 entityliving.o(entityliving.bv() + 1);
+                             }
+ 
+-                            if (this.knockbackStrength > 0) {
+-                                f3 = MathHelper.sqrt(this.motX * this.motX + this.motZ * this.motZ);
+-                                if (f3 > 0.0F) {
+-                                    movingobjectposition.entity.g(this.motX * (double) this.knockbackStrength * 0.6000000238418579D / (double) f3, 0.1D, this.motZ * (double) this.knockbackStrength * 0.6000000238418579D / (double) f3);
+-                                }
++                            f3 = MathHelper.sqrt(this.motX * this.motX + this.motZ * this.motZ);
++                            if (f3 > 0.0F) {
++                                double arrowHorizontal = PaperConfig.knockbackArrowHorizontal;
++                                double arrowVertical = PaperConfig.knockbackArrowVertical;
++                                double dx = this.motX * (double) (this.knockbackStrength + 1) * arrowHorizontal / (double) f3;
++                                double dz = this.motZ * (double) (this.knockbackStrength + 1) * arrowHorizontal / (double) f3;
++                                movingobjectposition.entity.g(dx, arrowVertical, dz);
+                             }
+ 
+                             if (this.shooter instanceof EntityLiving) {
+diff --git a/src/main/java/net/minecraft/server/EntityLiving.java b/src/main/java/net/minecraft/server/EntityLiving.java
+index 8312eb096..73267d9c9 100644
+--- a/src/main/java/net/minecraft/server/EntityLiving.java
++++ b/src/main/java/net/minecraft/server/EntityLiving.java
+@@ -839,7 +839,13 @@ public abstract class EntityLiving extends Entity {
+                         }
+ 
+                         this.aw = (float) (MathHelper.b(d1, d0) * 180.0D / 3.1415927410125732D - (double) this.yaw);
+-                        damagesource.knockbackEventCalled = this.a(entity, f, d0, d1); // SportPaper
++                        // SportPaper start - skip melee knockback for projectiles (handled by projectile itself)
++                        if (damagesource instanceof EntityDamageSourceIndirect && ((EntityDamageSourceIndirect) damagesource).getProximateDamageSource() instanceof IProjectile) {
++                            damagesource.knockbackEventCalled = false;
++                        } else {
++                            damagesource.knockbackEventCalled = this.a(entity, f, d0, d1); // SportPaper
++                        }
++                        // SportPaper end
+                     } else {
+                         this.aw = (float) ((int) (Math.random() * 2.0D) * 180);
+                     }
+-- 
+2.54.0
+

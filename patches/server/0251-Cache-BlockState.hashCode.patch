@@ -1,4 +1,4 @@
-From 374931f95747bac43eb2ff97f23ec1bdf66df7c4 Mon Sep 17 00:00:00 2001
+From e3feba37ebc452b4547aa6ff9b178637f8889adf Mon Sep 17 00:00:00 2001
 From: Axel Uhl <axel.uhl@sap.com>
 Date: Thu, 11 Jan 2018 10:34:56 +1100
 Subject: [PATCH] Cache BlockState.hashCode

@@ -1,4 +1,4 @@
-From 90577e2cc370257c40675093dbe1920a70512b6a Mon Sep 17 00:00:00 2001
+From 0d3a5dc6176f972ef1d9da5c01354d3f49a8f6be Mon Sep 17 00:00:00 2001
 From: Austin Mayes <almayes@trevecca.edu>
 Date: Mon, 25 Feb 2019 15:08:18 -0600
 Subject: [PATCH] Make CraftMetaItem public, add missing clone() methods

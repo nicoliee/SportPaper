@@ -1,4 +1,4 @@
-From f733feb235bb77a1780ad1d3a0b3916a3c394cbb Mon Sep 17 00:00:00 2001
+From 4f6b7c515c1dcba2732bc2e965bfcd373380f81a Mon Sep 17 00:00:00 2001
 From: "BT (calcastor/mame)" <43831917+calcastor@users.noreply.github.com>
 Date: Wed, 10 Dec 2025 03:11:50 -0800
 Subject: [PATCH] Migrate from Trove to fastutil

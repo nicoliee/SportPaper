@@ -1,4 +1,4 @@
-From f7ea83c48563655cee3eb47d04b1b780bd036adc Mon Sep 17 00:00:00 2001
+From 32d356386d0d6f31e6d3355aa272903c530117b3 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Wed, 4 Jul 2018 02:25:48 -0400
 Subject: [PATCH] Entity#getChunk API

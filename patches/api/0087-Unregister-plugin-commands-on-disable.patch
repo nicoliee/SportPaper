@@ -1,4 +1,4 @@
-From 9a1842b671949e63216e061189ab0f32202d45e1 Mon Sep 17 00:00:00 2001
+From 5fe7fe083d02b086fb04effee752e412ed432246 Mon Sep 17 00:00:00 2001
 From: Austin Mayes <austin@avicus.net>
 Date: Fri, 4 Jan 2019 18:05:48 -0600
 Subject: [PATCH] Unregister plugin commands on disable

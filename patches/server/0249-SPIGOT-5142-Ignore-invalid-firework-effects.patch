@@ -1,4 +1,4 @@
-From 212518157d8dead2f9d364a9036d9d284907b5f0 Mon Sep 17 00:00:00 2001
+From c7090cc193a7c468f85432e344fc089b81d232c6 Mon Sep 17 00:00:00 2001
 From: md_5 <git@md-5.net>
 Date: Sat, 6 Jul 2019 10:08:52 +1000
 Subject: [PATCH] SPIGOT-5142: Ignore invalid firework effects

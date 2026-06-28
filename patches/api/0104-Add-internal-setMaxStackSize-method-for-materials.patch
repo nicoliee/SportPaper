@@ -1,4 +1,4 @@
-From 5cd37ee5137f8cc1ef7233f860e6eae1ebebab40 Mon Sep 17 00:00:00 2001
+From 0f3010971815d98ca5fd4b33f3bd5d5eceab66da Mon Sep 17 00:00:00 2001
 From: hpfxd <me@hpfxd.com>
 Date: Wed, 27 Oct 2021 20:45:30 -0400
 Subject: [PATCH] Add internal setMaxStackSize method for materials

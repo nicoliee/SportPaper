@@ -1,4 +1,4 @@
-From fbb21d27eff24b45388667043d2f3c3af7841ed6 Mon Sep 17 00:00:00 2001
+From 3df006d211dcc9780701b34b340e9f6b35aa731e Mon Sep 17 00:00:00 2001
 From: md_5 <git@md-5.net>
 Date: Tue, 1 Mar 2016 08:30:03 +1100
 Subject: [PATCH] Add Attribute and AttributeModifier API.

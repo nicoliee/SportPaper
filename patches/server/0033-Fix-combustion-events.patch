@@ -1,4 +1,4 @@
-From 8ce545fd1ee3a39a4470360bf52834db3c0f9a24 Mon Sep 17 00:00:00 2001
+From 845f91ce9f8ee9c9cf9621e591d67bfe6602dd45 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Thu, 30 Oct 2014 00:40:07 -0400
 Subject: [PATCH] Fix combustion events

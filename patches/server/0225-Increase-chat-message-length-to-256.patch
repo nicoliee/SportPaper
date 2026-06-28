@@ -1,4 +1,4 @@
-From 4b4d52a553350fd33a9251a4ea302b4b0d70e2f5 Mon Sep 17 00:00:00 2001
+From 699a77173d72786a676623d3b4a6a4e98c6caca7 Mon Sep 17 00:00:00 2001
 From: "BT (calcastor/mame)" <43831917+calcastor@users.noreply.github.com>
 Date: Fri, 5 Jul 2024 21:12:10 -0700
 Subject: [PATCH] Increase chat message length to 256

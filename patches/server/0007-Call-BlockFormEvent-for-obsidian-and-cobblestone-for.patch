@@ -1,4 +1,4 @@
-From ede7a28d86fa7f2d14f0f8be42ee2627400419e9 Mon Sep 17 00:00:00 2001
+From bf66d92f109cc140857a2b6f3f31ed1ef4caaf1c Mon Sep 17 00:00:00 2001
 From: Steve Anton <anxuiz.nx@gmail.com>
 Date: Fri, 5 Oct 2012 12:00:26 -0700
 Subject: [PATCH] Call BlockFormEvent for obsidian and cobblestone formation

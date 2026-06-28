@@ -1,4 +1,4 @@
-From 2d7731f422af19c1461de9c933801307b8016c1f Mon Sep 17 00:00:00 2001
+From 79478121297414f856bf30372121c625031f49e8 Mon Sep 17 00:00:00 2001
 From: Austin Mayes <austin@avicus.net>
 Date: Fri, 4 Jan 2019 18:28:50 -0600
 Subject: [PATCH] Remove old timings API

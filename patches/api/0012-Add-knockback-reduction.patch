@@ -1,4 +1,4 @@
-From 54dc6a9a9070e9e18df036d25cb3e16bacd10965 Mon Sep 17 00:00:00 2001
+From c51cc9d8bb24bbe42ded68614f6d7dea72440d5c Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Sun, 18 May 2014 03:16:26 -0400
 Subject: [PATCH] Add knockback reduction

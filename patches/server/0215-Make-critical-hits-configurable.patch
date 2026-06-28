@@ -1,4 +1,4 @@
-From 6435aa3f7122c6b983bc6643b66841dd414a966c Mon Sep 17 00:00:00 2001
+From e78c0cada01eb1dce2480c48b6b9269dd20559d6 Mon Sep 17 00:00:00 2001
 From: halfmaster1 <ohpointfive@gmail.com>
 Date: Tue, 18 May 2021 04:28:46 -0400
 Subject: [PATCH] Make critical hits configurable

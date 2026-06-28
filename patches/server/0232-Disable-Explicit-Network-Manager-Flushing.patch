@@ -1,4 +1,4 @@
-From 53e795d1fd478456ed6b5893eb99726431d70bff Mon Sep 17 00:00:00 2001
+From 66e4ed84a687b42a72e64a9ae29125bbecd7bebf Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Sun, 11 Mar 2018 14:13:33 -0400
 Subject: [PATCH] Disable Explicit Network Manager Flushing

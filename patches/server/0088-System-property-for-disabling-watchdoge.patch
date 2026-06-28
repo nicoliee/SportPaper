@@ -1,4 +1,4 @@
-From dfdd665f75d461a032767a8786e468fb4d51169d Mon Sep 17 00:00:00 2001
+From a0424d1846e1e66731b2a53198727d450ec18a99 Mon Sep 17 00:00:00 2001
 From: Zach Brown <zach.brown@destroystokyo.com>
 Date: Thu, 12 May 2016 23:02:58 -0500
 Subject: [PATCH] System property for disabling watchdoge

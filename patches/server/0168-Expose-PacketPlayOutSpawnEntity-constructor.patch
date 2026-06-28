@@ -1,4 +1,4 @@
-From ef8b623d452557a7f062ae2d19523b13361db700 Mon Sep 17 00:00:00 2001
+From 82827b470331e1e3f1d53afbc542de038ed78bfc Mon Sep 17 00:00:00 2001
 From: Austin Mayes <almayes@trevecca.edu>
 Date: Fri, 8 Mar 2019 16:01:32 -0600
 Subject: [PATCH] Expose PacketPlayOutSpawnEntity constructor

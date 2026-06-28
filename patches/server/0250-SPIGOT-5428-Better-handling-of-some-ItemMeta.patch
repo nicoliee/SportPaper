@@ -1,4 +1,4 @@
-From 031567bf1cffc4120cb70e8352ff7f0a3ca4e720 Mon Sep 17 00:00:00 2001
+From 3eb092cfdc1f80ae3e003a60dfc1189b263ed49a Mon Sep 17 00:00:00 2001
 From: md_5 <git@md-5.net>
 Date: Sat, 14 Dec 2019 10:54:12 +1100
 Subject: [PATCH] SPIGOT-5428: Better handling of some ItemMeta

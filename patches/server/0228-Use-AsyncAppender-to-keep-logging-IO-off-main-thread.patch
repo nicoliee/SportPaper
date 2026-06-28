@@ -1,4 +1,4 @@
-From bfc8808e45ec569470dd9866892a561d1abf040f Mon Sep 17 00:00:00 2001
+From 7d5058309a535fa144d44ddcf26837616ad61102 Mon Sep 17 00:00:00 2001
 From: Jason Penilla <11360596+jpenilla@users.noreply.github.com>
 Date: Thu, 12 Aug 2021 04:46:41 -0700
 Subject: [PATCH] Use AsyncAppender to keep logging IO off main thread

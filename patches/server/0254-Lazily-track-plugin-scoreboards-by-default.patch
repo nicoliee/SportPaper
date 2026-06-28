@@ -1,4 +1,4 @@
-From 5222be5ad50147c880746e8b61b23ff317dd6a46 Mon Sep 17 00:00:00 2001
+From a776ad6bdde2b0b66a85ecdb319d2fccf310504f Mon Sep 17 00:00:00 2001
 From: Andrew Steinborn <git@steinborn.me>
 Date: Sat, 3 Oct 2020 04:15:09 -0400
 Subject: [PATCH] Lazily track plugin scoreboards by default

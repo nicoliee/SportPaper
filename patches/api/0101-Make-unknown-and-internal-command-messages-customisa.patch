@@ -1,4 +1,4 @@
-From c9ceff7d4eaa96e0d4b1f19e8b7e7b6cc0a03194 Mon Sep 17 00:00:00 2001
+From d32a06420aaf73c2365cad46fe430aca9271e487 Mon Sep 17 00:00:00 2001
 From: VytskaLT <VytskaLT@protonmail.com>
 Date: Fri, 4 Dec 2020 13:56:52 +0200
 Subject: [PATCH] Make unknown and internal command messages customisable in

@@ -1,4 +1,4 @@
-From 5177e0ca29fe35810f25cf1f47b9b6f60ab15695 Mon Sep 17 00:00:00 2001
+From 6b4ff13ad35e46ec8fb8c04dc88ce48c1804fa38 Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Thu, 29 Dec 2016 23:23:45 -0500
 Subject: [PATCH] Add option to not tick empty worlds

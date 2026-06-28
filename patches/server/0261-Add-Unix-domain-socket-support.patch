@@ -1,4 +1,4 @@
-From 860b18d8c8f7bc39c1c7f338f885ed7e5119e68b Mon Sep 17 00:00:00 2001
+From d82f00b86d71ccedb33108868b3b0a1c5bc0972d Mon Sep 17 00:00:00 2001
 From: Andrew Steinborn <git@steinborn.me>
 Date: Tue, 11 May 2021 17:39:22 -0400
 Subject: [PATCH] Add Unix domain socket support

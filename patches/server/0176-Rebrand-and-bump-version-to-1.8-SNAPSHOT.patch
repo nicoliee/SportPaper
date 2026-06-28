@@ -1,4 +1,4 @@
-From fdf56ff1162bb32481a0dd12b7fd9d53b44a1f21 Mon Sep 17 00:00:00 2001
+From 26659cf7702d922e5eefda279a9ef2531b88714b Mon Sep 17 00:00:00 2001
 From: Ashcon Partovi <ashcon@partovi.net>
 Date: Sat, 27 Apr 2019 15:28:42 -0700
 Subject: [PATCH] Rebrand and bump version to 1.8-SNAPSHOT

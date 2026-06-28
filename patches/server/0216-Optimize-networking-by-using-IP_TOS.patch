@@ -1,4 +1,4 @@
-From 9fc85f4f7cdc0c4ea86b27de536780d4916ec1ca Mon Sep 17 00:00:00 2001
+From bc8c200165dd397d65037259f40177d468cf8adb Mon Sep 17 00:00:00 2001
 From: Heath Logan Campbell <github@heathlogancampbell.com>
 Date: Fri, 31 Jul 2020 12:43:00 +0200
 Subject: [PATCH] Optimize networking by using IP_TOS

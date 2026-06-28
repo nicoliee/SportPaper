@@ -1,4 +1,4 @@
-From 382de1643e0ad7f14361cc0c6f141faa0ea622e1 Mon Sep 17 00:00:00 2001
+From 1a1b5e3aa7a74d0502adc88f361db5171ca2bd35 Mon Sep 17 00:00:00 2001
 From: Hugo Manrique <hugmanrique@gmail.com>
 Date: Mon, 16 Jul 2018 12:42:20 +0200
 Subject: [PATCH] Avoid item merge if stack size above max stack size

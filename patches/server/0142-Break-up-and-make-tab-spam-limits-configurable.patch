@@ -1,4 +1,4 @@
-From de4c9ab3b3ee8bc50b555dfc0ee59524e0154835 Mon Sep 17 00:00:00 2001
+From 828c25ecf2efb0448920f181346c4041f3e6341f Mon Sep 17 00:00:00 2001
 From: Shane Freeder <theboyetronic@gmail.com>
 Date: Sun, 29 Jul 2018 05:02:15 +0100
 Subject: [PATCH] Break up and make tab spam limits configurable

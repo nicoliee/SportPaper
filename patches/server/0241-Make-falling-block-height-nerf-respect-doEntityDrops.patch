@@ -1,4 +1,4 @@
-From b0bc5b5ea54b8a66d24659c63d16ac446c3f94e7 Mon Sep 17 00:00:00 2001
+From 5f77eac086f246ee03b48a63b8a81edbf3fb5fd0 Mon Sep 17 00:00:00 2001
 From: Martin Panzer <postremus1996@googlemail.com>
 Date: Mon, 6 Jun 2016 21:14:35 +0200
 Subject: [PATCH] Make falling block height nerf respect doEntityDrops

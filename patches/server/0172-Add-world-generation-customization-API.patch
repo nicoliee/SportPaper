@@ -1,4 +1,4 @@
-From 257d6aca5edfa2c3b82a6c8b88aa53664567ef9a Mon Sep 17 00:00:00 2001
+From 8195bfada8298413518b642e3844f10f5466b029 Mon Sep 17 00:00:00 2001
 From: Rafi Baum <rafi@ukbaums.com>
 Date: Tue, 23 Apr 2019 17:32:11 -0400
 Subject: [PATCH] Add world generation customization API

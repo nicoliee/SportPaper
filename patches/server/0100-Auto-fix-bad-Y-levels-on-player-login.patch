@@ -1,4 +1,4 @@
-From e74a926a5f4480bf66dcfdb2937d2711010e69dc Mon Sep 17 00:00:00 2001
+From 98be2d3abaf9a678f85d13480e0539edce4544df Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Wed, 21 Sep 2016 23:48:39 -0400
 Subject: [PATCH] Auto fix bad Y levels on player login

@@ -1,4 +1,4 @@
-From 04661f975859774bacf78887c9bfa51385399b9b Mon Sep 17 00:00:00 2001
+From c0398bbcb0273046933db55c6022a294ebe70060 Mon Sep 17 00:00:00 2001
 From: Ashcon Partovi <ashcon@partovi.net>
 Date: Thu, 2 May 2019 15:45:58 -0700
 Subject: [PATCH] Add willBeOnline API

@@ -1,4 +1,4 @@
-From ca507dc6f40bea4ece94950c9fb83d691e0515a7 Mon Sep 17 00:00:00 2001
+From 36ca88e007735e40a2acac2b4fc2c34d98eb59d7 Mon Sep 17 00:00:00 2001
 From: imkunet <im@kunet.dev>
 Date: Sun, 1 Feb 2026 05:49:47 -0500
 Subject: [PATCH] Fix Unix domain socket support

@@ -1,4 +1,4 @@
-From c2376fb08bb3b18ec40acb137753b2ca545cfd13 Mon Sep 17 00:00:00 2001
+From 7ecccfabe70829da3c164a66aec981291a2de0f3 Mon Sep 17 00:00:00 2001
 From: imkunet <im@kunet.dev>
 Date: Fri, 6 Jun 2025 02:28:20 -0400
 Subject: [PATCH] Add MCCoroutine compatibility

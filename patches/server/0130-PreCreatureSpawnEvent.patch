@@ -1,4 +1,4 @@
-From ccb5d22affdbedbb56a76e847529a005bd28821b Mon Sep 17 00:00:00 2001
+From de6a601a36a966930f50bbd53eb39f1a22e02706 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Sun, 14 Jan 2018 17:01:31 -0500
 Subject: [PATCH] PreCreatureSpawnEvent

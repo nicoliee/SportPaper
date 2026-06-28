@@ -1,4 +1,4 @@
-From 99bec1e954af6e15f0f1bc845ed01b03ed7aa949 Mon Sep 17 00:00:00 2001
+From 8f92a98ea74b61fc12b0c8284d441f9eab4c49b2 Mon Sep 17 00:00:00 2001
 From: Austin Mayes <almayes@trevecca.edu>
 Date: Tue, 5 Mar 2019 21:25:40 -0600
 Subject: [PATCH] Personalized component API

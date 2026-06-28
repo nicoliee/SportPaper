@@ -1,4 +1,4 @@
-From 5fc80574cedcd9ea6bc76b8d179f76aa1f50f9d0 Mon Sep 17 00:00:00 2001
+From 3ca6ba69a0c52eb84b09062e89a4afa8d8317bb5 Mon Sep 17 00:00:00 2001
 From: Austin Mayes <austin@avicus.net>
 Date: Thu, 27 Sep 2018 08:31:55 -0500
 Subject: [PATCH] Add translatable methods to world broadcast API

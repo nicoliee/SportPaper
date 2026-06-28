@@ -1,4 +1,4 @@
-From fa660f7024f61b0a8f314d11443c1bf4a19c2ee3 Mon Sep 17 00:00:00 2001
+From 8d2ce4ccfbdd9a4926b171e0262e7e953c37a018 Mon Sep 17 00:00:00 2001
 From: Austin L Mayes <me@austinlm.me>
 Date: Mon, 21 Dec 2020 17:08:28 -0600
 Subject: [PATCH] Don't store merchant recipes with invalid data

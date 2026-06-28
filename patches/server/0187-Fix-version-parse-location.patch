@@ -1,4 +1,4 @@
-From 461cb993948dfee79ec565dc44fcd20a26e83047 Mon Sep 17 00:00:00 2001
+From 070a796ee9bb14ffd7d2b85e5919cc1f6e14f419 Mon Sep 17 00:00:00 2001
 From: Austin Mayes <austin@avicus.net>
 Date: Mon, 22 Jun 2020 11:40:12 -0500
 Subject: [PATCH] Fix version parse location

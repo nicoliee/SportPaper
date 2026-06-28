@@ -1,4 +1,4 @@
-From 7f41d8e962fbe3ea5c1c70d377ee3c0e03371592 Mon Sep 17 00:00:00 2001
+From 582dee6e79182859d19930cac2c71410604f3dba Mon Sep 17 00:00:00 2001
 From: Jedediah Smith <jedediah@silencegreys.com>
 Date: Sun, 6 Mar 2016 03:43:35 -0500
 Subject: [PATCH] Empty chunk API

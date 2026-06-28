@@ -1,4 +1,4 @@
-From 92a1f24c7ba7719b4fcdc4f9720821839f814dc0 Mon Sep 17 00:00:00 2001
+From 59681ada078abdd0f609811e637cb5d48595f262 Mon Sep 17 00:00:00 2001
 From: David Rodriguez <15853933+limbo56@users.noreply.github.com>
 Date: Sun, 13 Oct 2019 19:21:28 -0400
 Subject: [PATCH] Fix NamedEntitySpawn not initializing data watcher

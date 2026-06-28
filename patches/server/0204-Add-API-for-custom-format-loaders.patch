@@ -1,4 +1,4 @@
-From bebf7336329cf14b5f73c3d49cb7b103e567025b Mon Sep 17 00:00:00 2001
+From f0bb23067df58d7cadee960cbce2e9ffc4608cb2 Mon Sep 17 00:00:00 2001
 From: William Jeffcock <jeffcockw@gmail.com>
 Date: Thu, 23 Sep 2021 01:11:33 +0100
 Subject: [PATCH] Add API for custom format loaders

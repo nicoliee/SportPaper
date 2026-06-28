@@ -1,4 +1,4 @@
-From 832e4d78a9dd56060c4fe23cdcecb0686a873c66 Mon Sep 17 00:00:00 2001
+From f50bf45f4aa1bd6ff47f2d4cbd8f8170eadff2be Mon Sep 17 00:00:00 2001
 From: kashike <kashike@vq.lc>
 Date: Tue, 8 Mar 2016 18:28:43 -0800
 Subject: [PATCH] Don't nest if we don't need to when serealising text

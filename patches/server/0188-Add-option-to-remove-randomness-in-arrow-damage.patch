@@ -1,4 +1,4 @@
-From d781e3d3e8ad363b9e104ccfb134b82e41299aa3 Mon Sep 17 00:00:00 2001
+From b5c50807328cb7148b4a796abeecbc257057f1bf Mon Sep 17 00:00:00 2001
 From: Indicado <indicado@walrus.gg>
 Date: Wed, 15 Jul 2020 09:52:19 +0200
 Subject: [PATCH] Add option to remove randomness in arrow damage

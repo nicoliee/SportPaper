@@ -1,4 +1,4 @@
-From 6a2f0bf39cbe150d458ad3dfa0bd11728e562e21 Mon Sep 17 00:00:00 2001
+From 444fb68915af858c9dd0f713f342f359118480df Mon Sep 17 00:00:00 2001
 From: RoccoDev <hey@rocco.dev>
 Date: Thu, 13 Nov 2025 09:00:39 +0100
 Subject: [PATCH] Apply item attributes on slot change

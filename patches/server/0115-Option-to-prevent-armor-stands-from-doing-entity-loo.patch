@@ -1,4 +1,4 @@
-From 204326b60088bf86ed112d46d6503ffcd9962849 Mon Sep 17 00:00:00 2001
+From 754c520301b5499efd35ab187aa7a6ed51fe370e Mon Sep 17 00:00:00 2001
 From: Hugo Manrique <hugmanrique@gmail.com>
 Date: Mon, 23 Jul 2018 12:57:39 +0200
 Subject: [PATCH] Option to prevent armor stands from doing entity lookups

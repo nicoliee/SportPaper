@@ -1,4 +1,4 @@
-From e57a19de0eb6b8e3e741b1c0c1a786c3b69ce590 Mon Sep 17 00:00:00 2001
+From cffa5ffda5fbaec6148500464c860b60a33b98ac Mon Sep 17 00:00:00 2001
 From: imkunet <im@kunet.dev>
 Date: Wed, 18 Feb 2026 10:00:48 -0500
 Subject: [PATCH] Faster hits

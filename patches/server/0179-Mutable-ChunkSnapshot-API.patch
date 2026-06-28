@@ -1,4 +1,4 @@
-From c84142a4d8e8a029ea8508b73001d46e27c8a4cf Mon Sep 17 00:00:00 2001
+From 9263ee7d800a237ff31af21bb78dfa302fd773fb Mon Sep 17 00:00:00 2001
 From: Ashcon Partovi <ashcon@partovi.net>
 Date: Tue, 30 Apr 2019 08:04:32 -0700
 Subject: [PATCH] Mutable ChunkSnapshot API

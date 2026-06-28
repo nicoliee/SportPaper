@@ -1,4 +1,4 @@
-From bba8175201496f8de8d6482d2716fd816eabf6fb Mon Sep 17 00:00:00 2001
+From 8c7fa32e2bec7008a165efe8fcb86985c70881d5 Mon Sep 17 00:00:00 2001
 From: Zach Brown <zach.brown@destroystokyo.com>
 Date: Sat, 16 Jul 2016 19:11:17 -0500
 Subject: [PATCH] Don't lookup game profiles that have no UUID and no name
