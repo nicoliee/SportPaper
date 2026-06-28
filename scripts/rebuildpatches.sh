@@ -13,17 +13,13 @@ if [ "$2" == "nofilter" ] || [ "$2" == "noclean" ]; then
     nofilter="1"
 fi
 function cleanupPatches {
-    cd "$1"
+    folder="$1"
+    relfolder="$2"
+    cd "$folder"
     for patch in *.patch; do
-        gitver=$(tail -n 2 "$patch" | grep -ve "^$" | tail -n 1)
-        diffs=$($gitcmd diff --staged "$patch" | grep -E "^(\+|-)" | grep --color=none -Ev "(From [a-z0-9]{32,}|--- a|\+\+\+ b|.index|Date: )")
-
-        testver=$(echo "$diffs" | tail -n 2 | grep -ve "^$" | tail -n 1 | grep "$gitver")
-        if [ "$testver" != "" ]; then
-            diffs=$(echo "$diffs" | tail -n +3)
-        fi
-
-        if [ "$diffs" == "" ] ; then
+        old=$(git show HEAD:"$relfolder/$patch" 2>/dev/null | sed -n '/^---$/,$ p' | tail -n +2 || true)
+        new=$(sed -n '/^---$/,$ p' "$patch" | tail -n +2)
+        if [ "$old" = "$new" ]; then
             $gitcmd reset HEAD "$patch" >/dev/null
             $gitcmd checkout -- "$patch" >/dev/null
         fi
@@ -59,7 +55,7 @@ function savePatches {
     cd "$basedir"
     $gitcmd add --force -A "$basedir/$patch_folder"
     if [ "$nofilter" == "0" ]; then
-        cleanupPatches "$basedir/$patch_folder"
+        cleanupPatches "$basedir/$patch_folder" "$patch_folder"
     fi
     echo "Patches saved for $what to $patch_folder/"
 }
