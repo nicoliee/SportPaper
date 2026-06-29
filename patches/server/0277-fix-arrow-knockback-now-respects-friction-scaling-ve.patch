@@ -1,0 +1,77 @@
+From d5a5e55f2c9effc14d90ba85d6a98709d417142d Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Oscar=20Mej=C3=ADa?=
+ <163463944+nicoliee@users.noreply.github.com>
+Date: Sun, 28 Jun 2026 19:39:13 -0600
+Subject: [PATCH] fix: arrow knockback now respects friction, scaling, vertical
+ limit, knockback reduction, and EntityKnockbackByEntityEvent like
+ EntityLiving.a()
+
+
+diff --git a/src/main/java/net/minecraft/server/EntityArrow.java b/src/main/java/net/minecraft/server/EntityArrow.java
+index 67844fae7..22663c273 100644
+--- a/src/main/java/net/minecraft/server/EntityArrow.java
++++ b/src/main/java/net/minecraft/server/EntityArrow.java
+@@ -7,7 +7,9 @@ import org.bukkit.entity.LivingEntity;
+ import org.bukkit.event.entity.EntityCombustByEntityEvent;
+ import org.bukkit.event.player.PlayerPickupItemEvent;
+ import com.destroystokyo.paper.PaperConfig;
++import com.destroystokyo.paper.event.entity.EntityKnockbackByEntityEvent;
+ import com.destroystokyo.paper.event.entity.ProjectileCollideEvent;
++import org.bukkit.util.Vector;
+ // CraftBukkit end
+ 
+ public class EntityArrow extends Entity implements IProjectile {
+@@ -280,11 +282,45 @@ public class EntityArrow extends Entity implements IProjectile {
+ 
+                             f3 = MathHelper.sqrt(this.motX * this.motX + this.motZ * this.motZ);
+                             if (f3 > 0.0F) {
+-                                double arrowHorizontal = PaperConfig.knockbackArrowHorizontal;
+-                                double arrowVertical = PaperConfig.knockbackArrowVertical;
+-                                double dx = this.motX * (double) (this.knockbackStrength + 1) * arrowHorizontal / (double) f3;
+-                                double dz = this.motZ * (double) (this.knockbackStrength + 1) * arrowHorizontal / (double) f3;
+-                                movingobjectposition.entity.g(dx, arrowVertical, dz);
++                                double magnitude = f3;
++                                double knockbackReduction = entityliving.getBukkitEntity().getKnockbackReduction();
++                                double friction = PaperConfig.knockbackFriction - knockbackReduction;
++
++                                double arrowHorizontal = PaperConfig.knockbackArrowHorizontal * (this.knockbackStrength + 1) * (1d - knockbackReduction);
++                                double arrowVertical = PaperConfig.knockbackArrowVertical * (this.knockbackStrength + 1) * (1d - knockbackReduction);
++
++                                double oldMotX = entityliving.motX;
++                                double oldMotY = entityliving.motY;
++                                double oldMotZ = entityliving.motZ;
++
++                                entityliving.motX /= friction;
++                                entityliving.motZ /= friction;
++
++                                if (PaperConfig.knockbackScaling) {
++                                    entityliving.motY /= friction;
++                                    entityliving.motY += arrowVertical;
++                                } else {
++                                    entityliving.motY = arrowVertical;
++                                }
++
++                                entityliving.motX += this.motX / magnitude * arrowHorizontal;
++                                entityliving.motZ += this.motZ / magnitude * arrowHorizontal;
++
++                                if (entityliving.motY > PaperConfig.knockbackVerticalLimit) {
++                                    entityliving.motY = PaperConfig.knockbackVerticalLimit;
++                                }
++
++                                Vector delta = new Vector(entityliving.motX - oldMotX, entityliving.motY - oldMotY, entityliving.motZ - oldMotZ);
++                                entityliving.motX = oldMotX;
++                                entityliving.motY = oldMotY;
++                                entityliving.motZ = oldMotZ;
++                                org.bukkit.entity.Entity bukkitEntity = entityliving.getBukkitEntity();
++                                if (new EntityKnockbackByEntityEvent((LivingEntity) bukkitEntity, ((org.bukkit.event.entity.EntityDamageByEntityEvent) bukkitEntity.getLastDamageCause()).getDamager(), (float) k, delta).callEvent()) {
++                                    entityliving.motX += delta.getX();
++                                    entityliving.motY += delta.getY();
++                                    entityliving.motZ += delta.getZ();
++                                }
++                                entityliving.ai = true;
+                             }
+ 
+                             if (this.shooter instanceof EntityLiving) {
+-- 
+2.54.0
+
